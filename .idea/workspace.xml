@@ -5,283 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_BeamSoldier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_BeamSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_BowSoldier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_BulletRocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_CrossHair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_EnemyDeathSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_FireBall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_FlameThrowerSoldier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_FlameThrowerSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Font.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_GameOverSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_LaserBeamProjectile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_LaserBeamProjectile2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_LifeLostSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_PiercerSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_ProjectilePiercer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Projektil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_RocketShotSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_RocketSoldier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Soldier1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_SoldierSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Spider1A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Spider1B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Spider2A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_Spider2B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_background_Level.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_explosion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/NTD_firewall_locks.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Fonts/Minecraft.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/aac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/ai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/avi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/dmg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/doc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/docx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/exe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/gif.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/htm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/iso.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/jar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/java.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/jpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/js.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/mkv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/mov.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/mp3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/mp4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/mpg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/png.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/ppt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/ps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/psd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/rss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/sys.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/txt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/xls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/xlsx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Attachments/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/credits.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/placeholder2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/quit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/Icons/Buttons/spotify.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/MusicTracks/Rainy_Village-Tad_on.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/MusicTracks/Remnants_of_the_Festival-Tad_on.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/MusicTracks/Unwavering_Emotion-Tad_on.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ScamOrNot/maildata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_04B_03__.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueProjectile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueShotAnimatonFrame0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueShotAnimatonFrame1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueShotAnimatonFrame2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueShotAnimatonFrame3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BlueShotAnimatonFrame4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Boss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_BossExplosion.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Enemy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_EnemyShootingSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Enemy_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Esc-Key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ExplosionFrame9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_GameMusic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_HugeExplosion.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_KIVoiceOver.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_LargeExplosion.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_MenuMusic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_P-Key.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Pfeiltasten.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_RedProjectile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_ShootingSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_SmallExplosion.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_Spaceship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/VirusVoid_WASD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_TMPblock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_door.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_enemy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_exitbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_level1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_level2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_level3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_level4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_main screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_playbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/resources/ED_tutorialbutton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-PressStart2P-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-correct.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-fragentestleicht" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-fragentestmittel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-fragentestschwer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-incorrect.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/techmaster-lose.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/FilePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/blockStates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Escape_Directory/gameStates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Controlling/GUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Controlling/UIManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Enemy/EnemyContainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Enemy/EnemyLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameMenuPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameOverScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/HauptFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/LevelPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/MenuPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Projectile/ProjectileContainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Projectile/ProjectileLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Soldier/SoldierContainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Soldier/SoldierLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Soldier/SoldierPlacePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/UIPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Window/InfoWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/Window/InfoWindowSoldiers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Help/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Help/MyFont.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Help/MyImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Help/Soldiers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Controlling/GameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Controlling/LevelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Controlling/LogicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Controlling/SoldierManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/Projectile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/ProjectileBeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/ProjectileFireBall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/ProjectilePierce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/ProjectileRocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Projectiles/ProjectileTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Logic/Soldier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Sound/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NanoTechDefenders/Sound/SoundController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/Techmaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/GUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/QuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Antwort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Frage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Spieler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseAntwortActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseLevelActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ExitActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/HelpActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/JokerActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/QuizFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/StartActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameStartPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/design/RoundedButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/MusicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Options.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/AttachmentButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/BackgroundPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/EdgedSlider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/ImageButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/EndScreenUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/GameUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/HowToPlayUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainMenueUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/OptionsUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/imagecontrol/PictureManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/imagecontrol/ScaledImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/PauseLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/PlanetHPLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/ScaledLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/SpaceshipLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/PlanetHPLabelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/SpaceshipKeyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/VolumeRegulatorBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialEndPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/MainMenuPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/OptionsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/OrangePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/TutorialPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/help/WaitHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/controller/InfiniteGameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/controller/LogicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/controller/TutorialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/enemymanager/BossManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/enemymanager/DefaultEnemyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/enemymanager/EnemyManagerHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/enemymanager/ShootingEnemyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Planet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Projectile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Spaceship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/GameTutorialEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/MoveSpaceship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/SpaceshipCollisionDetection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/TutorialAndGameHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/GameTimeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/GameTutorialEventManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/InfiniteGameTimeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/PlanetManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/SpaceshipManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/TimeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/manager/TutorialTimeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/BossProjectileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/EnemyProjectileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/PlayerProjectileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/ProjectileManagerHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/sound/MusicManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/sound/SoundEffectManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusvoid/logic/sound/SoundManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruppe_08_ProgrammierProjekt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gruppe_08_ProgrammierProjekt.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2ZRdJCB5JKBy8rLTeCp5aeNU5hj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,11 +35,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/niede/Downloads/jackson-databind-2.16.0.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -330,6 +57,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -339,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702388753005</updated>
       <workItem from="1702388754132" duration="6252000" />
+      <workItem from="1702396011280" duration="134000" />
     </task>
     <servers />
   </component>

@@ -52,12 +52,14 @@ public class Main {
         JButton escape_Directory = createBtn("<html>Escape<br>Directory");
         JButton spiel6Btn = createBtn("spiel6");
 
-        nanoTechDefendersBtn.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
-        virusVoidBtn.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
-        scamOrNot.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
-        techmaster.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
-        escape_Directory.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
-        spiel6Btn.setSize(new Dimension(frame.getWidth() / 3, frame.getHeight() / 2));
+        Dimension buttonsDimension = new Dimension(frame.getWidth() / 3, frame.getHeight() / 2);
+
+        nanoTechDefendersBtn.setSize(buttonsDimension);
+        virusVoidBtn.setSize(buttonsDimension);
+        scamOrNot.setSize(buttonsDimension);
+        techmaster.setSize(buttonsDimension);
+        escape_Directory.setSize(buttonsDimension);
+        spiel6Btn.setSize(buttonsDimension);
 
         nanoTechDefendersBtn.addActionListener(e -> {
             new GameManager();
