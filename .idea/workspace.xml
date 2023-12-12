@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gruppe_08_ProgrammierProjekt:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gruppe_08_ProgrammierProjekt_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jars/jackson-annotations-2.16.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jars/jackson-core-2.16.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jars/jackson-databind-2.16.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_16_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Files/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +46,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/niede/Downloads/jackson-databind-2.16.0.jar",
+    "last_opened_file_path": "C:/Users/niede/Desktop/Studium/Semester_3/Gruppe_08_ProgrammierProjekt/Jars/jackson-core-2.16.0.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +60,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\niede\Desktop\Studium\Semester_3\Gruppe_08_ProgrammierProjekt\Jars" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
