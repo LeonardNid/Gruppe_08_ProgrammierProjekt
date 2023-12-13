@@ -10,14 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gruppe_08_ProgrammierProjekt_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jars/jackson-annotations-2.16.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jars/jackson-core-2.16.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jars/jackson-databind-2.16.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_16_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_AnimationSheet_Character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_BACKTO1982.TTF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Einstellungen_Homescreen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_gameBackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_level_one_data.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_menu_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_outside_sprites.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/PlayerKeyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterCharacterPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterLevelPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/KeyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/createSwitchPanelActionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Files/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +54,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -45,10 +79,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "ITfighter",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/niede/Desktop/Studium/Semester_3/Gruppe_08_ProgrammierProjekt/Jars/jackson-core-2.16.0.jar",
+    "last_opened_file_path": "/Users/finge/Desktop/Studium/Hochschule_Hannover/3.Semester/Programmierprojekt/Gruppe_08_Programmierprojekt/Files/ITfighter_ressources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +95,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Files/ITfighter_ressources" />
+      <recent name="$PROJECT_DIR$/Files/pictures" />
+      <recent name="$PROJECT_DIR$/src/ITfighter/utilities" />
+      <recent name="$PROJECT_DIR$/src/ITfighter" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niede\Desktop\Studium\Semester_3\Gruppe_08_ProgrammierProjekt\Jars" />
     </key>
@@ -91,6 +131,7 @@
       <updated>1702388753005</updated>
       <workItem from="1702388754132" duration="6252000" />
       <workItem from="1702396011280" duration="134000" />
+      <workItem from="1702477105697" duration="7671000" />
     </task>
     <servers />
   </component>
