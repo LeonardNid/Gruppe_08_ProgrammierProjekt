@@ -131,8 +131,8 @@ public class GameTutorialSuperPanel extends GuiBasic {
     public void removeExplosionAnimationLabel() {
         SwingUtilities.invokeLater(() -> {
             if (!explosionAnimationLabels.isEmpty()) {
-                this.remove(explosionAnimationLabels.getFirst());
-                explosionAnimationLabels.removeFirst();
+                this.remove(explosionAnimationLabels.get(0)); // geht nicht mit getFirst auf allen Geräten
+                explosionAnimationLabels.remove(explosionAnimationLabels.get(0)); // geht nicht mit removeFirst auf allen Geräten
             }
         });
     }
