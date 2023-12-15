@@ -7,7 +7,6 @@ import virusvoid.gui.labels.SpaceshipLabel;
 import virusvoid.gui.other.GuiBasic;
 import virusvoid.gui.other.GuiController;
 import virusvoid.gui.other.SpaceshipKeyListener;
-import virusvoid.gui.other.*;
 
 import javax.swing.*;
 import java.awt.*;
