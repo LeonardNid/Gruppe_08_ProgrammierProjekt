@@ -1,11 +1,14 @@
 package IT_fighter.utilities;
 
 import javax.imageio.ImageIO;
+import javax.sound.sampled.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class LoadAndSaveData {
 
@@ -56,5 +59,28 @@ public class LoadAndSaveData {
             }
         return levelData;
 
+    }
+    public static Clip getSoundFile(String soundFileName) {
+        Clip clip;
+        String errorMessage = "Fehler bei SoundFile einlesen";
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new URL(sourceOfResources + soundFileName));
+            clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+        } catch (UnsupportedAudioFileException e) {
+            System.out.println(errorMessage);
+            throw new RuntimeException(e);
+        } catch (MalformedURLException e) {
+            System.out.println(errorMessage);
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            System.out.println(errorMessage);
+            throw new RuntimeException(e);
+        } catch (LineUnavailableException e) {
+            System.out.println(errorMessage);
+            throw new RuntimeException(e);
+
+        }
+        return clip;
     }
 }

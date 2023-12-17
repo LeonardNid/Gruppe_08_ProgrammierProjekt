@@ -13,6 +13,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+
 /**
  * The base panel for the game/tutorial, providing components for spaceship, projectiles, and animations.
  */
@@ -131,8 +132,9 @@ public class GameTutorialSuperPanel extends GuiBasic {
     public void removeExplosionAnimationLabel() {
         SwingUtilities.invokeLater(() -> {
             if (!explosionAnimationLabels.isEmpty()) {
-                //this.remove(explosionAnimationLabels.getFirst());
-                //explosionAnimationLabels.removeFirst();
+                this.remove(explosionAnimationLabels.get(0));
+                explosionAnimationLabels.remove(explosionAnimationLabels.get(0));
+                //TODO ausgeklammert
             }
         });
     }

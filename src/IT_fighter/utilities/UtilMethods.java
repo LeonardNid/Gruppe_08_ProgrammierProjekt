@@ -1,5 +1,7 @@
 package IT_fighter.utilities;
 
+import javax.swing.*;
+import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import static IT_fighter.layers.app.Game.*;
 
@@ -36,38 +38,45 @@ public class UtilMethods {
         }
         return true;
     }
-    public static float GetEntityXPosNextToWall(Rectangle2D.Float hitbox, float xSpeed) {
-        int currentTile = (int) (hitbox.x / TILES_SIZE);
-        if (xSpeed > 0) {
-            // Right
-            int tileXPos = currentTile * TILES_SIZE;
-            int xOffset = (int) (TILES_SIZE - hitbox.width);
-            return tileXPos + xOffset - 1;
-        } else
-            // Left
-            return currentTile * TILES_SIZE;
-    }
 
-    public static float GetEntityYPosUnderRoofOrAboveFloor(Rectangle2D.Float hitbox, float airSpeed) {
-        int currentTile = (int) (hitbox.y / TILES_SIZE);
-        if (airSpeed > 0) {
-            // Falling - touching floor
-            int tileYPos = currentTile * TILES_SIZE;
-            int yOffset = (int) (TILES_SIZE - hitbox.height);
-            return tileYPos + yOffset - 1;
-        } else
-            // Jumping
-            return currentTile * TILES_SIZE;
 
-    }
-
-    public static boolean IsEntityOnFloor(Rectangle2D.Float hitbox, int[][] lvlData) {
+    public static boolean entityOnFloor(Rectangle2D.Float hitbox, int[][] lvlData) {
         // Check the pixel below bottomleft and bottomright
-        if (!validPosition(hitbox.x, hitbox.y + hitbox.height + 1, lvlData))
-            if (!validPosition(hitbox.x + hitbox.width, hitbox.y + hitbox.height + 1, lvlData))
+        if (validPosition(hitbox.x, hitbox.y + hitbox.height + 1, lvlData))
+            if (validPosition(hitbox.x + hitbox.width, hitbox.y + hitbox.height + 1, lvlData))
                 return false;
 
         return true;
 
     }
+    public static float entityYPosNotUpOrDown(Rectangle2D.Float hitbox, float ySpeed) {
+        int actualTileNumber = (int) (hitbox.y / TILES_SIZE);
+
+        if (ySpeed > 0) {//wenn ySpeed größer als 0 ist fällt der Spieler
+            int tileYPos = actualTileNumber * TILES_SIZE;
+            int yOffset = (int) (TILES_SIZE - hitbox.height);
+            return tileYPos + yOffset - 1;
+        } else {//wenn ySpeed kleiner als 0 ist, springt die Spielfigur
+            return actualTileNumber * TILES_SIZE;
+        }
+    }
+    public static float entityNextToWallPosX(Rectangle2D.Float hitbox, float xSpeed) {
+        int actualTileNumber = (int) (hitbox.x / TILES_SIZE);
+        //xSpeed ist positiv, wenn Spieler sich nach rechts bewegt
+        if (xSpeed > 0) {
+            int tileXPos = actualTileNumber * TILES_SIZE;
+            int OffsetX = (int) (TILES_SIZE - hitbox.width);
+            return tileXPos + OffsetX-1;
+        //bei negativen xSpeed bewegt sich der Spieler nach links
+        } else {
+            return actualTileNumber * TILES_SIZE;
+        }
+    }
+    public static JPanel createGap(Dimension dimension) {
+        JPanel gap = new JPanel();
+        gap.setOpaque(false);
+        gap.setPreferredSize(dimension);
+        return gap;
+    }
+
 }

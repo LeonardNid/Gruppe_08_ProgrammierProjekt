@@ -1,13 +1,12 @@
 package IT_fighter.layers.ui.ctrl;
 
 import IT_fighter.layers.app.Game;
-import IT_fighter.layers.app.GameController;
 import IT_fighter.layers.app.ITFighterAppController;
 import IT_fighter.layers.ui.*;
+import IT_fighter.layers.ui.menuPanels.ITFighterLevelPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterMenuPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterOptionsPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterTutorialPanel;
-import IT_fighter.utilities.LoadAndSaveData;
 
 import javax.swing.*;
 import java.awt.*;

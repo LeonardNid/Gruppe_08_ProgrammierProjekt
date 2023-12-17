@@ -1,4 +1,4 @@
-package IT_fighter.layers.ui;
+package IT_fighter.layers.ui.menuPanels;
 
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 import IT_fighter.layers.ui.menuPanels.BasicPanel;

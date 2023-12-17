@@ -22,7 +22,7 @@ public class PlayerKeyHandler implements KeyListener {
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_W:
-                character.setUp(true);
+                character.setJump(true);
                 break;
             case KeyEvent.VK_A:
                 character.setLeft(true);
@@ -44,7 +44,7 @@ public class PlayerKeyHandler implements KeyListener {
     public void keyReleased(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_W:
-                character.setUp(false);
+                character.setJump(false);
                 break;
             case KeyEvent.VK_A:
                 character.setLeft(false);
