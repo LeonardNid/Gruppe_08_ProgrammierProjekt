@@ -2,60 +2,103 @@ package de.Luca.ScamOrNot.UI;
 
 import de.Luca.ScamOrNot.Logic.Options;
 import de.Luca.ScamOrNot.Logic.main;
+import de.Luca.ScamOrNot.UI.CustomElements.CustomSlider;
 
 import javax.swing.*;
 import java.awt.*;
-
-import static java.lang.Math.round;
+import java.awt.event.ItemEvent;
 
 public class OptionsUI {
+
     public static void init() {
+        displayGUI();
+    }
+
+    private static void displayGUI() {
+        UIManager um=new UIManager();
+        um.put("OptionPane.background",Color.BLACK);
+        um.put("Panel.background",Color.BLACK);
+        int result = JOptionPane.showConfirmDialog(null, getPanel(),"Options.exe", JOptionPane.DEFAULT_OPTION,
+                JOptionPane.PLAIN_MESSAGE);
+
+        if(result == JOptionPane.OK_OPTION) {
+            Options.setMute(mute);
+            Options.setVolume(vol);
+            Options.setDifficulty(diff);
+            Options.reloadOptions();
+        }
+
+        um.put("OptionPane.background",Color.WHITE);
+        um.put("Panel.background",Color.WHITE);
+    }
+
+    private static boolean mute = Options.getMute();
+    private static int vol = Options.getVolume();
+    private static String diff = Options.getDifficulty();
+
+    private static JPanel getPanel() {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+        panel.setBackground(Color.black);
 
         JPanel volumenPnl = new JPanel();
         volumenPnl.setLayout(new BoxLayout(volumenPnl, BoxLayout.X_AXIS));
-        volumenPnl.setPreferredSize(new Dimension(300, 300));
 
         JLabel sliderLbl = new JLabel("Sound volume:");
         sliderLbl.setFont(main.pixelFont.deriveFont(20f));
-        sliderLbl.setForeground(Color.DARK_GRAY);
+        sliderLbl.setForeground(Color.WHITE);
         volumenPnl.add(sliderLbl);
 
-        JSlider test = new JSlider();
-        test.setPreferredSize(new Dimension(100, 10));
-        test.setMinimum(0);
-        test.setValue((int) round(Options.getVolume()*0.03));
-        test.setMaximum(100);
-        volumenPnl.add(test);
 
-        JCheckBox test2 = new JCheckBox();
-        test2.setText("Full Mute");
-        test2.setSelected(Options.getMute());
-        volumenPnl.add(test2);
+        JSlider slider = new JSlider() {
+            @Override
+            public void updateUI() {
+                setUI(new CustomSlider(this));
+            }
+        };
+        slider.setMinimum(0);
+        slider.setMaximum(30);
+        slider.setValue(vol);
+        slider.addChangeListener(e -> vol = slider.getValue());
+        volumenPnl.add(slider);
+
+        JCheckBox fullMuteBtn = new JCheckBox();
+        fullMuteBtn.setText("Full Mute");
+        fullMuteBtn.setForeground(Color.WHITE);
+        fullMuteBtn.setSelected(mute);
+        fullMuteBtn.addItemListener(e -> {
+            mute = fullMuteBtn.isSelected();
+        });
+        volumenPnl.add(fullMuteBtn);
 
         panel.add(volumenPnl);
 
         JPanel difficultyPnl = new JPanel();
         difficultyPnl.setLayout(new BoxLayout(difficultyPnl, BoxLayout.X_AXIS));
-        difficultyPnl.setPreferredSize(new Dimension(300, 300));
 
         JLabel difficultyLbl = new JLabel("Difficulty: ");
         difficultyLbl.setFont(main.pixelFont.deriveFont(20f));
-        difficultyLbl.setForeground(Color.DARK_GRAY);
+        difficultyLbl.setForeground(Color.WHITE);
         difficultyPnl.add(difficultyLbl);
 
         String[] difficulty = {"Easy", "Normal", "Hard"};
-        JComboBox test3 = new JComboBox(difficulty);
-        test3.setSelectedItem(Options.getDifficulty());
+        JComboBox difficultyBox = new JComboBox(difficulty);
+        difficultyBox.setSelectedItem(diff);
 
-        difficultyPnl.add(test3);
+        difficultyBox.addItemListener(event -> {
+            String item = (String) event.getItem();
+            if (event.getStateChange() == ItemEvent.SELECTED) {
+                System.out.println(item);
+                diff = item;
+            }
+        });
+
+
+        difficultyPnl.add(difficultyBox);
 
         panel.add(volumenPnl);
         panel.add(difficultyPnl);
 
-        MainFrame.addScreen(panel, "OptionsUI");
-        MainFrame.showScreen("OptionsUI");
+        return panel;
     }
-
 }

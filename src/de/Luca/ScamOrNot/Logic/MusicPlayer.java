@@ -4,14 +4,23 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 public class MusicPlayer {
     private final List<File> tracks;
-    private Clip clip;
+    private static Clip clip;
     private int currentIndex = -1;
 
+    private boolean stop = false;
+
     private Clip before;
+
+    public static Clip getClip() {
+        return clip;
+    }
 
     public MusicPlayer(List<File> tracks) {
         this.tracks = new ArrayList<>(tracks);
@@ -19,6 +28,11 @@ public class MusicPlayer {
     }
 
     public void play() {
+        System.out.println("Play func: " + stop);
+        if(stop) {
+            return;
+        }
+
         if(before == clip && before != null) {
             return;
         }
@@ -54,20 +68,23 @@ public class MusicPlayer {
 
         System.out.println("neuer track" + clip.toString());
 
-        Timer t = new Timer();
-        t.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                play();
+        clip.addLineListener(event -> {
+            if (event.getType() == LineEvent.Type.STOP) {
+                if(!stop) {
+                    play();
+                }
             }
-        }, clip.getMicrosecondLength());
+        });
 
     }
 
-    public void stop() {
+    public void stop(boolean dauerhaft) {
         if (clip != null) {
             clip.stop();
         }
+        stop = dauerhaft;
+
+        System.out.println("Stop func: " + stop);
     }
 
     public static Clip loadClip(String soundFilePath) {

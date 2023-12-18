@@ -1,6 +1,8 @@
 package de.Luca.ScamOrNot.Logic;
 
 
+import de.Luca.ScamOrNot.UI.EndScreenUI;
+
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +24,42 @@ public class Logic {
 
     public static Email getRandomMail() {
         return getRandomMailPriv();
+    }
+
+    private static void startTimerPriv() {
+        int seconds = 0;
+        System.out.println("Timer func start");
+        System.out.println(seconds + "");
+        System.out.println(Options.getDifficulty());
+        switch (Options.getDifficulty()) {
+            case "Normal":
+                seconds = 90;
+            case "Hard":
+                seconds = 10;
+        }
+
+        if(seconds != 0) {
+            diff_timer = new Timer(seconds * 1000, e -> {
+                diff_timer.stop();
+                EndScreenUI.init(5, "");
+            });
+            diff_timer.start();
+            System.out.println("Timer start");
+        }
+    }
+
+    private static void stopTimerPriv() {
+        if(diff_timer != null) {
+            diff_timer.stop();
+        }
+    }
+
+    public static void stopTimer() {
+        stopTimerPriv();
+    }
+
+    public static void startTimer() {
+        startTimerPriv();
     }
 
     private static Email getRandomMailPriv() {

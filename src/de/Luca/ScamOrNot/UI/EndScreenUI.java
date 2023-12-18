@@ -1,9 +1,12 @@
 package de.Luca.ScamOrNot.UI;
 
 
+import de.Luca.ScamOrNot.Logic.Email;
+import de.Luca.ScamOrNot.Logic.MusicPlayer;
 import de.Luca.ScamOrNot.Logic.main;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class EndScreenUI {
 
@@ -13,34 +16,70 @@ public class EndScreenUI {
     reason 2 -> marked phishing email as normal
     reason 3 -> marked scam email as normal
     reason 4 -> clicked on suspecious and dangerous link
+    reason 5 -> run out of time
      */
 
-    public static void init(int reason) {
-        JPanel panel = new JPanel();
+    public static void init(int reason, String explanation) {
+        main.player.stop(true);
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.setBackground(Color.WHITE);
 
-        main.player.stop();
+        JPanel contentPanel = new JPanel();
+        contentPanel.setLayout(new BoxLayout(contentPanel, BoxLayout.Y_AXIS));
+        contentPanel.setBackground(Color.WHITE);
+        contentPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Add padding
 
-        JLabel test = new JLabel();
+        JLabel theEnd = new JLabel("YOU LOST!");
+        theEnd.setFont(new Font("Arial", Font.BOLD, 24));
+        theEnd.setAlignmentX(Component.CENTER_ALIGNMENT);
+        contentPanel.add(theEnd);
 
-        if(reason == 0) {
-            test.setText("Du hast alle Mails für heute gelesen!");
-        }
-        else if(reason == 1) {
-            test.setText("Du hast durch einen Anhang einen Virus heruntergeladen. Du wurdest gekündigt");
-        }
-        else if(reason == 2) {
-            test.setText("Du bist auf eine Phishing Email reingefallen und alle Daten der Firma wurden geklaut. Du wurdest gekündigt!");
-        }
-        else if(reason == 3) {
-            test.setText("Du bist auf eine Scam Email reingefallen und wurdest gekündigt!");
-        }
-        else if(reason == 4) {
-            test.setText("Du hast einen gefährlichen Link angedrückt und das Firmennetzwerk mit einem Trojaner infiziert. Du wurdest gekündigt!");
+        JLabel reasonLbl = new JLabel(getReasonText(reason));
+        reasonLbl.setFont(new Font("Arial", Font.PLAIN, 16));
+        reasonLbl.setAlignmentX(Component.CENTER_ALIGNMENT);
+        contentPanel.add(reasonLbl);
+
+        if (!explanation.isEmpty()) {
+            JLabel explanationLbl = new JLabel("<html><body style='text-align: center;'>" + "Explanation of the last email: " + explanation + "</body></html>");
+            explanationLbl.setFont(new Font("Arial", Font.PLAIN, 14));
+            explanationLbl.setAlignmentX(Component.CENTER_ALIGNMENT);
+            explanationLbl.setBorder(BorderFactory.createEmptyBorder(100, 0, 100, 0)); // Add padding
+            contentPanel.add(explanationLbl, BorderLayout.CENTER); // Add the explanation label to the center
         }
 
-        panel.add(test);
+        JButton backToMain = new JButton("Back to Desktop");
+        backToMain.setFont(new Font("Arial", Font.PLAIN, 16));
+        backToMain.addActionListener(e -> {
+            main.player = new MusicPlayer(main.loaded_tracks);
+            main.player.play();
+            Email.init();
+            MainMenueUI.init();
+        });
+        backToMain.setAlignmentX(Component.CENTER_ALIGNMENT);
+        contentPanel.add(backToMain);
+
+        panel.add(contentPanel, BorderLayout.CENTER);
 
         MainFrame.addScreen(panel, "EndScreenUI");
         MainFrame.showScreen("EndScreenUI");
+    }
+
+    private static String getReasonText(int reason) {
+        switch (reason) {
+            case 0:
+                return "You've read all emails for today!";
+            case 1:
+                return "You downloaded a virus through an attachment. You've been fired.";
+            case 2:
+                return "You fell for a phishing email, and all company data was stolen. You've been fired!";
+            case 3:
+                return "You fell for a scam email and got fired!";
+            case 4:
+                return "You clicked on a dangerous link, infecting the company network with a trojan. You've been fired!";
+            case 5:
+                return "You've run out of time...";
+            default:
+                return "";
+        }
     }
 }

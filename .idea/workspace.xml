@@ -10,52 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/controller/GUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/controller/QuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Antwort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Frage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Spieler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ChooseAntwortActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ChooseLevelActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ExitActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/HelpActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/JokerActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/QuizFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/StartActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameMainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameMainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameStartPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/design/RoundedButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/CustomSlider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameMenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/MenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/Techmaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Techmaster/Techmaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/GUIController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/QuizController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Antwort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Frage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Spieler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseAntwortActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseLevelActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ExitActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/HelpActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/JokerActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/QuizFacade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/StartActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameStartPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/design/RoundedButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/ScamOrNot/maildata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ScamOrNot/maildata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Options.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/Options.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/AttachmentButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/AttachmentButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/EdgedSlider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/ImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements/ImageButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/EndScreenUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/EndScreenUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/GameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/HowToPlayUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/HowToPlayUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainMenueUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/MainMenueUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/OptionsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/OptionsUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="scamornot" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -69,29 +60,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/leonard/Studium/Semester_3/DBS2/Bonusaufgabe2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "test2",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/lucawresch/Documents/Uni/3. Semester/Programmierprojekt/Gruppe_08_ProgrammierProjekt/src/de/Luca/ScamOrNot/UI/CustomElements",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI/CustomElements" />
+      <recent name="$PROJECT_DIR$/src/de/Luca/ScamOrNot/UI" />
+      <recent name="$PROJECT_DIR$/src/de/Luca/ScamOrNot/Logic" />
+      <recent name="$PROJECT_DIR$/src/de/Luca/ScamOrNot" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niede\Desktop\Studium\Semester_3\Gruppe_08_ProgrammierProjekt\Jars" />
     </key>
@@ -125,11 +122,23 @@
       <workItem from="1702465548306" duration="1012000" />
       <workItem from="1702553336458" duration="42000" />
       <workItem from="1702896569097" duration="107000" />
+      <workItem from="1702930771680" duration="2459000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
