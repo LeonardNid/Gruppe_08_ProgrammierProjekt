@@ -7,7 +7,6 @@ import virusvoid.gui.labels.SpaceshipLabel;
 import virusvoid.gui.other.GuiBasic;
 import virusvoid.gui.other.GuiController;
 import virusvoid.gui.other.SpaceshipKeyListener;
-import virusvoid.gui.other.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -131,8 +130,8 @@ public class GameTutorialSuperPanel extends GuiBasic {
     public void removeExplosionAnimationLabel() {
         SwingUtilities.invokeLater(() -> {
             if (!explosionAnimationLabels.isEmpty()) {
-                this.remove(explosionAnimationLabels.getFirst());
-                explosionAnimationLabels.removeFirst();
+                this.remove(explosionAnimationLabels.get(0)); // geht nicht mit getFirst auf allen Geräten
+                explosionAnimationLabels.remove(explosionAnimationLabels.get(0)); // geht nicht mit removeFirst auf allen Geräten
             }
         });
     }
