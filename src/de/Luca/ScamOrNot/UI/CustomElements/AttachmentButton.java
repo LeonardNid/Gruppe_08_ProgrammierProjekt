@@ -41,7 +41,7 @@ public class AttachmentButton extends JButton {
             if (fileNameParts.length > 1) {
                 String fileExtension = fileNameParts[fileNameParts.length - 1].toLowerCase();
                 if (MainFrame.dangerousExtension.contains(fileExtension)) {
-                    EndScreenUI.init(1);
+                    EndScreenUI.init(1, "Du hast auf ein Attachment geklickt, welches dir Schaden hinzugefügt hat.");
                 } else {
                     JOptionPane.showMessageDialog(null, "Gerade nochmal gut gegangen! Klicke nicht einfach so auf Anhänge! Auch in 'vermeintlich' guten Anhängen können gefährliche Viren o.Ä. verbaut sein.");
                     //TODO: evtl. für verschiedene Anhangstypen auch bei Bildern halt auch Bilder anzeigen etc.

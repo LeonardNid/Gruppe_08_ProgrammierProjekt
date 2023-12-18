@@ -1,7 +1,7 @@
 package de.Luca.ScamOrNot.Logic;
 
 public class Options {
-    private static int volume = 50;
+    private static int volume = 15;
 
     private static boolean mute = false;
     private static String difficulty = "Easy";
@@ -28,5 +28,14 @@ public class Options {
 
     public static void setMute(boolean val) {
         mute = val;
+    }
+
+    public static void reloadOptions() {
+        if(mute) {
+            MusicPlayer.setVolume(MusicPlayer.getClip(), 0);
+        }
+        else {
+            MusicPlayer.setVolume(MusicPlayer.getClip(), ((float) volume /100));
+        }
     }
 }

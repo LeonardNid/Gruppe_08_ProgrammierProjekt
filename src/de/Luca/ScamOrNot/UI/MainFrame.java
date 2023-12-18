@@ -32,21 +32,18 @@ public class MainFrame {
         GameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GameFrame.getContentPane().setLayout(GameCardLayout);
 
-        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        GraphicsDevice gd = ge.getDefaultScreenDevice();
-        //if (gd.isFullScreenSupported()) {
-        //    gd.setFullScreenWindow(GameFrame);
-        //} else {
-            // Fallback für den Fall, dass der Vollbildmodus nicht unterstützt wird
-            GameFrame.setSize(1080, 1920);
-            GameFrame.setLocationRelativeTo(null);
-            GameFrame.setUndecorated(true);
-            GameFrame.setVisible(true);
-        //}
+        GameFrame.setSize(1080, 1920);
+        GameFrame.setLocationRelativeTo(null);
+        GameFrame.setUndecorated(true);
+        GameFrame.setVisible(true);
 
         GameFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         dangerousExtension.add("exe");
+        dangerousExtension.add("iso");
+        dangerousExtension.add("jar");
+        dangerousExtension.add("sys");
+        dangerousExtension.add("dmg");
 
         GameFrame.validate();
         GameFrame.setVisible(true);
@@ -71,7 +68,4 @@ public class MainFrame {
         MainFrame.GameFrame.setVisible(true);
     }
 
-    public static void createPopupWindow(JPanel parent, String title, String text) {
-        JOptionPane.showMessageDialog(parent, text, title, JOptionPane.PLAIN_MESSAGE);
-    }
 }

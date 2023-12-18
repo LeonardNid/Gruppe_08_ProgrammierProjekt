@@ -4,6 +4,8 @@ import de.Luca.ScamOrNot.Logic.main;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HowToPlayUI {
@@ -25,11 +27,23 @@ public class HowToPlayUI {
 
     private static JPanel getPanel() {
         JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBackground(Color.black);
-        JLabel label = new JLabel("ADD HOW TO PLAY");
-        label.setFont(main.pixelFont.deriveFont(30f));
-        label.setForeground(Color.green);
-        panel.add(label);
+
+        List<String> strings = new ArrayList<>();
+        strings.add("Scam or Not?");
+        strings.add("");
+        strings.add("Erkenne und entscheide, ob eine Email eine reguläre, phishing oder scam Email ist.");
+        strings.add("Pass auf, auf welche Links und Anhänge du klickst.");
+        strings.add("");
+        strings.add("user@MacBook-Pro ~ % ");
+
+        for(String st : strings) {
+            JLabel label = new JLabel(st + "\n");
+            label.setFont(main.pixelFont.deriveFont(16f));
+            label.setForeground(Color.green);
+            panel.add(label);
+        }
 
         return panel;
     }
