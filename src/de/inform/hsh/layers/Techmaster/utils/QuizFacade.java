@@ -1,7 +1,7 @@
-package de.inform.hsh.layers.utils;
+package de.inform.hsh.layers.Techmaster.utils;
 
-import de.inform.hsh.layers.model.Frage;
-import de.inform.hsh.layers.model.Spieler;
+import de.inform.hsh.layers.Techmaster.model.Frage;
+import de.inform.hsh.layers.Techmaster.model.Spieler;
 
 public interface QuizFacade {
 	/**

@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.view;
+package de.inform.hsh.layers.Techmaster.view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import de.inform.hsh.layers.controller.GUIController;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
 
 /**
  * 

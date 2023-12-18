@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.model;
+package de.inform.hsh.layers.Techmaster.model;
 
 import java.util.ArrayList;
 /**

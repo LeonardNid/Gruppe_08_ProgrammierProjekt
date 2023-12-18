@@ -190,7 +190,7 @@ public class MenuPanel extends JPanel implements ActionListener {
             System.out.println("Back gedrückt");
 //            frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING)); // schließt die Anwendung wie wenn man auf X klickt
             frame.dispose();
-            Main.createMainFrame();
+            Main.setMainFrameVisible();
         }
     }
 }

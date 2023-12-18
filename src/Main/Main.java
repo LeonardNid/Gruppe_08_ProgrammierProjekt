@@ -9,41 +9,62 @@ import virusvoid.logic.controller.LogicController;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Die Klasse Main fungiert als Einstiegspunkt für die Anwendung und bietet eine grafische Benutzeroberfläche (GUI)
+ * mit Schaltflächen zum Starten verschiedener Anwendungen. Die Klasse enthält Methoden zum Erstellen und Verwalten des
+ * Haupt-JFrame- und JPanel-Komponenten sowie Schaltflächen für verschiedene Anwendungen.
+ */
 public class Main {
+    /**
+     * Das Haupt-JFrame für die Anwendung.
+     */
     public static JFrame frame;
+
+    /**
+     * Das Haupt-JPanel mit Schaltflächen zum Starten verschiedener Anwendungen.
+     */
     private static JPanel panel = new JPanel();
+
+    /**
+     * Die Hauptmethode, die die GUI-Komponenten der Anwendung initialisiert und einrichtet.
+     *
+     * @param args Kommandozeilenargumente (werden in dieser Anwendung nicht verwendet).
+     */
     public static void main(String[] args) {
-
-        createMainFrame();
-        createJPanel();
-        addButtons();
-    }
-
-    public static void createMainFrame() {
-
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Beendet die Anwendung beim Schließen des Fensters
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH); // Setzt die Größe auf maximal (Vollbildmodus)
 
-
-
         frame.add(panel);
 
-
-        frame.setUndecorated(true); // Entfernt die Standard-Fensterrahmen (Titelleiste)
+        frame.setUndecorated(true); // Entfernt den Standard-Fensterrahmen (Titelleiste)
         frame.setResizable(false); // Verhindert, dass das Fenster in der Größe verändert werden kann
         frame.setVisible(true); // Macht das Fenster sichtbar
+
+        createJPanel();
+        addButtons();
     }
 
+    /**
+     * Methode, um das Haupt-JFrame wieder sichtbar zu machen.
+     */
+    public static void setMainFrameVisible() {
+        frame.setVisible(true);
+    }
 
+    /**
+     * Erstellt das Haupt-JPanel mit einem Rasterlayout und einer festgelegten Hintergrundfarbe.
+     */
     private static void createJPanel() {
         panel.setSize(new Dimension(frame.getWidth(), frame.getHeight()));
-        panel.setLayout(new GridLayout(2, 3,20,20));
+        panel.setLayout(new GridLayout(2, 3, 20, 20));
         panel.setBackground(new Color(0, 150, 180));
-
         panel.setVisible(true);
     }
 
+    /**
+     * Fügt dem Haupt-JPanel Schaltflächen hinzu, die jeweils eine andere Anwendung starten.
+     */
     private static void addButtons() {
         JButton nanoTechDefendersBtn = createBtn("<html>nanoTech<br>Defenders");
         JButton virusVoidBtn = createBtn("virusVoid");
@@ -98,6 +119,12 @@ public class Main {
         panel.add(spiel6Btn);
     }
 
+    /**
+     * Erstellt eine JButton mit benutzerdefinierter Formatierung und Ausrichtung.
+     *
+     * @param name Der auf der Schaltfläche anzuzeigende Text.
+     * @return Die konfigurierte JButton.
+     */
     private static JButton createBtn(String name) {
         System.out.println(name);
         JButton button = new JButton(name);
@@ -105,10 +132,8 @@ public class Main {
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setOpaque(false); // Macht den Button-Hintergrund transparent
         button.setContentAreaFilled(false); // Entfernt das Füllen des Inhaltsbereichs
-//        button.setBorderPainted(false); // Entfernt die Button-Grenze
         button.setForeground(Color.BLACK); // Setzt die Textfarbe
         button.setFocusable(false);
         return button;
     }
-
 }

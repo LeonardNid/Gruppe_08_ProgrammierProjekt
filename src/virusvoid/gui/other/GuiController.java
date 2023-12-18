@@ -12,8 +12,6 @@ import virusvoid.gui.panels.*;
 import virusvoid.help.WaitHelper;
 import virusvoid.logic.controller.LogicController;
 
-import static Main.Main.frame;
-
 /**
  * The {@code GuiController} class manages the graphical user interface (GUI) components and handles
  * the transition between different panels in the game.
@@ -84,7 +82,7 @@ public class GuiController {
     public static void quitApplication() {
         LogicController.stopMusic();
         mainFrame.dispose();
-        Main.createMainFrame();
+        Main.setMainFrameVisible();
     }
 
     /**
