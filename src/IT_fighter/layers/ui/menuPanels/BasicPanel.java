@@ -41,8 +41,9 @@ public abstract class BasicPanel extends JPanel {
         b.setForeground(color);
         b.setBackground(Color.black);
         b.setOpaque(true);
-        b.setContentAreaFilled(true);
         b.setBorderPainted(false);
+        b.setContentAreaFilled(true);
+
         b.setFocusPainted(false);
         b.setFont(font);
 

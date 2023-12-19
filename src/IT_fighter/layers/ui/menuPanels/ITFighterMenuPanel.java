@@ -18,7 +18,7 @@ public class ITFighterMenuPanel extends BasicPanel {
         backgroundImage = backgroundImage.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
 
         //setze Titel
-        title = labelGenerator("IT-Fighter", Color.WHITE, getFont(80));
+        title = labelGenerator("ITFighter", Color.WHITE, getFont(80));
 
         //erzeugen der Buttons des Menupanels
         play_button = buttonGenerator("Play", Color.GREEN, getFont(ButtonStandardSize));
@@ -53,18 +53,9 @@ public class ITFighterMenuPanel extends BasicPanel {
         close_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.exit(0);
+                ITFighterGuiController.getInstance().closeITFighterapplication();
             }
         });
-
-         /**
-        tutorial_button.addActionListener(ITFighterGuiController.getInstance().
-                createSwitchActionlistner(ITFighterGuiController.createTutorialPanel()));
-        options_button.addActionListener(ITFighterGuiController.getInstance().
-                createSwitchActionlistner(ITFighterGuiController.createOptionsPanel()));
-        close_button.addActionListener(ITFighterGuiController.getInstance().
-                createSwitchActionlistner(null));
-        */
 
 
         //Erstellen eines Layouts für das MenuPanel inklusive dem Einfügen aller Komponenten
@@ -77,10 +68,10 @@ public class ITFighterMenuPanel extends BasicPanel {
                 menuLayout.createSequentialGroup()
                         .addGroup(menuLayout.createParallelGroup()
                                 .addComponent(title, screenWidth/2-BUTTON_WIDTH/2,
-                                        screenWidth/2-BUTTON_WIDTH/2, screenWidth/2-BUTTON_WIDTH/2)
-                                .addGap(screenWidth/2-BUTTON_WIDTH/2))
+                                        screenWidth/2-BUTTON_WIDTH/2, screenWidth/2-BUTTON_WIDTH/2))
+//                                .addGap(screenWidth/2-BUTTON_WIDTH/2))
                         .addGroup(menuLayout.createParallelGroup()
-                                .addGap(BUTTON_GAP_SIZE)
+                                .addGap(BUTTON_GAP_SIZE*3)
                                 .addComponent(play_button, BUTTON_WIDTH, BUTTON_WIDTH, BUTTON_WIDTH)
                                 .addGap(BUTTON_GAP_SIZE)
                                 .addComponent(tutorial_button, BUTTON_WIDTH, BUTTON_WIDTH, BUTTON_WIDTH)
@@ -94,10 +85,11 @@ public class ITFighterMenuPanel extends BasicPanel {
         menuLayout.setVerticalGroup(
                 menuLayout.createParallelGroup()
                         .addGroup(menuLayout.createSequentialGroup()
-                                .addComponent(title, 100, 100, 100)
-                                .addGap(980))
+                                .addComponent(title, 100, 100, 100))
+
                         .addGroup(menuLayout.createSequentialGroup()
-                                .addGap(BUTTON_GAP_SIZE)
+
+                                .addGap(BUTTON_GAP_SIZE*3)
                                 .addComponent(play_button, BUTTON_HEIGHT, BUTTON_HEIGHT, BUTTON_HEIGHT)
                                 .addGap(BUTTON_GAP_SIZE)
                                 .addComponent(tutorial_button, BUTTON_HEIGHT, BUTTON_HEIGHT, BUTTON_HEIGHT)

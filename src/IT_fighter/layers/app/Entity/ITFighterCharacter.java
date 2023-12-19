@@ -109,7 +109,7 @@ public class ITFighterCharacter extends Entity {
             action = RUNING;
         } else {action = IDLE;}
         if (startAction != action) {
-            ITFighterAppController.getInstance().getActualGameController().setAnimationIndex();
+            ITFighterAppController.getInstance().getCurrentGameController().setAnimationIndex();
         }
     }
 

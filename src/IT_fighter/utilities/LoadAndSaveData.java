@@ -64,14 +64,17 @@ public class LoadAndSaveData {
         Clip clip;
         String errorMessage = "Fehler bei SoundFile einlesen";
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new URL(sourceOfResources + soundFileName));
+            String path = "ITfighter_resources/"+soundFileName;
+            System.out.println(path);
+            InputStream musicStream = LoadAndSaveData.class.getClassLoader().getResourceAsStream(path);
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(musicStream);
             clip = AudioSystem.getClip();
             clip.open(audioInputStream);
         } catch (UnsupportedAudioFileException e) {
             System.out.println(errorMessage);
             throw new RuntimeException(e);
         } catch (MalformedURLException e) {
-            System.out.println(errorMessage);
+            System.out.println(errorMessage+ "falsche Url");
             throw new RuntimeException(e);
         } catch (IOException e) {
             System.out.println(errorMessage);

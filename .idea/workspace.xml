@@ -9,22 +9,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_game_music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/BinaryCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/GameMusic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" afterDir="false" />
+    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="2. Optionspanel funktionalität hergestellt">
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_BinaryCode.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Corona.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Kanone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_SpikeTurned.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_erro.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spike.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spikeLeft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spikeRight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_menu_background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_menu_background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/PlayerKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/PlayerKeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterLevelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +61,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "tomschroeder2"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="931f02c8-38e5-4663-9144-fe7a980dfd4b" />
+        <option name="url" value="https://github.com/LeonardNid/Gruppe_08_ProgrammierProjekt.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -57,28 +86,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ITfighter",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/finge/Desktop/Studium/Hochschule_Hannover/3.Semester/Programmierprojekt/Gruppe_08_Programmierprojekt/Files/ITfighter_ressources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ITfighter&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/finge/Desktop/Studium/Hochschule_Hannover/3.Semester/Programmierprojekt/Gruppe_08_Programmierprojekt/Files/ITfighter_ressources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Files/ITfighter_ressources" />
@@ -116,7 +144,8 @@
       <updated>1702388753005</updated>
       <workItem from="1702388754132" duration="6252000" />
       <workItem from="1702396011280" duration="134000" />
-      <workItem from="1702477105697" duration="40700000" />
+      <workItem from="1702477105697" duration="61937000" />
+      <workItem from="1702898205040" duration="18226000" />
     </task>
     <task id="LOCAL-00001" summary="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
       <option name="closed" value="true" />
@@ -126,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702491686185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2. Optionspanel funktionalität hergestellt">
+      <option name="closed" value="true" />
+      <created>1702811418075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702811418075</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt" />
+    <MESSAGE value="2. Optionspanel funktionalität hergestellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Optionspanel funktionalität hergestellt" />
   </component>
 </project>

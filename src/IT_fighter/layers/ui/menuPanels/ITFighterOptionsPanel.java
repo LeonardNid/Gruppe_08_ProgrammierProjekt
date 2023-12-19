@@ -1,5 +1,6 @@
 package IT_fighter.layers.ui.menuPanels;
 
+import IT_fighter.layers.app.Sound.SoundManager;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
 import javax.swing.*;
@@ -14,6 +15,7 @@ import static IT_fighter.utilities.UtilMethods.createGap;
 public class ITFighterOptionsPanel extends BasicPanel {
     private JLabel soundLabel, gameMusicLabel, gameSoundLabel;
     private JButton gameMusicVolumeUpBtn, gameMusicVolumeDownBtn, gameSoundVolumeUpBtn, gameSoundVolumeDownBtn, backBtn;
+    private Image backgroundImage;
     public ITFighterOptionsPanel(){
         initOptionsPanel();
     }
@@ -28,41 +30,63 @@ public class ITFighterOptionsPanel extends BasicPanel {
         setActionListeners();
     }
     private void setLabels() {
-        soundLabel = labelGenerator("Sound", Color.WHITE, getFont(70));
+        soundLabel = labelGenerator("Sound", new Color(63, 75, 85), getFont(70));
         soundLabel.setHorizontalAlignment(JLabel.LEFT);
-        soundLabel.setVerticalAlignment(JLabel.NORTH);
         gameMusicLabel= labelGenerator("Background music", Color.WHITE, getFont(40));
+        gameMusicLabel.setHorizontalAlignment(JLabel.LEFT);
+        gameMusicLabel.setVerticalAlignment(JLabel.NORTH);
         gameSoundLabel = labelGenerator("Game sound", Color.WHITE, getFont(40));
+        gameSoundLabel.setHorizontalAlignment(JLabel.LEFT);
+        gameSoundLabel.setVerticalAlignment(JLabel.NORTH);
     }
 
     private void setButtons() {
-        gameMusicVolumeUpBtn = buttonGenerator("+", Color.WHITE, getFont(40));
-        gameMusicVolumeDownBtn = buttonGenerator("-", Color.WHITE, getFont(40));
-        gameSoundVolumeUpBtn = buttonGenerator("Hallo", Color.WHITE, getFont(40));
-        gameSoundVolumeDownBtn = buttonGenerator("-", Color.WHITE, getFont(40));
-        backBtn = buttonGenerator("Back", Color.RED,getFont(70));
+        gameMusicVolumeUpBtn = buttonGenerator("+", Color.BLACK, getFont(40));
+        gameMusicVolumeUpBtn.setBackground(Color.WHITE);
+        gameMusicVolumeUpBtn.setHorizontalAlignment(JButton.LEFT);
+        gameMusicVolumeUpBtn.setVerticalAlignment(JButton.NORTH);
+
+        gameMusicVolumeDownBtn = buttonGenerator("-", Color.BLACK, getFont(40));
+        gameMusicVolumeDownBtn.setBackground(Color.white);
+        gameMusicVolumeDownBtn.setHorizontalAlignment(JButton.LEFT);
+        gameMusicVolumeDownBtn.setVerticalAlignment(JButton.NORTH);
+
+        gameSoundVolumeUpBtn = buttonGenerator("+", Color.BLACK, getFont(40));
+        gameSoundVolumeUpBtn.setBackground(Color.white);
+        gameSoundVolumeUpBtn.setHorizontalAlignment(JButton.LEFT);
+        gameSoundVolumeUpBtn.setVerticalAlignment(JButton.NORTH);
+
+        gameSoundVolumeDownBtn = buttonGenerator("-", Color.BLACK, getFont(40));
+        gameSoundVolumeDownBtn.setBackground(Color.white);
+        gameSoundVolumeDownBtn.setHorizontalAlignment(JButton.LEFT);
+        gameSoundVolumeDownBtn.setVerticalAlignment(JButton.NORTH);
+
+        backBtn = buttonGenerator("Back", Color.RED, getFont(60));
+        backBtn.setHorizontalAlignment(JButton.LEFT);
+        backBtn.setVerticalAlignment(JButton.NORTH);
+        backBtn.setOpaque(false);
 
     }
     private void setLayout() {
         this.setLayout(new BorderLayout());
         //Lücke Links
         JPanel leftGap = new JPanel();
-        leftGap.setBackground(Color.RED);
+        leftGap.setOpaque(false);
         leftGap.setPreferredSize(new Dimension(300,100));
         this.add(leftGap,BorderLayout.WEST);
 
         JPanel rightGap = new JPanel();
-        rightGap.setBackground(Color.BLUE);
+        rightGap.setOpaque(false);
         rightGap.setPreferredSize(new Dimension(300,100));
         this.add(rightGap, BorderLayout.EAST);
 
         JPanel upGap = new JPanel();
-        upGap.setBackground(Color.yellow);
+        upGap.setOpaque(false);
         upGap.setPreferredSize(new Dimension(300, 100));
         this.add(upGap, BorderLayout.NORTH);
 
         JPanel downGap = new JPanel();
-        downGap.setBackground(Color.gray);
+        downGap.setOpaque(false);
         downGap.setPreferredSize(new Dimension(300,100));
         this.add(downGap, BorderLayout.SOUTH);
 
@@ -76,19 +100,19 @@ public class ITFighterOptionsPanel extends BasicPanel {
 
         JPanel gameMusicPanel = new JPanel();
         gameMusicPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 20, 20));
+        gameMusicPanel.setOpaque(false);
         gameMusicPanel.add(gameMusicVolumeUpBtn);
         gameMusicPanel.add(gameMusicVolumeDownBtn);
 
 
         JPanel standardGap1 = createGap(new Dimension(300,100));
         JPanel standardGap2 = createGap(new Dimension());
-        standardGap1.setBackground(Color.green);
 
 
 
         JPanel centerPanel = new JPanel();
         centerPanel.setOpaque(false);
-        centerPanel.setLayout(new GridLayout(4,2));
+        centerPanel.setLayout(new GridLayout(4,2, 10, 20));
         centerPanel.add(soundLabel);
         centerPanel.add(standardGap1);
         centerPanel.add(gameMusicLabel);
@@ -109,13 +133,46 @@ public class ITFighterOptionsPanel extends BasicPanel {
                 ITFighterGuiController.getInstance().createMenuPanel();
             }
         });
+        gameMusicVolumeDownBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMEMUSIC, SoundManager.DOWN);
 
+            }
+        });
+        gameMusicVolumeUpBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMEMUSIC, SoundManager.UP);
+
+            }
+        });
+        gameSoundVolumeDownBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMESOUND, SoundManager.DOWN);
+            }
+        });
+        gameSoundVolumeUpBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMESOUND, SoundManager.UP);
+            }
+        });
+
+    }
+    @Override
+    public JLabel labelGenerator(String text, Color color, Font font) {
+        JLabel l = new JLabel(text);
+        l.setForeground(color);
+        l.setHorizontalAlignment(JLabel.CENTER);
+        l.setFont(font);
+        return l;
     }
 
 
 
 
-    private Image backgroundImage;
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

@@ -3,16 +3,40 @@ package IT_fighter.layers.app.Sound;
 import javax.sound.sampled.Clip;
 
 public class SoundManager {
-    private static boolean mute = false;
-    public void play(Clip clip) {
-        clip.start();
+    public static final int GAMEMUSIC = 0;
+    public static final int GAMESOUND = 1;
+    public static final boolean DOWN = true;
+    public static final boolean UP = false;
+    private static Sound gameMusic = new Sound("ITF_game_music.wav");
+    private static Sound killSound = new Sound("ITF_erro.wav");
+
+
+    public static void setGameMusicVolume(boolean down) {
+        if(down) {
+            gameMusic.volumeDown();
+        } else {
+            gameMusic.volumeUp();
+        }
     }
-    public void loop(Clip clip) {
-        clip.loop(Clip.LOOP_CONTINUOUSLY);
+    public static void setGameSoundVolume(boolean down) {
+        if(down) {
+            killSound.volumeDown();
+        } else {
+            killSound.volumeUp();
+        }
     }
-    public static void stop(Clip clip) {
-        clip.stop();
+    public static void playGameMusic() {
+        gameMusic.loop();
     }
-    public static void volumeUp()
-    {}
+    public static void stopGameMusic() {
+        gameMusic.stop();
+    }
+
+    public void startKillSound() {
+        killSound.start();
+    }
+    public void stopKillSound() {
+        killSound.stop();
+    }
+
 }

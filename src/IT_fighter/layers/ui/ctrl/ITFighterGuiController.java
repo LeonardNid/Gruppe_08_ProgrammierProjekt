@@ -2,11 +2,13 @@ package IT_fighter.layers.ui.ctrl;
 
 import IT_fighter.layers.app.Game;
 import IT_fighter.layers.app.ITFighterAppController;
+import IT_fighter.layers.app.Sound.SoundManager;
 import IT_fighter.layers.ui.*;
 import IT_fighter.layers.ui.menuPanels.ITFighterLevelPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterMenuPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterOptionsPanel;
 import IT_fighter.layers.ui.menuPanels.ITFighterTutorialPanel;
+import Main.Main;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +22,6 @@ public class ITFighterGuiController {
     private static volatile ITFighterGuiController instance;
     private ITFighterAppController mAppFacade;
     private JFrame mainFrame;
-    //TODO actualGamePanel muss langfristig hier weg
     private GamePanelController actualGamePanelController;
 
 
@@ -29,10 +30,10 @@ public class ITFighterGuiController {
     private ITFighterGuiController() {
         //singelton-Pattern
         this.mAppFacade = getmAppFacade();
-        startGui();
-        //this.gamePanel3 = new ITFighterGamePanel3();
+
 
     }
+
 
     public static synchronized ITFighterGuiController getInstance() {
         if (instance == null) {
@@ -44,17 +45,26 @@ public class ITFighterGuiController {
     public void closeGame() {
         changePanel(new ITFighterLevelPanel());
     }
+    public void closeITFighterapplication() {
+        SoundManager.stopGameMusic();
+        mainFrame.dispose();
+        Main.createMainFrame();
+    }
 
-    private void startGui() {
+    public void startGui() {
+        System.out.println("Aufruf startGui");
         mAppFacade = ITFighterAppController.getInstance();
         mAppFacade.setmGuiController(this);
+        SoundManager.playGameMusic();
         EventQueue.invokeLater(new Runnable() {
             @Override public void run() {
                 mainFrame = new ITFighterMainFrame();
+                mainFrame.setUndecorated(true);
                 ITFighterMenuPanel menuPanel = new ITFighterMenuPanel();
                 mainFrame.getContentPane().add(menuPanel);
                 mainFrame.pack();
                 mainFrame.setVisible(true);
+                mainFrame.setLocationRelativeTo(null);
             }
         });
     }
@@ -174,6 +184,10 @@ public class ITFighterGuiController {
 
     public int getLevelOffset() {
        return mAppFacade.getLevelOffset();
+    }
+
+    public void setSoundVolume(int sound, boolean down) {
+        mAppFacade.setSoundVolume(sound, down);
     }
 }
 

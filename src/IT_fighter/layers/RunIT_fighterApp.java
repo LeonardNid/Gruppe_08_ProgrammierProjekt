@@ -4,6 +4,6 @@ import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
 public class RunIT_fighterApp {
     public static void start() {
-        ITFighterGuiController.getInstance();
+        ITFighterGuiController.getInstance().startGui();
     }
 }

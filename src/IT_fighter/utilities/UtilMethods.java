@@ -1,5 +1,7 @@
 package IT_fighter.utilities;
 
+import IT_fighter.layers.app.ITFighterAppController;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
@@ -17,6 +19,13 @@ public class UtilMethods {
             }
         }
         return false;
+    }
+    public static boolean colisionWithPlayer(Rectangle2D.Float playerHitbox, Rectangle2D.Float enemyHitbox) {
+        if(enemyHitbox.intersects(playerHitbox)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     private static boolean validPosition(Float x, Float y, int [][] levelData) {

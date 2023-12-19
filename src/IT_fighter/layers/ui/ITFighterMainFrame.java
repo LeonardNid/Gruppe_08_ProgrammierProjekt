@@ -1,6 +1,7 @@
 package IT_fighter.layers.ui;
 
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
+import Main.Main;
 
 import javax.swing.*;
 import java.awt.event.WindowEvent;

@@ -16,7 +16,7 @@ public class GamePanel extends JPanel {
     private int[][] levelData;
     private BufferedImage[] levelSprite;
 
-    private BufferedImage backgroundImage;
+    private BufferedImage backgroundImage, cannon, virus;
     private ITFighterCharacterPanel characterPanel;
     //##################################################################################################################
 
@@ -27,11 +27,20 @@ public class GamePanel extends JPanel {
         this.addKeyListener(keyHandler);
         setPanelSize();
         this.levelData = levelData;
-        this.backgroundImage = LoadAndSaveData.getImage("ITF_gameBackground.jpg");
+        loadPictures();
+
         importOutsideSprites();
-        this.setBackground(Color.BLACK);
         this.setDoubleBuffered(true);
         this.setFocusable(true);
+    }
+
+
+    private void loadPictures() {
+
+        this.backgroundImage = LoadAndSaveData.getImage("ITF_gameBackground.jpg");
+        cannon = LoadAndSaveData.getImage("ITF_Kanone.jpg");
+        virus = LoadAndSaveData.getImage("ITF_Corona.jpg");
+
     }
     //##################################################################################################################
 
@@ -87,8 +96,10 @@ public class GamePanel extends JPanel {
         graphics.drawImage(backgroundImage,0,0, GAME_WIDTH, GAME_HEIGHT, null);
         drawLevel(graphics, ITFighterGuiController.getInstance().getLevelOffset());
         characterPanel.render(graphics);
+        graphics.drawImage(cannon, 600, 600, 46,32, null);
 //        System.out.println("paintGamePanle");
     }
+    public void drawEnemy() {}
     public void drawLevel(Graphics g, int levelOffset) {
         for (int j = 0; j < TILES_IN_HEIGHT; j++)
             for (int i = 0; i < levelOneData[0].length; i++) {
