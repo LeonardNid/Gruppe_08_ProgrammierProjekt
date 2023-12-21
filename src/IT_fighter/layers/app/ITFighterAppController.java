@@ -30,26 +30,17 @@ public class ITFighterAppController {
 
     public void setUpLevelOne() {
         currentGameController = new GameController();
-        currentGameController.setmCharacter(new ITFighterCharacter(100, 620, 16, 28));
         currentGameController.setPlayerSpeed(1.0f);
         //TODO enemy spawn frequency
     }
     public void startLevel() {
-        currentGameController.startGameLoop();
+        currentGameController.startGame();
     }
     public void startLevelTwo() {
-        currentGameController = new GameController();
-        currentGameController.setmCharacter(new ITFighterCharacter(100, 620, (int) 16, (int) 28));
-        currentGameController.setPlayerSpeed(2.0f);
-        currentGameController.startGameLoop();
-        //TODO enemy spawn frequency
+
     }
     public void startLevelThree() {
-        currentGameController = new GameController();
-        currentGameController.setmCharacter(new ITFighterCharacter(100, 620, (int) (32 * Game.SCALE),
-                (int) (32 * Game.SCALE)));
-        currentGameController.setPlayerSpeed(2.0f);
-        currentGameController.startGameLoop();
+
         //TODO enemy spawn frequency
     }
 
@@ -65,6 +56,7 @@ public class ITFighterAppController {
     public ITFighterCharacter getActualCharacter() {
         return currentGameController.getmCharacter();
     }
+    public EnemyManager getCurrentEnemyManager() {return currentGameController.getmEnemyManager();}
 
     public GameController getCurrentGameController() {
         return currentGameController;

@@ -2,7 +2,7 @@ package IT_fighter.layers.app;
 
 import IT_fighter.layers.app.Entity.ITFighterCharacter;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
-import IT_fighter.utilities.LoadAndSaveData;
+
 import static IT_fighter.layers.app.Game.*;
 
 public class GameController{
@@ -28,8 +28,17 @@ public class GameController{
     private EnemyManager mEnemyManager;
     //##################################################################################################################
     public GameController() {
+        mCharacter = new ITFighterCharacter(100, 620, (int) 16, (int) 28);
+        mEnemyManager = new EnemyManager();
 
-
+    }
+    public void startGame() {
+        mEnemyManager.startSpawnThread();
+        startGameLoop();
+    }
+    public void stopGame() {
+        stopGameLoop();
+        mEnemyManager.stopSpawnThread();
     }
 
 
@@ -47,11 +56,14 @@ public class GameController{
         gameThread = new GameLoop(this);
         gameThread.start();
     }
+
+
     public void stopGameLoop() {
         gameThread.stopGameLoop();
     }
     // sorgt für ein Update aller logischen Komponenten des Spiels
     public void update() {
+        mEnemyManager.updateVirusList();
         mCharacter.update();
         checkCloseToBorder();
 
@@ -73,7 +85,7 @@ public class GameController{
         }
     }
     public void closeGame() {
-        stopGameLoop();
+        stopGame();
         ITFighterGuiController.getInstance().closeGame();
     }
     //##################################################################################################################
@@ -93,20 +105,28 @@ public class GameController{
     public void setmCharacter(ITFighterCharacter mCharacter) {
         this.mCharacter = mCharacter;
     }
-
-
     public void setPlayerSpeed(Float playerSpeed) {
         mCharacter.setPlayerSpeed(playerSpeed);
     }
 
-
+    public EnemyManager getmEnemyManager() {
+        return mEnemyManager;
+    }
     public void setVirusSpeed() {
         //TODO methode zum einstellen der Bewegungs geschwindigtkeit der Spielfigur
     }
+
+
+
+
+
+
+
+
+
     public int getLevelTiles_In_Width() {
         return levelTiles_In_Width;
     }
-
     public int getxLevelOffset() {
         return xLevelOffset;
     }

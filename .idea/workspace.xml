@@ -9,36 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="2. Optionspanel funktionalität hergestellt">
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_BinaryCode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Corona.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Kanone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_SpikeTurned.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_erro.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spike.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spikeLeft.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_spikeRight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/Sound.java" afterDir="false" />
+    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert">
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_cloud.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_windows_defender.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_menu_background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_menu_background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +58,9 @@
         <option name="url" value="https://github.com/LeonardNid/Gruppe_08_ProgrammierProjekt.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -145,7 +132,7 @@
       <workItem from="1702388754132" duration="6252000" />
       <workItem from="1702396011280" duration="134000" />
       <workItem from="1702477105697" duration="61937000" />
-      <workItem from="1702898205040" duration="18226000" />
+      <workItem from="1702898205040" duration="34709000" />
     </task>
     <task id="LOCAL-00001" summary="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
       <option name="closed" value="true" />
@@ -163,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702811418075</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert">
+      <option name="closed" value="true" />
+      <created>1703007440061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703007440061</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +168,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt" />
     <MESSAGE value="2. Optionspanel funktionalität hergestellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Optionspanel funktionalität hergestellt" />
+    <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
   </component>
 </project>

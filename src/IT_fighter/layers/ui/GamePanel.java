@@ -1,5 +1,7 @@
 package IT_fighter.layers.ui;
 
+import IT_fighter.layers.app.EnemyManager;
+import IT_fighter.layers.app.Entity.Virus;
 import IT_fighter.layers.app.PlayerKeyHandler;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 import IT_fighter.utilities.LoadAndSaveData;
@@ -16,8 +18,10 @@ public class GamePanel extends JPanel {
     private int[][] levelData;
     private BufferedImage[] levelSprite;
 
-    private BufferedImage backgroundImage, cannon, virus;
+    private BufferedImage backgroundImage, cannon;
     private ITFighterCharacterPanel characterPanel;
+    private ITFighterEnemyPanel enemyPanel;
+    private JPanel levelFinishedPanel, gameOverPanel;
     //##################################################################################################################
 
     public GamePanel(int[][] levelData) {
@@ -39,7 +43,6 @@ public class GamePanel extends JPanel {
 
         this.backgroundImage = LoadAndSaveData.getImage("ITF_gameBackground.jpg");
         cannon = LoadAndSaveData.getImage("ITF_Kanone.jpg");
-        virus = LoadAndSaveData.getImage("ITF_Corona.jpg");
 
     }
     //##################################################################################################################
@@ -65,7 +68,7 @@ public class GamePanel extends JPanel {
     }
 
     //##################################################################################################################
-    //
+    //getter und setter
     private void setPanelSize() {
         Dimension screenDimension = new Dimension(GAME_WIDTH, GAME_HEIGHT);
         setMinimumSize(screenDimension);
@@ -77,29 +80,40 @@ public class GamePanel extends JPanel {
         this.characterPanel = characterPanel;
     }
 
+    public void setEnemyPanenl(ITFighterEnemyPanel enemyPanel) {
+        this.enemyPanel = enemyPanel;
+    }
+    public void setGameOverPanel(JPanel gameOverPanel) {
+        this.gameOverPanel = gameOverPanel;
+    }
+    public void setLevelFinishedPanel(JPanel levelFinishedPanel) {
+        this.levelFinishedPanel = levelFinishedPanel;
+    }
 
 
 
 
     //##################################################################################################################
     //
-    public void repaintPanel() {
+    public void renderPanel() {
         //TODO Komponenten die repainted werden müssen
-        this.repaint();
 
+        this.repaint();
     }
     //##################################################################################################################
     //zeichen der Bildkomponenten
     @Override
     public void paintComponent(Graphics graphics) {
+        int levelOffset = ITFighterGuiController.getInstance().getLevelOffset();
         super.paintComponent(graphics);
         graphics.drawImage(backgroundImage,0,0, GAME_WIDTH, GAME_HEIGHT, null);
-        drawLevel(graphics, ITFighterGuiController.getInstance().getLevelOffset());
+        drawLevel(graphics, levelOffset);
         characterPanel.render(graphics);
-        graphics.drawImage(cannon, 600, 600, 46,32, null);
+        graphics.drawImage(cannon, 600 - levelOffset, 600, 46,32, null);
+        enemyPanel.drawEnemies(graphics, levelOffset);
 //        System.out.println("paintGamePanle");
     }
-    public void drawEnemy() {}
+
     public void drawLevel(Graphics g, int levelOffset) {
         for (int j = 0; j < TILES_IN_HEIGHT; j++)
             for (int i = 0; i < levelOneData[0].length; i++) {

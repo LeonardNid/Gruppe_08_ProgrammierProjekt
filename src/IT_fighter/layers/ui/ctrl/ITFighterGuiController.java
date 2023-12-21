@@ -1,5 +1,6 @@
 package IT_fighter.layers.ui.ctrl;
 
+import IT_fighter.layers.app.EnemyManager;
 import IT_fighter.layers.app.Game;
 import IT_fighter.layers.app.ITFighterAppController;
 import IT_fighter.layers.app.Sound.SoundManager;
@@ -85,6 +86,17 @@ public class ITFighterGuiController {
     public ITFighterCharacterPanel getCharacterPanel() {
         return new ITFighterCharacterPanel(mAppFacade.getCharacter());
     }
+    public int getLevelOffset() {
+        return mAppFacade.getLevelOffset();
+    }
+
+    public void setSoundVolume(int sound, boolean down) {
+        mAppFacade.setSoundVolume(sound, down);
+    }
+
+    public EnemyManager getCurrentEnemyManager() {
+        return mAppFacade.getCurrentEnemyManager();
+    }
 
 
 
@@ -163,8 +175,11 @@ public class ITFighterGuiController {
         //TODO level 1 erstellen
 
         mAppFacade.setUpLevelOne();
-        actualGamePanelController = new GamePanelController(new GamePanel(Game.levelOneData),
-                new ITFighterCharacterPanel(ITFighterAppController.getInstance().getActualCharacter()));
+        actualGamePanelController = new GamePanelController(
+                new GamePanel(Game.levelOneData),
+                new ITFighterCharacterPanel(ITFighterAppController.getInstance().getActualCharacter()),
+                new ITFighterEnemyPanel(getCurrentEnemyManager())
+                );
 
         changePanel(actualGamePanelController.getGamePanel());
         mAppFacade.startLevel();
@@ -182,12 +197,6 @@ public class ITFighterGuiController {
     }
 
 
-    public int getLevelOffset() {
-       return mAppFacade.getLevelOffset();
-    }
 
-    public void setSoundVolume(int sound, boolean down) {
-        mAppFacade.setSoundVolume(sound, down);
-    }
 }
 

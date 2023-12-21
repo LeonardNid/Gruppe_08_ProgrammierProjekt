@@ -9,14 +9,16 @@ import IT_fighter.layers.app.ITFighterAppController;
 
 
 public class Virus extends Enemy{
-    private float ySpeed = 4.0f;
+    private float ySpeed = 2.0f;
 
     public Virus(float x, float y, int width, int height) {
         super(x,y,width,height);
         initHitbox(x,y,(int) (24* Game.SCALE), (int)(24* Game.SCALE));//x = 24,y = 24 Größe der Hitbox
+        setxDrawOffset(2 * Game.SCALE);
+        setyDrawOffset(4 * Game.SCALE);
     }
 
-    @Override
+
     /**
      * if the return value is false the Virus has to be deleted
      *

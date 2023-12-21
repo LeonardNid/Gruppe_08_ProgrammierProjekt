@@ -33,7 +33,8 @@ public class UtilMethods {
         float yIndex = y/TILES_SIZE;
 
 
-        if (x < 0 || x >= levelData[0].length*32*TILES_SIZE) {
+        if (x < 0 || x >= levelData[0].length*TILES_SIZE) {
+
             return false;
         }
         if (y < 0 || y >= GAME_HEIGHT) {
