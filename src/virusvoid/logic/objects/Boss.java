@@ -15,6 +15,8 @@ import java.awt.*;
 public class Boss extends GameObject {
 
     private boolean exploding;
+    private final int height;
+    private final int width;
     private final int maxHp;
     private int hp;
 
@@ -26,7 +28,9 @@ public class Boss extends GameObject {
      * @param maxHp The maximum HP which the boss should have
      */
     public Boss(int x, int y, int maxHp) {
-        super(x, y, LogicController.scaleX(125), LogicController.scaleX(125));
+        super(x, y);
+        this.height = LogicController.scaleX(125);
+        this.width = LogicController.scaleX(125);
         this.maxHp = maxHp;
         exploding = false;
         this.hp = maxHp;
@@ -90,5 +94,25 @@ public class Boss extends GameObject {
      */
     public boolean isExploding() {
         return exploding;
+    }
+
+    /**
+     * Gets the height of the boss.
+     *
+     * @return The height of the boss.
+     */
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Gets the width of the boss.
+     *
+     * @return The width of the boss.
+     */
+    @Override
+    public int getWidth() {
+        return width;
     }
 }

@@ -1,6 +1,7 @@
 package virusvoid.logic.projectilemanager;
 
 import virusvoid.logic.controller.TutorialController;
+import virusvoid.logic.objects.GameObject;
 import virusvoid.logic.sound.SoundEffectManager;
 import virusvoid.logic.controller.GameController;
 import virusvoid.logic.controller.InfiniteGameController;
@@ -124,7 +125,7 @@ public class PlayerProjectileManager {
                 playerProjectileCollision(shootingEnemyList, projectile);
 
                 if (BossManager.getBoss() != null) {
-                    if (LogicController.collision(BossManager.getBoss(), projectile)) {
+                    if (GameObject.collision(BossManager.getBoss(), projectile)) {
                         ProjectileManagerHelper.removeProjectile(playerProjectileList, projectile);
                         BossManager.getBoss().damage(1);
                     }
@@ -141,7 +142,7 @@ public class PlayerProjectileManager {
      */
     private static void playerProjectileCollision(CopyOnWriteArrayList<Enemy> list, Projectile projectile) {
         for (Enemy enemy : list) {
-            if (LogicController.collision(projectile, enemy)) {
+            if (GameObject.collision(projectile, enemy)) {
                 ProjectileManagerHelper.removeProjectile(playerProjectileList, projectile);
                 EnemyManagerHelper.removeEnemy(list, enemy, true);
                 SoundEffectManager.playAndLoadClip("VirusVoid_SmallExplosion.wav");

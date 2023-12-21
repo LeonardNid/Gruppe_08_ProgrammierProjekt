@@ -3,15 +3,18 @@ package virusvoid.logic.controller;
 import java.awt.*;
 import java.util.Random;
 
+import virusvoid.gui.panels.GamePanel;
+import virusvoid.gui.panels.GameTutorialEndPanel;
+import virusvoid.gui.panels.GameTutorialPanel;
+import virusvoid.gui.panels.TutorialPanel;
 import virusvoid.logic.enemymanager.BossManager;
-import virusvoid.logic.objects.GameObject;
-import virusvoid.logic.other.MoveSpaceship;
 import virusvoid.logic.other.manager.PlanetManager;
 import virusvoid.logic.other.manager.SpaceshipManager;
 import virusvoid.logic.sound.MusicManager;
 import virusvoid.logic.sound.SoundEffectManager;
 import virusvoid.gui.other.GuiController;
-import virusvoid.logic.other.*;
+
+import javax.swing.*;
 
 /**
  * The LogicController class manages the whole game logic.
@@ -97,7 +100,7 @@ public class LogicController {
     public static void startGame() {
         musicTransition();
         GameController.startGameController();
-        GuiController.repaintPanel(0);
+        GuiController.startGraphicsLoop(0);
     }
 
     /**
@@ -106,7 +109,7 @@ public class LogicController {
     public static void startInfiniteGame() {
         musicTransition();
         InfiniteGameController.startInifinteGame();
-        GuiController.repaintPanel(0);
+        GuiController.startGraphicsLoop(0);
     }
 
     /**
@@ -115,7 +118,7 @@ public class LogicController {
     public static void startTutorial() {
         musicTransition();
         TutorialController.startTutorialController();
-        GuiController.repaintPanel(1);
+        GuiController.startGraphicsLoop(1);
     }
 
     /**
@@ -384,7 +387,7 @@ public class LogicController {
      * @param pressedOrReleased  Whether the key is pressed or released.
      */
     public static void updateDirection(int keycode, boolean pressedOrReleased) {
-        MoveSpaceship.updateDirection(keycode, pressedOrReleased);
+        SpaceshipManager.getSpaceship().updateDirection(keycode, pressedOrReleased);
     }
 
     /**
@@ -393,7 +396,7 @@ public class LogicController {
      * @return The updated spaceship location.
      */
     public static Point updateSpaceshipLocation() {
-        return MoveSpaceship.updateSpaceshipLocation();
+        return SpaceshipManager.getSpaceship().updateSpaceshipLocation();
     }
 
     /**
@@ -491,20 +494,6 @@ public class LogicController {
             return 100.0f;
         }
         return (float) BossManager.getBoss().getMaxHp();
-    }
-
-    /**
-     * Checks if two GameObjects (rectangles) collide.
-     *
-     * @param box1 The first logical box.
-     * @param box2 The second logical box.
-     * @return True if the rectangles collide, false otherwise.
-     */
-    public static boolean collision(GameObject box1, GameObject box2) {
-        return (box1.getX() < box2.getX() + box2.getWidth()) &&
-               (box1.getX() + box1.getWidth() > box2.getX()) &&
-               (box1.getY() < box2.getY() + box2.getHeight()) &&
-               (box1.getY() + box1.getHeight() > box2.getY());
     }
 
     /**

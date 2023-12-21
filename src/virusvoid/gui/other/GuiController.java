@@ -163,7 +163,7 @@ public class GuiController {
      *
      * @param repaintType The type of repaint (0 for game, 1 for tutorial).
      */
-    public static void repaintPanel(int repaintType) {
+    public static void startGraphicsLoop(int repaintType) {
         final int targetRepaints = 120;
         final long optimalTime = 1_000_000_000 / targetRepaints;
 
@@ -171,13 +171,7 @@ public class GuiController {
             long lastRepaintTime = 0;
             int repaints = 0;
 
-            while (true) {
-                if (!(activePanel instanceof GamePanel) && repaintType == 0) {
-                    break;
-                } else if (!(activePanel instanceof TutorialPanel) && repaintType == 1) {
-                    break;
-                }
-
+            while ((activePanel instanceof GamePanel && repaintType == 0) || activePanel instanceof TutorialPanel && repaintType == 1) {
                 long lastLoopTime = System.nanoTime();
                 activePanel.repaint();
 
@@ -444,7 +438,7 @@ public class GuiController {
      * @param planetHp The new health points of the planet.
      */
     public static void setPlanetHp(int planetHp) {
-        PlanetHPLabelManager.getPlanetHPLabel().setPlanetHP(planetHp);
+        PlanetHPLabelManager.setPlanetHP(planetHp);
     }
 
     /**

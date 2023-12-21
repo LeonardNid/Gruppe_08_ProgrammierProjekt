@@ -20,13 +20,4 @@ public class PlanetHPLabel extends JLabel {
         this.setFont(new GuiBasic().pixelArtFont(30));
         this.setBounds(5, 0, 250, 25);
     }
-
-    /**
-     * Sets the health points (HP) value for the planet and updates the label text accordingly.
-     *
-     * @param hp The new health points value for the planet.
-     */
-    public void setPlanetHP(int hp) {
-        this.setText("Planet HP: " + hp);
-    }
 }

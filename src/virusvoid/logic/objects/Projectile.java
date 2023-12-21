@@ -1,10 +1,14 @@
 package virusvoid.logic.objects;
 
+import virusvoid.logic.controller.LogicController;
+
 /**
  * Represents a Projectile in the game, a moving object shot by the player's spaceship.
  */
 public class Projectile extends GameObject {
 
+    private final int height;
+    private final int width;
     private final int type;
     private final int id;
 
@@ -19,9 +23,11 @@ public class Projectile extends GameObject {
      * @param type   The type of the Projectile.
      */
     public Projectile(int x, int y, int width, int height, int id, int type) {
-        super(x, y, width, height);
-        this.id = id;
+        super(x, y);
+        this.height = height;
+        this.width = width;
         this.type = type;
+        this.id = id;
     }
 
     /**
@@ -40,5 +46,25 @@ public class Projectile extends GameObject {
      */
     public int getType() {
         return type;
+    }
+
+    /**
+     * Gets the height of the projectile.
+     *
+     * @return The height of the projectile.
+     */
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Gets the width of the projectile.
+     *
+     * @return The width of the projectile.
+     */
+    @Override
+    public int getWidth() {
+        return width;
     }
 }
