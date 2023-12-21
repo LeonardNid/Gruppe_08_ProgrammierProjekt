@@ -4,6 +4,8 @@ import IT_fighter.layers.ui.GamePanel;
 import IT_fighter.layers.ui.ITFighterCharacterPanel;
 import IT_fighter.layers.ui.ITFighterEnemyPanel;
 
+import javax.swing.*;
+
 /**
  * Verwaltet alle graphischen Objekte eines Levels
  */
@@ -50,8 +52,12 @@ public class GamePanelController {
     public void setGamePanel(GamePanel gamePanel) {
         this.gamePanel = gamePanel;
     }
-
-    public void showGameOverPanel() {
-
+    /**
+    public JPanel createGameOverPanel() {
+        JPanel gameOverPanel = new JPanel();
+        gameOverPanel.setLayout(new BoxLayout(gameOverPanel, BoxLayout.Y_AXIS));
+        JTextPane gameOverText = new JTextPane();
+        //gameOverText.
     }
+     */
 }
