@@ -18,7 +18,7 @@ public class GamePanel extends JPanel {
     private int[][] levelData;
     private BufferedImage[] levelSprite;
 
-    private BufferedImage backgroundImage, cannon;
+    private BufferedImage backgroundImage, cannon, cloud, windowsDefender, tiktok;
     private ITFighterCharacterPanel characterPanel;
     private ITFighterEnemyPanel enemyPanel;
     private JPanel levelFinishedPanel, gameOverPanel;
@@ -40,21 +40,20 @@ public class GamePanel extends JPanel {
 
 
     private void loadPictures() {
-
         this.backgroundImage = LoadAndSaveData.getImage("ITF_gameBackground.jpg");
         cannon = LoadAndSaveData.getImage("ITF_Kanone.jpg");
+        cloud = LoadAndSaveData.getImage("ITF_cloud.jpg");
+        windowsDefender = LoadAndSaveData.getImage("ITF_windows_defender.jpg");
+        tiktok = LoadAndSaveData.getImage("ITF_tiktok.jpg");
 
     }
     //##################################################################################################################
+    public void showGameOverScreen() {
+        this.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 200));
+        this.add(gameOverPanel);
 
-    //###################################################################################################################
-    //getter und setter
-    public int[][] getLevelData() {
-        return levelData;
     }
-    public int getSpriteIndex(int x, int y) {
-        return levelData[y][x];
-    }
+
     //##################################################################################################################
 
     private void importOutsideSprites() {
@@ -69,6 +68,12 @@ public class GamePanel extends JPanel {
 
     //##################################################################################################################
     //getter und setter
+    public int[][] getLevelData() {
+        return levelData;
+    }
+    public int getSpriteIndex(int x, int y) {
+        return levelData[y][x];
+    }
     private void setPanelSize() {
         Dimension screenDimension = new Dimension(GAME_WIDTH, GAME_HEIGHT);
         setMinimumSize(screenDimension);
@@ -108,10 +113,21 @@ public class GamePanel extends JPanel {
         super.paintComponent(graphics);
         graphics.drawImage(backgroundImage,0,0, GAME_WIDTH, GAME_HEIGHT, null);
         drawLevel(graphics, levelOffset);
-        characterPanel.render(graphics);
-        graphics.drawImage(cannon, 600 - levelOffset, 600, 46,32, null);
+
         enemyPanel.drawEnemies(graphics, levelOffset);
+        drawClouds(graphics, levelOffset);
+        graphics.drawImage(cannon, 2816 - levelOffset, 736, 46,32, null);
+        graphics.drawImage(windowsDefender, 5720 - levelOffset, 730, 32, 32, null);
+        graphics.drawImage(tiktok, 1088 - levelOffset, 890, 32, 32, null);
+
+
+        characterPanel.render(graphics);
 //        System.out.println("paintGamePanle");
+    }
+    public void drawClouds(Graphics graphics, int levelOffset) {
+        graphics.drawImage(cloud, 100 - levelOffset, 100, null);
+        graphics.drawImage(cloud, 1000 - levelOffset, 100, null);
+        graphics.drawImage(cloud, 2500 - levelOffset, 100, null);
     }
 
     public void drawLevel(Graphics g, int levelOffset) {

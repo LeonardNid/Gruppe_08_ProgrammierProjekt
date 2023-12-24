@@ -11,6 +11,7 @@ public class UtilMethods {
     public static boolean canMoveHere(Float x, Float y, float width, float height, int [][] levelData) {
         if(validPosition(x, y, levelData)) {
             if (validPosition(x + width,y + height, levelData)) {
+
                 if (validPosition(x + width, y, levelData)) {
                     if (validPosition(x, y+height, levelData)) {
                         return true;
@@ -34,7 +35,6 @@ public class UtilMethods {
 
 
         if (x < 0 || x >= levelData[0].length*TILES_SIZE) {
-
             return false;
         }
         if (y < 0 || y >= GAME_HEIGHT) {
@@ -43,9 +43,17 @@ public class UtilMethods {
         int value = levelData[(int) yIndex][(int) xIndex];
         //value sind werte aus aus dem levelarray die gleichzeitig angeben welcher Stein an dieser Position gezeichnet
         //wurde 11 z.B.
-        if ((value >= 48 || value < 0 || value != 11)) {
+        if(value >= 47 || value < 0) {
             return false;
         }
+        //value 5 und 4 sind Spikes und töten den Spieler
+        if(value == 5 || value == 4) {
+            ITFighterAppController.getInstance().killPlayer();
+        }
+        if (value != 11) {
+            return false;
+        }
+
         return true;
     }
 

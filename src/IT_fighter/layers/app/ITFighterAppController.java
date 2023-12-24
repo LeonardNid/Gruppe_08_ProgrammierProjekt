@@ -69,9 +69,17 @@ public class ITFighterAppController {
         return currentGameController.getmCharacter();
     }
 
+    public void killPlayer() {
+        SoundManager.playKillSound();
+        currentGameController.stopGame();
+        mGuiController.setGameOverScreen();
+
+    }
+
 
     public void closeGame() {
-        currentGameController.closeGame();
+        currentGameController.stopGame();
+        mGuiController.closeGame();
     }
 
     public int getLevelOffset() {

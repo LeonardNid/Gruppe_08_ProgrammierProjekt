@@ -1,7 +1,5 @@
 package IT_fighter.layers.app.Sound;
 
-import javax.sound.sampled.Clip;
-
 public class SoundManager {
     public static final int GAMEMUSIC = 0;
     public static final int GAMESOUND = 1;
@@ -32,10 +30,11 @@ public class SoundManager {
         gameMusic.stop();
     }
 
-    public void startKillSound() {
+    public static void playKillSound() {
+        //Sound killSound = new Sound("ITF_erro.wav");
         killSound.start();
     }
-    public void stopKillSound() {
+    public static void stopKillSound() {
         killSound.stop();
     }
 

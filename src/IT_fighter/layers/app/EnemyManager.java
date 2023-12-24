@@ -1,14 +1,16 @@
 package IT_fighter.layers.app;
 
+import IT_fighter.layers.app.Entity.BinaryCode;
+import IT_fighter.layers.app.Entity.Enemy;
 import IT_fighter.layers.app.Entity.Virus;
 
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class EnemyManager {
-    private CopyOnWriteArrayList<Virus> virusArrayList = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<Virus> virusList = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<BinaryCode> binaryCodesList = new CopyOnWriteArrayList<>();
     private boolean spawn;
-    private long spawnTime;
+    private long spawnTime = 10000;
     Thread spawnThread;
     public void stopSpawnThread() {
         spawn = false;
@@ -20,10 +22,11 @@ public class EnemyManager {
         spawn = true;
         spawnThread = new Thread(()-> {
             while(spawn) {
-                virusArrayList.add(new Virus(100, 100, 32,32));
+                virusList.add(new Virus(100, 100, 32,32));
+                binaryCodesList.add(new BinaryCode(2816, 734, 32, 64));
                 System.out.println("neuer Gegner erstellt");
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(spawnTime);
                 } catch (InterruptedException e) {
                     System.out.println("Interrupted Exception gefangen");
                 }
@@ -32,13 +35,28 @@ public class EnemyManager {
         spawnThread.start();
     }
 
+    public void updateEnemyList(CopyOnWriteArrayList<? extends Enemy> enemyList) {
+        boolean stayInlist;
+        for(Enemy e: enemyList) {
+            stayInlist = e.updatePosition();
+            if (!stayInlist) {
+                enemyList.remove(e);
+            }
+        }
+    }
+
+    public void updateEnemies() {
+        updateEnemyList(virusList);
+        updateEnemyList(binaryCodesList);
+    }
+
 
     public void updateVirusList() {
         boolean stayInlist;
-        for(Virus v : virusArrayList) {
+        for(Virus v : virusList) {
             stayInlist = v.updatePosition();
             if (!stayInlist) {
-                virusArrayList.remove(v);
+                virusList.remove(v);
             }
         }
     }
@@ -47,7 +65,10 @@ public class EnemyManager {
         this.spawnTime = spawnTime;
     }
 
-    public CopyOnWriteArrayList<Virus> getVirusArrayList() {
-        return virusArrayList;
+    public CopyOnWriteArrayList<Virus> getVirusList() {
+        return virusList;
+    }
+    public CopyOnWriteArrayList<BinaryCode> getBinaryCodesList(){
+        return binaryCodesList;
     }
 }
