@@ -23,7 +23,7 @@ public class ITFighterGuiController {
     private static volatile ITFighterGuiController instance;
     private ITFighterAppController mAppFacade;
     private JFrame mainFrame;
-    private GamePanelController actualGamePanelController;
+    private GamePanelController currentGamePanelController;
 
 
     //############################################################################################################
@@ -104,11 +104,11 @@ public class ITFighterGuiController {
     //############################################################################################################
 
     public void updateGraphics() {
-        actualGamePanelController.renderGame();
+        currentGamePanelController.renderGame();
 
     }
     public void setAnimationIndex() {
-        actualGamePanelController.setAnimationIndex();
+        currentGamePanelController.setAnimationIndex();
     }
 
 
@@ -175,13 +175,13 @@ public class ITFighterGuiController {
         //TODO level 1 erstellen
 
         mAppFacade.setUpLevelOne();
-        actualGamePanelController = new GamePanelController(
+        currentGamePanelController = new GamePanelController(
                 new GamePanel(Game.levelOneData),
                 new ITFighterCharacterPanel(ITFighterAppController.getInstance().getActualCharacter()),
                 new ITFighterEnemyPanel(getCurrentEnemyManager())
                 );
 
-        changePanel(actualGamePanelController.getGamePanel());
+        changePanel(currentGamePanelController.getGamePanel());
         mAppFacade.startLevel();
 
     }
@@ -196,7 +196,11 @@ public class ITFighterGuiController {
 
     }
 
-
+    public void setGameOverScreen() {
+        currentGamePanelController.setGameOverPanel();
+        mainFrame.revalidate();
+        mainFrame.repaint();
+    }
 
 }
 

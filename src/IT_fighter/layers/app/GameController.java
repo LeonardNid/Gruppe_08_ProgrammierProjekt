@@ -63,7 +63,7 @@ public class GameController{
     }
     // sorgt für ein Update aller logischen Komponenten des Spiels
     public void update() {
-        mEnemyManager.updateVirusList();
+        mEnemyManager.updateEnemies();
         mCharacter.update();
         checkCloseToBorder();
 
@@ -83,10 +83,6 @@ public class GameController{
             xLevelOffset = 0;
 
         }
-    }
-    public void closeGame() {
-        stopGame();
-        ITFighterGuiController.getInstance().closeGame();
     }
     //##################################################################################################################
     //sorgt für ein Update aller grafischen Komponenten des Spiels
