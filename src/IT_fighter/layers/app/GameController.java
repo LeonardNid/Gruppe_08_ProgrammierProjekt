@@ -24,12 +24,14 @@ public class GameController{
     //##################################################################################################################
     //Spielfigur
     private ITFighterCharacter mCharacter;
-    //##################################################################################################################
     private EnemyManager mEnemyManager;
+    private IconManager mIconManager;
     //##################################################################################################################
     public GameController() {
-        mCharacter = new ITFighterCharacter(100, 620, (int) 16, (int) 28);
+        mCharacter = new ITFighterCharacter(32, 678, (int) 16, (int) 28);
         mEnemyManager = new EnemyManager();
+        mIconManager = new IconManager();
+
 
     }
     public void startGame() {
@@ -66,6 +68,7 @@ public class GameController{
         mEnemyManager.updateEnemies();
         mCharacter.update();
         checkCloseToBorder();
+        mIconManager.checkCollisionWithIcon();
 
     }
 
@@ -108,17 +111,22 @@ public class GameController{
     public EnemyManager getmEnemyManager() {
         return mEnemyManager;
     }
-    public void setVirusSpeed() {
+    public void setVirusSpeed(long virusSpeed) {
         //TODO methode zum einstellen der Bewegungs geschwindigtkeit der Spielfigur
+        mEnemyManager.setVirusSpawnTime(virusSpeed);
+    }
+    public void setBinaryCodeSpeed(long BinaryCodeSpeed) {
+        mEnemyManager.setBinaryCodeSpawnTime(BinaryCodeSpeed);
+
     }
 
+    public void setmIconManager(IconManager mIconManager) {
+        this.mIconManager = mIconManager;
+    }
 
-
-
-
-
-
-
+    public IconManager getmIconManager() {
+        return mIconManager;
+    }
 
     public int getLevelTiles_In_Width() {
         return levelTiles_In_Width;
@@ -142,4 +150,6 @@ public class GameController{
     public int getMaxLevelOffsetX() {
         return maxLevelOffsetX;
     }
+
+
 }

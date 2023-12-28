@@ -10,27 +10,37 @@ import java.net.URL;
 
 public class Sound {
     private String soundName;
+    private boolean restart = false;
     private Clip sound;
     float currentVolume = -10f;
     FloatControl floatControl;
     public Sound(String soundName) {
         this.soundName = soundName;
+        setUpSound();
+
+    }
+    public void setUpSound() {
         sound = LoadAndSaveData.getSoundFile(soundName);
         floatControl = (FloatControl) sound.getControl(FloatControl.Type.MASTER_GAIN);
         floatControl.setValue(currentVolume);
     }
-    public void loop() {
+    public void loop(boolean restart) {
+        if(restart) {
+            setUpSound();
+            this.restart = true;
+        }
         sound.loop(Clip.LOOP_CONTINUOUSLY);
     }
     public void start() {
-        sound = LoadAndSaveData.getSoundFile(soundName);
-        floatControl = (FloatControl) sound.getControl(FloatControl.Type.MASTER_GAIN);
-        floatControl.setValue(currentVolume);
+        setUpSound();
         sound.start();
     }
     public void stop() {
         sound.stop();
-        sound.close();
+        if(restart) {
+            sound.close();
+        }
+
     }
 
     public void volumeUp() {
@@ -49,32 +59,6 @@ public class Sound {
         }
         floatControl.setValue(currentVolume);
 
-    }
-    public static Clip getSoundFile(String soundFileName) {
-        Clip clip;
-        String errorMessage = "Fehler bei SoundFile einlesen";
-        try {
-            String path = "ITfighter_resources/"+soundFileName;
-            System.out.println(path);
-            InputStream musicStream = LoadAndSaveData.class.getClassLoader().getResourceAsStream(path);
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(musicStream);
-            clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-        } catch (UnsupportedAudioFileException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-        } catch (MalformedURLException e) {
-            System.out.println(errorMessage+ "falsche Url");
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-        } catch (LineUnavailableException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-
-        }
-        return clip;
     }
 
 }

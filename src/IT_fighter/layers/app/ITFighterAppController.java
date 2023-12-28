@@ -28,25 +28,6 @@ public class ITFighterAppController {
         return instance;
     }
 
-    public void setUpLevelOne() {
-        currentGameController = new GameController();
-        currentGameController.setPlayerSpeed(1.0f);
-        //TODO enemy spawn frequency
-    }
-    public void startLevel() {
-        currentGameController.startGame();
-    }
-    public void startLevelTwo() {
-
-    }
-    public void startLevelThree() {
-
-        //TODO enemy spawn frequency
-    }
-
-
-
-
 
     //##################################################################################################################
     //getter und setter
@@ -61,31 +42,24 @@ public class ITFighterAppController {
     public GameController getCurrentGameController() {
         return currentGameController;
     }
+    public int getLevelOffset() {
+        return currentGameController.getxLevelOffset();
+    }
     //##################################################################################################################
     //Zugriff auf Player
     //TODO Zugriff auf Player aus AppController Regeln
-
+    public Rectangle2D.Float getCurrentPlayerPosition() {
+        return currentGameController.getmCharacter().getHitbox();
+    }
     public ITFighterCharacter getCharacter() {
         return currentGameController.getmCharacter();
     }
-
     public void killPlayer() {
         SoundManager.playKillSound();
         currentGameController.stopGame();
         mGuiController.setGameOverScreen();
 
     }
-
-
-    public void closeGame() {
-        currentGameController.stopGame();
-        mGuiController.closeGame();
-    }
-
-    public int getLevelOffset() {
-        return currentGameController.getxLevelOffset();
-    }
-
     public void setSoundVolume(int sound, boolean down) {
         if(sound == SoundManager.GAMEMUSIC) {
             SoundManager.setGameMusicVolume(down);
@@ -93,7 +67,52 @@ public class ITFighterAppController {
             SoundManager.setGameSoundVolume(down);
         }
     }
-    public Rectangle2D.Float getCurrentPlayerPosition() {
-        return currentGameController.getmCharacter().getHitbox();
+
+    //##################################################################################################################
+    public void touchedTiktok() {
+        new Thread(() ->{
+            SoundManager.stopGameMusic();
+            SoundManager.playTiktokSound();
+            mGuiController.setTiktokScreen();
+            currentGameController.getmIconManager().setShowingTiktokIcon(true);
+            System.out.println("touched tiktok appcontroller");
+        }).start();
     }
+    public void removeTiktok() {
+        SoundManager.stopTiktokSound();
+        SoundManager.playGameMusic();
+        System.out.println("should play music");
+        currentGameController.getmIconManager().setShowingTiktokIcon(false);
+    }
+    //##################################################################################################################
+    //level
+    public void levelFinished() {
+        currentGameController.stopGame();
+        mGuiController.setGameFinishedScreen();
+    }
+    public void closeGame() {
+        currentGameController.stopGame();
+        mGuiController.closeGame();
+    }
+    //##################################################################################################################
+    //level creation
+    public void setUpLevelOne() {
+        setUpLevel(1.0f, 25000, 25000);
+    }
+    public void setUpLevelTwo() {
+        setUpLevel(1.0f, 10000, 15000);
+    }
+
+    public void setUpLevelThree() {
+        setUpLevel(2.0f, 10000, 10000);
+    }
+    public void setUpLevel(float playerSpeed, long virusSpeed, long binaryCodeSpeed) {
+        currentGameController = new GameController();
+        currentGameController.setPlayerSpeed(playerSpeed);
+        currentGameController.setVirusSpeed(virusSpeed);
+        currentGameController.setBinaryCodeSpeed(binaryCodeSpeed);
+        mGuiController.createLevelGraphics();
+        currentGameController.startGame();
+    }
+
 }

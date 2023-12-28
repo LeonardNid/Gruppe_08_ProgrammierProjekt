@@ -31,7 +31,6 @@ public class ITFighterEnemyPanel {
         for (BinaryCode b: currentEnemyManager.getBinaryCodesList()) {
             graphics.drawImage(binaryCode, b.getX()- levelOffset,
                     b.getY(), 30, 30, null);
-            System.out.println("BinaryCode at "+ (b.getX() - levelOffset));
         }
     }
 }

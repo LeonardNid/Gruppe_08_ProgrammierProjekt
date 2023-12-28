@@ -7,6 +7,7 @@ public class SoundManager {
     public static final boolean UP = false;
     private static Sound gameMusic = new Sound("ITF_game_music.wav");
     private static Sound killSound = new Sound("ITF_erro.wav");
+    private static Sound tiktokSound = new Sound("ITF_tiktok_Sound.wav");
 
 
     public static void setGameMusicVolume(boolean down) {
@@ -19,19 +20,25 @@ public class SoundManager {
     public static void setGameSoundVolume(boolean down) {
         if(down) {
             killSound.volumeDown();
+            tiktokSound.volumeDown();
         } else {
             killSound.volumeUp();
+            tiktokSound.volumeUp();
         }
     }
+    public static void playTiktokSound() {
+        tiktokSound.loop(true);
+    }
+    public static void stopTiktokSound() {
+        tiktokSound.stop();
+    }
     public static void playGameMusic() {
-        gameMusic.loop();
+        gameMusic.loop(false);
     }
     public static void stopGameMusic() {
         gameMusic.stop();
     }
-
     public static void playKillSound() {
-        //Sound killSound = new Sound("ITF_erro.wav");
         killSound.start();
     }
     public static void stopKillSound() {

@@ -48,14 +48,10 @@ public class ITFighterLevelPanel extends BasicPanel {
 
     private void setButtons() {
 
-        level1_button = buttonGenerator("LEVEL 1", Color.WHITE, getFont(ButtonStandardSize));
+        level1_button = buttonGenerator("EASY", Color.GREEN, getFont(ButtonStandardSize));
 
-        level2_button = buttonGenerator("LEVEL 2", Color.WHITE, getFont(ButtonStandardSize));
-        //TODO dummmy erstezen
-        level3_button = buttonGenerator("LEVEL 3", Color.WHITE, getFont(ButtonStandardSize));
-
-        //TODO dummy erstezen
-
+        level2_button = buttonGenerator("NORMAL", Color.YELLOW, getFont(ButtonStandardSize));
+        level3_button = buttonGenerator("HARD", new Color(195,78,1), getFont(ButtonStandardSize));
         back_button = buttonGenerator("CLOSE", Color.RED, getFont(ButtonStandardSize));
 
         back_button.addActionListener(new ActionListener() {

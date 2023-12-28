@@ -1,15 +1,28 @@
 package IT_fighter.layers.ui.menuPanels;
 
+import IT_fighter.utilities.LoadAndSaveData;
+
+import javax.swing.*;
 import java.awt.*;
 
 
 public class ITFighterTutorialPanel extends BasicPanel {
     private Image backgroundImage;
+    private JButton close;
     public ITFighterTutorialPanel() {
         setSize();
         backgroundImage = getImage("ITF_menu_background.jpg");
         backgroundImage = backgroundImage.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
 
+    }
+    public void setComponents() {
+        close = buttonGenerator("Close", Color.red, LoadAndSaveData.getFont(40));
+//        JTextPane = new
+    }
+
+
+    private void setLayout() {
+        this.setLayout(new BorderLayout());
 
     }
 

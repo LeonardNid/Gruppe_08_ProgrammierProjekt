@@ -9,27 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten">
-      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_tiktok.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml" beforeDir="false" />
+    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_tiktok_Sound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_tiktok_phone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/IconManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/TiktokPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Kanone.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_Kanone.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_level_one_data.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_level_one_data.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_outside_sprites.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_outside_sprites.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_BinaryCode.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Files/ITfighter_resources/ITF_BinaryCode.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/BinaryCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/BinaryCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/createSwitchPanelActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +138,7 @@
       <workItem from="1702396011280" duration="134000" />
       <workItem from="1702477105697" duration="61937000" />
       <workItem from="1702898205040" duration="35875000" />
-      <workItem from="1703158995075" duration="39243000" />
+      <workItem from="1703158995075" duration="74275000" />
     </task>
     <task id="LOCAL-00001" summary="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
       <option name="closed" value="true" />
@@ -173,7 +172,39 @@
       <option name="project" value="LOCAL" />
       <updated>1703153802969</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437267112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437267112</updated>
+    </task>
+    <task id="LOCAL-00006" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437345618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437345618</updated>
+    </task>
+    <task id="LOCAL-00007" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437359640</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437359640</updated>
+    </task>
+    <task id="LOCAL-00008" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437391521</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437391521</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +216,7 @@
     <MESSAGE value="2. Optionspanel funktionalität hergestellt" />
     <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
     <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten" />
+    <MESSAGE value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
+    <option name="LAST_COMMIT_MESSAGE" value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
   </component>
 </project>

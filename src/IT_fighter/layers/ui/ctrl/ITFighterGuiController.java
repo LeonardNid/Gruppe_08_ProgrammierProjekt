@@ -111,37 +111,8 @@ public class ITFighterGuiController {
         currentGamePanelController.setAnimationIndex();
     }
 
-
-    public void updatePlayerPosition() {
-
-    }
-
-    //TODO in Gamepanel integrieren
-    // Stop player bei Focus verlust des Mainframes
-    public void lostWindowFoucs() {
-        //hi
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //############################################################################################################
     //Panels erzeugen
-    //TODO changePanel vielleicht noch Code sparender machen
     public void changePanel(JPanel panel) {
         mainFrame.getContentPane().removeAll();
         System.out.println(mainFrame.getContentPane().getComponents());
@@ -172,35 +143,49 @@ public class ITFighterGuiController {
     }
 
     public void createLevel1() {
-        //TODO level 1 erstellen
-
         mAppFacade.setUpLevelOne();
+    }
+
+    public void createLevel2() {
+        mAppFacade.setUpLevelTwo();
+    }
+
+    public void createLevel3() {
+        mAppFacade.setUpLevelThree();
+    }
+    public void createLevelGraphics() {
         currentGamePanelController = new GamePanelController(
                 new GamePanel(Game.levelOneData),
                 new ITFighterCharacterPanel(ITFighterAppController.getInstance().getActualCharacter()),
                 new ITFighterEnemyPanel(getCurrentEnemyManager())
-                );
-
+        );
         changePanel(currentGamePanelController.getGamePanel());
-        mAppFacade.startLevel();
-
     }
-
-    public void createLevel2() {
-        //TODO level 2 erstellen
-    }
-
-    public void createLevel3() {
-        //TODO level 3 erstellen
-
-
-    }
-
     public void setGameOverScreen() {
         currentGamePanelController.setGameOverPanel();
         mainFrame.revalidate();
         mainFrame.repaint();
     }
+    public void setGameFinishedScreen() {
+        currentGamePanelController.setGameFinishedPanel();
+        mainFrame.revalidate();
+        mainFrame.repaint();
 
+    }
+    public void setTiktokScreen() {
+        currentGamePanelController.setTiktokPanel();
+        mainFrame.revalidate();
+        mainFrame.repaint();
+    }
+
+    public void removeTiktokPanel() {
+
+        new Thread(()->{
+            mAppFacade.removeTiktok();
+            currentGamePanelController.removeTiktokPanel();
+            mainFrame.revalidate();
+            mainFrame.repaint();
+        }).start();
+    }
 }
 

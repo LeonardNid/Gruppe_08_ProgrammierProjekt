@@ -15,18 +15,6 @@ public class ITFighterMainFrame extends JFrame {
         //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.addWindowFocusListener(new WindowFocusListener() {
-
-            @Override
-            public void windowGainedFocus(WindowEvent e) {
-
-            }
-
-            @Override
-            public void windowLostFocus(WindowEvent e) {
-                ITFighterGuiController.getInstance().lostWindowFoucs();
-            }
-        });
     }
 
     /**

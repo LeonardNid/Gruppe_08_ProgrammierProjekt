@@ -1,7 +1,5 @@
 package IT_fighter.layers.ui;
 
-import IT_fighter.layers.app.EnemyManager;
-import IT_fighter.layers.app.Entity.Virus;
 import IT_fighter.layers.app.PlayerKeyHandler;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 import IT_fighter.utilities.LoadAndSaveData;
@@ -21,7 +19,7 @@ public class GamePanel extends JPanel {
     private BufferedImage backgroundImage, cannon, cloud, windowsDefender, tiktok;
     private ITFighterCharacterPanel characterPanel;
     private ITFighterEnemyPanel enemyPanel;
-    private JPanel levelFinishedPanel, gameOverPanel;
+    private JPanel tiktokPanel;
     //##################################################################################################################
 
     public GamePanel(int[][] levelData) {
@@ -48,10 +46,13 @@ public class GamePanel extends JPanel {
 
     }
     //##################################################################################################################
-    public void showGameOverScreen() {
+    public void showScreen(JPanel panel) {
         this.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 200));
-        this.add(gameOverPanel);
-
+        this.add(panel);
+    }
+    public void showTiktokScreen() {
+        this.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 200));
+        this.add(tiktokPanel);
     }
 
     //##################################################################################################################
@@ -88,21 +89,15 @@ public class GamePanel extends JPanel {
     public void setEnemyPanenl(ITFighterEnemyPanel enemyPanel) {
         this.enemyPanel = enemyPanel;
     }
-    public void setGameOverPanel(JPanel gameOverPanel) {
-        this.gameOverPanel = gameOverPanel;
+
+    public void setTiktokPanel(JPanel tiktokPanel) {
+        this.tiktokPanel = tiktokPanel;
     }
-    public void setLevelFinishedPanel(JPanel levelFinishedPanel) {
-        this.levelFinishedPanel = levelFinishedPanel;
-    }
-
-
-
 
     //##################################################################################################################
     //
     public void renderPanel() {
         //TODO Komponenten die repainted werden müssen
-
         this.repaint();
     }
     //##################################################################################################################
@@ -125,9 +120,10 @@ public class GamePanel extends JPanel {
 //        System.out.println("paintGamePanle");
     }
     public void drawClouds(Graphics graphics, int levelOffset) {
-        graphics.drawImage(cloud, 100 - levelOffset, 100, null);
-        graphics.drawImage(cloud, 1000 - levelOffset, 100, null);
+        graphics.drawImage(cloud, 90 - levelOffset, 100, null);
+        graphics.drawImage(cloud, 1000 - levelOffset, 140, null);
         graphics.drawImage(cloud, 2500 - levelOffset, 100, null);
+        graphics.drawImage(cloud, 3842 - levelOffset, 120, null);
     }
 
     public void drawLevel(Graphics g, int levelOffset) {
@@ -139,6 +135,8 @@ public class GamePanel extends JPanel {
     }
 
 
-
-
+    public void removerTiktokPanel() {
+        this.remove(tiktokPanel);
+        this.setLayout(new FlowLayout());
+    }
 }
