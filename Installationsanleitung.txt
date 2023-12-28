@@ -1,0 +1,6 @@
+1. Installiere Java 21
+2. Starte die beigefühte Jar Datei
+3. Klicke mit der Maus auf eines der 6 Spiele
+4. Spiel Spielen
+5. Jeweiliges Spiel beenden um in die Bibliothek zurück zu gelangen
+6. Beenden mit 'Alt' + 'F4' (Beendet Spielebibliothek)
