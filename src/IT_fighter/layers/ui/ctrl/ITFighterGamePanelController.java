@@ -1,10 +1,10 @@
 package IT_fighter.layers.ui.ctrl;
 
 import IT_fighter.layers.app.ITFighterAppController;
-import IT_fighter.layers.ui.GamePanel;
+import IT_fighter.layers.ui.ITFighterGamePanel;
 import IT_fighter.layers.ui.ITFighterCharacterPanel;
 import IT_fighter.layers.ui.ITFighterEnemyPanel;
-import IT_fighter.layers.ui.TiktokPanel;
+import IT_fighter.layers.ui.ITFighterTiktokPanel;
 import IT_fighter.utilities.LoadAndSaveData;
 
 import javax.swing.*;
@@ -18,14 +18,14 @@ import java.awt.event.ActionListener;
 /**
  * Verwaltet alle graphischen Objekte eines Levels
  */
-public class GamePanelController {
+public class ITFighterGamePanelController {
     //TODO hier erweitern wenn weitere graphische Objekte zum Level hinzukommen
     private ITFighterCharacterPanel characterPanel;
-    private GamePanel gamePanel;
+    private ITFighterGamePanel gamePanel;
     private boolean showingTiktokPanel = false;
     private ITFighterEnemyPanel enemyPanel;
-    public GamePanelController(GamePanel gamePanel, ITFighterCharacterPanel characterPanel,
-                               ITFighterEnemyPanel enemyPanel) {
+    public ITFighterGamePanelController(ITFighterGamePanel gamePanel, ITFighterCharacterPanel characterPanel,
+                                        ITFighterEnemyPanel enemyPanel) {
         this.characterPanel = characterPanel;
         this.gamePanel = gamePanel;
         this.enemyPanel = enemyPanel;
@@ -35,7 +35,7 @@ public class GamePanelController {
     private void setUpGamePanel() {
         gamePanel.setCharacterPanel(characterPanel);
         gamePanel.setEnemyPanenl(enemyPanel);
-        gamePanel.setTiktokPanel(new TiktokPanel());
+        gamePanel.setTiktokPanel(new ITFighterTiktokPanel());
         //gamePanel
     }
 
@@ -47,7 +47,7 @@ public class GamePanelController {
         return characterPanel;
     }
 
-    public GamePanel getGamePanel() {
+    public ITFighterGamePanel getGamePanel() {
         return gamePanel;
     }
 
@@ -60,7 +60,7 @@ public class GamePanelController {
         this.characterPanel = characterPanel;
     }
     //TODO entfernen falls es nicht mehr implementiert wirda
-    public void setGamePanel(GamePanel gamePanel) {
+    public void setGamePanel(ITFighterGamePanel gamePanel) {
         this.gamePanel = gamePanel;
     }
     public JPanel createGameOverPanel() {
@@ -99,7 +99,7 @@ public class GamePanelController {
         back_button.setForeground(Color.GREEN);
         back_button.setOpaque(false);
         back_button.setBorderPainted(false);
-        back_button.setContentAreaFilled(true);
+        back_button.setContentAreaFilled(false);
         back_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -151,7 +151,7 @@ public class GamePanelController {
         back_button.setForeground(Color.GREEN);
         back_button.setOpaque(false);
         back_button.setBorderPainted(false);
-        back_button.setContentAreaFilled(true);
+        back_button.setContentAreaFilled(false);
         back_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

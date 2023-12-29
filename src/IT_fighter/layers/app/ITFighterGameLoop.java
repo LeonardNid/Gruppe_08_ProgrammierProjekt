@@ -1,11 +1,11 @@
 package IT_fighter.layers.app;
 
-public class GameLoop extends Thread{
+public class ITFighterGameLoop extends Thread{
     private final int FPS_SET = 120;
     private final int UPS_SET = 200;
     private boolean run = true;
-    private GameController game;
-    public GameLoop(GameController gameController) {
+    private ITFighterGameController game;
+    public ITFighterGameLoop(ITFighterGameController gameController) {
         game = gameController;
     }
     @Override

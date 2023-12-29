@@ -2,15 +2,11 @@ package IT_fighter.layers.ui.menuPanels;
 
 import IT_fighter.utilities.LoadAndSaveData;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 
-public abstract class BasicPanel extends JPanel {
+public abstract class ITFighterBasicPanel extends JPanel {
 
     //Screen variables
     public static final Dimension ScreenDimension = new Dimension(1920, 1056);

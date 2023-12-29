@@ -1,6 +1,6 @@
 package IT_fighter.layers.app.Entity;
 
-import IT_fighter.layers.app.Game;
+import IT_fighter.layers.app.ITFighterGame;
 import IT_fighter.layers.app.ITFighterAppController;
 
 import static IT_fighter.utilities.UtilMethods.*;
@@ -8,26 +8,26 @@ import static IT_fighter.utilities.UtilMethods.*;
 import static IT_fighter.utilities.Constants.PlayerConstants.IDLE;
 import static IT_fighter.utilities.Constants.PlayerConstants.RUNING;
 
-public class ITFighterCharacter extends Entity {
+public class ITFighterCharacter extends ITFighterEntity {
     private float playerSpeed = 2.0f;
     private int action = IDLE;
     private boolean moving = false;
     private boolean left, up, right, down, jump;
     //Pixelanzahl von 0,0 bis dahin wo Hitbox anfängt
-    private float xDrawOffset = 9 * Game.SCALE;
-    private float yDrawOffset = 6 * Game.SCALE;
+    private float xDrawOffset = 9 * ITFighterGame.SCALE;
+    private float yDrawOffset = 6 * ITFighterGame.SCALE;
     //##################################################################################################################
     //Variablen für Schwerkraft der Spielfigur
     private float ySpeed = 0f;
-    private float gravity = 0.04f * Game.SCALE;//0.04
-    private float jumpSpeed = -2.25f * Game.SCALE;
+    private float gravity = 0.04f * ITFighterGame.SCALE;//0.04
+    private float jumpSpeed = -2.25f * ITFighterGame.SCALE;
     private boolean inAir = false;
     //wird benötigt, wenn im Sprung eine Kollision auftritt
-    private float fallSpeed = 0.5f * Game.SCALE;
+    private float fallSpeed = 0.5f * ITFighterGame.SCALE;
     //##################################################################################################################
     public ITFighterCharacter(float x, float y, int width, int height) {
         super(x, y, width, height);
-        initHitbox(x, y, (int) (12 * Game.SCALE),(int) (24 * Game.SCALE)); //x = 12,y = 24 Größe der Hitbox
+        initHitbox(x, y, (int) (12 * ITFighterGame.SCALE),(int) (24 * ITFighterGame.SCALE)); //x = 12,y = 24 Größe der Hitbox
     }
 
 
@@ -134,13 +134,13 @@ public class ITFighterCharacter extends Entity {
             xSpeed += playerSpeed;
         }
         if(!inAir) {
-            if (!entityOnFloor(hitbox, Game.levelOneData)) {
+            if (!entityOnFloor(hitbox, ITFighterGame.levelOneData)) {
                 inAir = true;
             }
         }
 
         if (inAir) {
-            if (canMoveHere(hitbox.x, hitbox.y+ySpeed, hitbox.width, hitbox.height, Game.levelOneData)) {
+            if (canMoveHere(hitbox.x, hitbox.y+ySpeed, hitbox.width, hitbox.height, ITFighterGame.levelOneData)) {
                 //Spielfigur kollidiert mit keinem anderem Objekt beim Sprung
                 hitbox.y += this.ySpeed;
                 ySpeed += gravity;
@@ -168,7 +168,7 @@ public class ITFighterCharacter extends Entity {
     }
 
     private void updateXPos(float xSpeed) {
-        if(canMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, Game.levelOneData)) {
+        if(canMoveHere(hitbox.x + xSpeed, hitbox.y, hitbox.width, hitbox.height, ITFighterGame.levelOneData)) {
             hitbox.x += xSpeed;
         } else {
             hitbox.x = entityNextToWallPosX(hitbox, xSpeed);

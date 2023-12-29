@@ -1,23 +1,23 @@
 package IT_fighter.layers.app.Entity;
 
-import IT_fighter.layers.app.Game;
+import IT_fighter.layers.app.ITFighterGame;
 import IT_fighter.layers.app.ITFighterAppController;
 
 import static IT_fighter.utilities.UtilMethods.canMoveHere;
 import static IT_fighter.utilities.UtilMethods.colisionWithPlayer;
 
-public abstract class Enemy extends Entity {
+public abstract class ITFighterEnemy extends ITFighterEntity {
     private float ySpeed;
     private float xSpeed;
     private float xDrawOffset;
     private float yDrawOffset;
-    public Enemy(float x, float y, int width, int height, float xSpeed, float ySpeed) {
+    public ITFighterEnemy(float x, float y, int width, int height, float xSpeed, float ySpeed) {
         super(x, y, width, height);
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
     public boolean updatePosition() {
-        if(canMoveHere(hitbox.x + xSpeed, hitbox.y + ySpeed, hitbox.width, hitbox.height, Game.levelOneData)) {
+        if(canMoveHere(hitbox.x + xSpeed, hitbox.y + ySpeed, hitbox.width, hitbox.height, ITFighterGame.levelOneData)) {
             if(colisionWithPlayer(ITFighterAppController.getInstance().getCurrentPlayerPosition(), hitbox)) {
                 killPlayer();
                 return false;

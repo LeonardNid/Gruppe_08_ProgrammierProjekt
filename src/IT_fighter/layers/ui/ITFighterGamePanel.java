@@ -1,6 +1,6 @@
 package IT_fighter.layers.ui;
 
-import IT_fighter.layers.app.PlayerKeyHandler;
+import IT_fighter.layers.app.ITFighterPlayerKeyHandler;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 import IT_fighter.utilities.LoadAndSaveData;
 
@@ -8,11 +8,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-import static IT_fighter.layers.app.Game.*;
+import static IT_fighter.layers.app.ITFighterGame.*;
 
-public class GamePanel extends JPanel {
+public class ITFighterGamePanel extends JPanel {
     //TODO ist Final hier ok?
-    private final PlayerKeyHandler keyHandler = new PlayerKeyHandler();
+    private final ITFighterPlayerKeyHandler keyHandler = new ITFighterPlayerKeyHandler();
     private int[][] levelData;
     private BufferedImage[] levelSprite;
 
@@ -22,7 +22,7 @@ public class GamePanel extends JPanel {
     private JPanel tiktokPanel;
     //##################################################################################################################
 
-    public GamePanel(int[][] levelData) {
+    public ITFighterGamePanel(int[][] levelData) {
         initGamePanel(levelData);
     }
     private void initGamePanel(int[][] levelData) {

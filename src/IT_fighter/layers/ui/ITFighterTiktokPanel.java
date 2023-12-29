@@ -12,9 +12,9 @@ import java.awt.image.BufferedImage;
 
 import static IT_fighter.utilities.LoadAndSaveData.getImage;
 
-public class TiktokPanel extends JPanel {
+public class ITFighterTiktokPanel extends JPanel {
     private BufferedImage tiktokPhone = getImage("ITF_tiktok_phone.jpg");
-    public TiktokPanel() {
+    public ITFighterTiktokPanel() {
 
         this.setPreferredSize(new Dimension(tiktokPhone.getWidth(), tiktokPhone.getHeight()));
         this.setLayout(new BorderLayout());
@@ -25,7 +25,7 @@ public class TiktokPanel extends JPanel {
         close.setOpaque(false);
         close.setFocusPainted(false);
         close.setBorderPainted(false);
-        close.setContentAreaFilled(true);
+        close.setContentAreaFilled(false);
         close.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

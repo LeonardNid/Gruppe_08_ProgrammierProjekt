@@ -2,33 +2,25 @@ package IT_fighter.layers.app;
 
 
 import IT_fighter.layers.app.Entity.ITFighterCharacter;
-import IT_fighter.layers.app.Sound.SoundManager;
+import IT_fighter.layers.app.Sound.ITFighterSoundManager;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
 import java.awt.geom.Rectangle2D;
 
 public class ITFighterAppController {
     private static volatile ITFighterAppController instance;
-    private GameController currentGameController;
+    private ITFighterGameController currentGameController;
 
     private ITFighterGuiController mGuiController;
-
-
-
-
     //##################################################################################################################
-
     private ITFighterAppController() {
         //singelton
     }
-
     public static synchronized ITFighterAppController getInstance() {
-        if (instance==null)
+        if (instance == null)
             instance = new ITFighterAppController();
         return instance;
     }
-
-
     //##################################################################################################################
     //getter und setter
     public void setmGuiController(ITFighterGuiController guiController) {
@@ -37,9 +29,9 @@ public class ITFighterAppController {
     public ITFighterCharacter getActualCharacter() {
         return currentGameController.getmCharacter();
     }
-    public EnemyManager getCurrentEnemyManager() {return currentGameController.getmEnemyManager();}
+    public ITFighterEnemyManager getCurrentEnemyManager() {return currentGameController.getmEnemyManager();}
 
-    public GameController getCurrentGameController() {
+    public ITFighterGameController getCurrentGameController() {
         return currentGameController;
     }
     public int getLevelOffset() {
@@ -47,7 +39,7 @@ public class ITFighterAppController {
     }
     //##################################################################################################################
     //Zugriff auf Player
-    //TODO Zugriff auf Player aus AppController Regeln
+
     public Rectangle2D.Float getCurrentPlayerPosition() {
         return currentGameController.getmCharacter().getHitbox();
     }
@@ -55,32 +47,32 @@ public class ITFighterAppController {
         return currentGameController.getmCharacter();
     }
     public void killPlayer() {
-        SoundManager.playKillSound();
+        ITFighterSoundManager.playKillSound();
         currentGameController.stopGame();
         mGuiController.setGameOverScreen();
 
     }
     public void setSoundVolume(int sound, boolean down) {
-        if(sound == SoundManager.GAMEMUSIC) {
-            SoundManager.setGameMusicVolume(down);
+        if(sound == ITFighterSoundManager.GAMEMUSIC) {
+            ITFighterSoundManager.setGameMusicVolume(down);
         } else {
-            SoundManager.setGameSoundVolume(down);
+            ITFighterSoundManager.setGameSoundVolume(down);
         }
     }
 
     //##################################################################################################################
     public void touchedTiktok() {
         new Thread(() ->{
-            SoundManager.stopGameMusic();
-            SoundManager.playTiktokSound();
+            ITFighterSoundManager.stopGameMusic();
+            ITFighterSoundManager.playTiktokSound();
             mGuiController.setTiktokScreen();
             currentGameController.getmIconManager().setShowingTiktokIcon(true);
             System.out.println("touched tiktok appcontroller");
         }).start();
     }
     public void removeTiktok() {
-        SoundManager.stopTiktokSound();
-        SoundManager.playGameMusic();
+        ITFighterSoundManager.stopTiktokSound();
+        ITFighterSoundManager.playGameMusic();
         System.out.println("should play music");
         currentGameController.getmIconManager().setShowingTiktokIcon(false);
     }
@@ -107,7 +99,7 @@ public class ITFighterAppController {
         setUpLevel(2.0f, 10000, 10000);
     }
     public void setUpLevel(float playerSpeed, long virusSpeed, long binaryCodeSpeed) {
-        currentGameController = new GameController();
+        currentGameController = new ITFighterGameController();
         currentGameController.setPlayerSpeed(playerSpeed);
         currentGameController.setVirusSpeed(virusSpeed);
         currentGameController.setBinaryCodeSpeed(binaryCodeSpeed);

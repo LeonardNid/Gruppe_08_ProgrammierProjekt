@@ -3,12 +3,12 @@ package IT_fighter.layers.app.Entity;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 
-public abstract class Entity {
+public abstract class ITFighterEntity {
     protected float x, y;
     protected int width, height;
     protected Rectangle2D.Float hitbox;
 
-    public Entity(float x, float y, int width, int height) {
+    public ITFighterEntity(float x, float y, int width, int height) {
         this.x = x;
         this.y = y;
         this.width = width;

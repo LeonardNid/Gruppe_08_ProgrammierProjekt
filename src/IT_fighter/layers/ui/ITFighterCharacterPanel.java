@@ -2,7 +2,6 @@ package IT_fighter.layers.ui;
 
 import IT_fighter.layers.app.Entity.ITFighterCharacter;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
-import IT_fighter.layers.ui.menuPanels.BasicPanel;
 import IT_fighter.utilities.LoadAndSaveData;
 
 import java.awt.*;

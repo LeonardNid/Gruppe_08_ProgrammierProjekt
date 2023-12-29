@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class ITFighterTutorialPanel extends BasicPanel {
+public class ITFighterTutorialPanel extends ITFighterBasicPanel {
     private Image backgroundImage;
     private JButton close;
     public ITFighterTutorialPanel() {

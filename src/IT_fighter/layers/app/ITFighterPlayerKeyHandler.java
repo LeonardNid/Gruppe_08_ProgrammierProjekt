@@ -1,17 +1,13 @@
 package IT_fighter.layers.app;
 
 import IT_fighter.layers.app.Entity.ITFighterCharacter;
-import IT_fighter.layers.app.ITFighterAppController;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import static IT_fighter.utilities.Constants.Directions.*;
-import static IT_fighter.utilities.Constants.PlayerConstants.*;
-
-public class PlayerKeyHandler implements KeyListener {
+public class ITFighterPlayerKeyHandler implements KeyListener {
     ITFighterCharacter character;
-    public PlayerKeyHandler() {
+    public ITFighterPlayerKeyHandler() {
         character = ITFighterAppController.getInstance().getActualCharacter();
     }
     @Override

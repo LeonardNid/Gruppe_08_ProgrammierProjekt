@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class ITFighterMenuPanel extends BasicPanel {
+public class ITFighterMenuPanel extends ITFighterBasicPanel {
     private Image backgroundImage;
     private JButton play_button, tutorial_button, options_button, close_button;
     private JLabel title;

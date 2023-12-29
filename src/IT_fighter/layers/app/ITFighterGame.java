@@ -2,7 +2,7 @@ package IT_fighter.layers.app;
 
 import IT_fighter.utilities.LoadAndSaveData;
 
-public class Game {
+public class ITFighterGame {
     //allgemeine Daten über das Spiel
     private static final String LEVEL_ONE_DATA = "ITF_level_one_data.jpg";
     public static final int TILES_DEFAULT_SIZE = 32;

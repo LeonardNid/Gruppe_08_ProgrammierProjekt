@@ -3,18 +3,14 @@ package IT_fighter.layers.app.Sound;
 import IT_fighter.utilities.LoadAndSaveData;
 
 import javax.sound.sampled.*;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 
-public class Sound {
+public class ITFighterSound {
     private String soundName;
     private boolean restart = false;
     private Clip sound;
     float currentVolume = -10f;
     FloatControl floatControl;
-    public Sound(String soundName) {
+    public ITFighterSound(String soundName) {
         this.soundName = soundName;
         setUpSound();
 

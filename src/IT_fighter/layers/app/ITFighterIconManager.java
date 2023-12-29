@@ -4,13 +4,13 @@ import java.awt.geom.Rectangle2D;
 
 import static IT_fighter.utilities.UtilMethods.colisionWithPlayer;
 
-public class IconManager {
+public class ITFighterIconManager {
     private Rectangle2D.Float tiktok;
     private Rectangle2D.Float windowsDefender;
     private boolean isTouchingTiktokIcon = false;
     private boolean showingTiktokIcon = false;
 
-    public IconManager() {
+    public ITFighterIconManager() {
         windowsDefender = new Rectangle2D.Float(5720, 730, 32, 32);
         tiktok = new Rectangle2D.Float(1088, 890, 32, 32);
     }

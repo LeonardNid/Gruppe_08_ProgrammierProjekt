@@ -1,10 +1,9 @@
 package IT_fighter.layers.ui.menuPanels;
 
-import IT_fighter.layers.app.Sound.SoundManager;
+import IT_fighter.layers.app.Sound.ITFighterSoundManager;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
 import javax.swing.*;
-import javax.swing.event.AncestorListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,7 +11,7 @@ import java.awt.event.ActionListener;
 import static IT_fighter.utilities.UtilMethods.createGap;
 
 
-public class ITFighterOptionsPanel extends BasicPanel {
+public class ITFighterOptionsPanel extends ITFighterBasicPanel {
     private JLabel soundLabel, gameMusicLabel, gameSoundLabel;
     private JButton gameMusicVolumeUpBtn, gameMusicVolumeDownBtn, gameSoundVolumeUpBtn, gameSoundVolumeDownBtn, backBtn;
     private Image backgroundImage;
@@ -136,27 +135,27 @@ public class ITFighterOptionsPanel extends BasicPanel {
         gameMusicVolumeDownBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMEMUSIC, SoundManager.DOWN);
+                ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMEMUSIC, ITFighterSoundManager.DOWN);
 
             }
         });
         gameMusicVolumeUpBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMEMUSIC, SoundManager.UP);
+                ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMEMUSIC, ITFighterSoundManager.UP);
 
             }
         });
         gameSoundVolumeDownBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMESOUND, SoundManager.DOWN);
+                ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMESOUND, ITFighterSoundManager.DOWN);
             }
         });
         gameSoundVolumeUpBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ITFighterGuiController.getInstance().setSoundVolume(SoundManager.GAMESOUND, SoundManager.UP);
+                ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMESOUND, ITFighterSoundManager.UP);
             }
         });
 

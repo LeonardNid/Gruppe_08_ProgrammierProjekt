@@ -5,7 +5,7 @@ import IT_fighter.layers.app.ITFighterAppController;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
-import static IT_fighter.layers.app.Game.*;
+import static IT_fighter.layers.app.ITFighterGame.*;
 
 public class UtilMethods {
     public static boolean canMoveHere(Float x, Float y, float width, float height, int [][] levelData) {

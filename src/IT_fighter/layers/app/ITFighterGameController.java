@@ -3,13 +3,13 @@ package IT_fighter.layers.app;
 import IT_fighter.layers.app.Entity.ITFighterCharacter;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
-import static IT_fighter.layers.app.Game.*;
+import static IT_fighter.layers.app.ITFighterGame.*;
 
-public class GameController{
+public class ITFighterGameController {
 
     //##################################################################################################################
     //Attribute für GameLoop
-    private GameLoop gameThread;
+    private ITFighterGameLoop gameThread;
 
     //##################################################################################################################
 
@@ -24,13 +24,13 @@ public class GameController{
     //##################################################################################################################
     //Spielfigur
     private ITFighterCharacter mCharacter;
-    private EnemyManager mEnemyManager;
-    private IconManager mIconManager;
+    private ITFighterEnemyManager mEnemyManager;
+    private ITFighterIconManager mIconManager;
     //##################################################################################################################
-    public GameController() {
+    public ITFighterGameController() {
         mCharacter = new ITFighterCharacter(32, 678, (int) 16, (int) 28);
-        mEnemyManager = new EnemyManager();
-        mIconManager = new IconManager();
+        mEnemyManager = new ITFighterEnemyManager();
+        mIconManager = new ITFighterIconManager();
 
 
     }
@@ -55,7 +55,7 @@ public class GameController{
     // ##########################################################################
     //GameLoop
     public void startGameLoop() {
-        gameThread = new GameLoop(this);
+        gameThread = new ITFighterGameLoop(this);
         gameThread.start();
     }
 
@@ -108,7 +108,7 @@ public class GameController{
         mCharacter.setPlayerSpeed(playerSpeed);
     }
 
-    public EnemyManager getmEnemyManager() {
+    public ITFighterEnemyManager getmEnemyManager() {
         return mEnemyManager;
     }
     public void setVirusSpeed(long virusSpeed) {
@@ -120,11 +120,11 @@ public class GameController{
 
     }
 
-    public void setmIconManager(IconManager mIconManager) {
+    public void setmIconManager(ITFighterIconManager mIconManager) {
         this.mIconManager = mIconManager;
     }
 
-    public IconManager getmIconManager() {
+    public ITFighterIconManager getmIconManager() {
         return mIconManager;
     }
 

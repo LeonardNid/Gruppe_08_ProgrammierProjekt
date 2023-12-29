@@ -1,13 +1,13 @@
 package IT_fighter.layers.app.Sound;
 
-public class SoundManager {
+public class ITFighterSoundManager {
     public static final int GAMEMUSIC = 0;
     public static final int GAMESOUND = 1;
     public static final boolean DOWN = true;
     public static final boolean UP = false;
-    private static Sound gameMusic = new Sound("ITF_game_music.wav");
-    private static Sound killSound = new Sound("ITF_erro.wav");
-    private static Sound tiktokSound = new Sound("ITF_tiktok_Sound.wav");
+    private static ITFighterSound gameMusic = new ITFighterSound("ITF_game_music.wav");
+    private static ITFighterSound killSound = new ITFighterSound("ITF_erro.wav");
+    private static ITFighterSound tiktokSound = new ITFighterSound("ITF_tiktok_Sound.wav");
 
 
     public static void setGameMusicVolume(boolean down) {

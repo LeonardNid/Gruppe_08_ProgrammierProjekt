@@ -1,14 +1,13 @@
 package IT_fighter.layers.ui.menuPanels;
 
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
-import IT_fighter.layers.ui.menuPanels.BasicPanel;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ITFighterLevelPanel extends BasicPanel {
+public class ITFighterLevelPanel extends ITFighterBasicPanel {
     private JButton level1_button, level2_button, level3_button, back_button;
 
     public ITFighterLevelPanel() {

@@ -1,15 +1,15 @@
 package IT_fighter.layers.app;
 
-import IT_fighter.layers.app.Entity.BinaryCode;
-import IT_fighter.layers.app.Entity.Enemy;
-import IT_fighter.layers.app.Entity.Virus;
+import IT_fighter.layers.app.Entity.ITFighterBinaryCode;
+import IT_fighter.layers.app.Entity.ITFighterEnemy;
+import IT_fighter.layers.app.Entity.ITFighterVirus;
 
 import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class EnemyManager {
-    private CopyOnWriteArrayList<Virus> virusList = new CopyOnWriteArrayList<>();
-    private CopyOnWriteArrayList<BinaryCode> binaryCodesList = new CopyOnWriteArrayList<>();
+public class ITFighterEnemyManager {
+    private CopyOnWriteArrayList<ITFighterVirus> virusList = new CopyOnWriteArrayList<>();
+    private CopyOnWriteArrayList<ITFighterBinaryCode> binaryCodesList = new CopyOnWriteArrayList<>();
     private boolean spawn;
     private long virusSpawnTime = 10000;
     private long binaryCodeSpawnTime = 10000;
@@ -26,15 +26,15 @@ public class EnemyManager {
     private void startVirusSpawnThread(long sleepTime) {
         virusSpawnThread = new Thread(()-> {
             while(spawn) {
-                virusList.add(new Virus(100, 100, 32,32));
-                virusList.add(new Virus(3936, 152, 32, 32));
+                virusList.add(new ITFighterVirus(100, 100, 32,32));
+                virusList.add(new ITFighterVirus(3936, 152, 32, 32));
                 try {
                     Thread.sleep(random.nextLong(sleepTime)/2);
                 } catch (InterruptedException e) {
                     System.out.println("Interrupted Exception gefangen");
                 }
-                virusList.add(new Virus(2594, 132, 32,32));
-                virusList.add(new Virus(1094, 172, 32, 32));
+                virusList.add(new ITFighterVirus(2594, 132, 32,32));
+                virusList.add(new ITFighterVirus(1094, 172, 32, 32));
                 System.out.println("neuer Gegner erstellt");
                 try {
                     Thread.sleep(random.nextLong(sleepTime)/2);
@@ -48,7 +48,7 @@ public class EnemyManager {
     private void startBinaryCodeSpawnThread(long sleepTime) {
         binaryCodeSpawnThread = new Thread(()-> {
             while(spawn) {
-                binaryCodesList.add(new BinaryCode(2790, 734, 32, 64));
+                binaryCodesList.add(new ITFighterBinaryCode(2790, 734, 32, 64));
                 try {
                     Thread.sleep(random.nextLong(sleepTime));
                 } catch (InterruptedException e) {
@@ -66,9 +66,9 @@ public class EnemyManager {
 
     }
 
-    public void updateEnemyList(CopyOnWriteArrayList<? extends Enemy> enemyList) {
+    public void updateEnemyList(CopyOnWriteArrayList<? extends ITFighterEnemy> enemyList) {
         boolean stayInlist;
-        for(Enemy e: enemyList) {
+        for(ITFighterEnemy e: enemyList) {
             stayInlist = e.updatePosition();
             if (!stayInlist) {
                 enemyList.remove(e);
@@ -88,10 +88,10 @@ public class EnemyManager {
         this.binaryCodeSpawnTime = binaryCodeSpawnTime;
     }
 
-    public CopyOnWriteArrayList<Virus> getVirusList() {
+    public CopyOnWriteArrayList<ITFighterVirus> getVirusList() {
         return virusList;
     }
-    public CopyOnWriteArrayList<BinaryCode> getBinaryCodesList(){
+    public CopyOnWriteArrayList<ITFighterBinaryCode> getBinaryCodesList(){
         return binaryCodesList;
     }
 }
