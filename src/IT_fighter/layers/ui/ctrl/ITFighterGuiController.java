@@ -31,11 +31,10 @@ public class ITFighterGuiController {
     private ITFighterGuiController() {
         //singelton-Pattern
         this.mAppFacade = getmAppFacade();
-
-
     }
-
-
+    /***
+     *
+     */
     public static synchronized ITFighterGuiController getInstance() {
         if (instance == null) {
             instance = new ITFighterGuiController();
@@ -97,25 +96,28 @@ public class ITFighterGuiController {
     public EnemyManager getCurrentEnemyManager() {
         return mAppFacade.getCurrentEnemyManager();
     }
-
-
-
-
     //############################################################################################################
-
+    /**
+     * is called 120 times per Second by the GameController and repaints all shown graphical components
+     */
     public void updateGraphics() {
         currentGamePanelController.renderGame();
-
     }
+    /**
+     * calls the setAnimation method of the GamePanelController
+     */
     public void setAnimationIndex() {
         currentGamePanelController.setAnimationIndex();
     }
-
     //############################################################################################################
     //Panels erzeugen
+
+    /**
+     * removes all Components from the mainFrame and sets the new Panel inside the Mainframe
+     * @param panel is a one Panel of the menuPanels Package or the gamePanel
+     */
     public void changePanel(JPanel panel) {
         mainFrame.getContentPane().removeAll();
-        System.out.println(mainFrame.getContentPane().getComponents());
         mainFrame.getContentPane().add(panel);
         mainFrame.pack();
         mainFrame.revalidate();
@@ -123,36 +125,52 @@ public class ITFighterGuiController {
         panel.requestFocus();
     }
     //Methoden zum erzeugen von neuen Panels
+
+    /**
+     * creates a new MenuPanel and set it visible
+     */
     public void createMenuPanel() {
         changePanel(new ITFighterMenuPanel());
     }
-
+    /**
+     * creates a new MenuPanel and set it visible
+     */
     public void createTutorialPanel() {
         changePanel(new ITFighterTutorialPanel());
-
     }
-
+    /**
+     * creates a new OptionPanel and set it visible
+     */
     public void createOptionsPanel() {
         changePanel(new ITFighterOptionsPanel());
     }
-
-
-
+    /**
+     * creates a new LevelPanel and set it visible
+     */
     public void createLevelPanel() {
         changePanel(new ITFighterLevelPanel());
     }
-
+    /**
+     * creates the logic and graphic for the first level, in the gui called by easy button
+     */
     public void createLevel1() {
         mAppFacade.setUpLevelOne();
     }
-
+    /**
+     * creates the logic and graphic for the second level, in the gui called by medium button
+     */
     public void createLevel2() {
         mAppFacade.setUpLevelTwo();
     }
-
+    /**
+     * creates the logic and graphic for the third level, in the gui called by hard button
+     */
     public void createLevel3() {
         mAppFacade.setUpLevelThree();
     }
+    /**
+     * creates the graphics for a Level
+     */
     public void createLevelGraphics() {
         currentGamePanelController = new GamePanelController(
                 new GamePanel(Game.levelOneData),
@@ -161,25 +179,38 @@ public class ITFighterGuiController {
         );
         changePanel(currentGamePanelController.getGamePanel());
     }
+
+    /**
+     * sets the gameOverScreen to the GamePanel
+     */
     public void setGameOverScreen() {
         currentGamePanelController.setGameOverPanel();
         mainFrame.revalidate();
         mainFrame.repaint();
     }
+
+    /**
+     * sets the FinishedPanel to the GamePanel
+     */
     public void setGameFinishedScreen() {
         currentGamePanelController.setGameFinishedPanel();
         mainFrame.revalidate();
         mainFrame.repaint();
-
     }
+
+    /**
+     * sets the TiktokPanel
+     */
     public void setTiktokScreen() {
         currentGamePanelController.setTiktokPanel();
         mainFrame.revalidate();
         mainFrame.repaint();
     }
 
+    /**
+     * removes the tiktokPanel from the gamePanel
+     */
     public void removeTiktokPanel() {
-
         new Thread(()->{
             mAppFacade.removeTiktok();
             currentGamePanelController.removeTiktokPanel();
