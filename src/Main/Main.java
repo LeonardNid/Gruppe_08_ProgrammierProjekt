@@ -1,5 +1,6 @@
 package Main;
 
+import IT_fighter.layers.RunIT_fighterApp;
 import NanoTechDefenders.Help.MyFont;
 import NanoTechDefenders.Logic.Controlling.GameManager;
 import Techmaster.Techmaster;
@@ -71,7 +72,7 @@ public class Main {
         JButton scamOrNot = createBtn("ScamOrNot");
         JButton techmaster = createBtn("Techmaster");
         JButton escape_Directory = createBtn("<html>Escape<br>Directory");
-        JButton spiel6Btn = createBtn("spiel6");
+        JButton itfighter = createBtn("ITFighter");
 
         Dimension buttonsDimension = new Dimension(frame.getWidth() / 3, frame.getHeight() / 2);
 
@@ -80,7 +81,7 @@ public class Main {
         scamOrNot.setSize(buttonsDimension);
         techmaster.setSize(buttonsDimension);
         escape_Directory.setSize(buttonsDimension);
-        spiel6Btn.setSize(buttonsDimension);
+        itfighter.setSize(buttonsDimension);
 
         nanoTechDefendersBtn.addActionListener(e -> {
             new GameManager();
@@ -107,7 +108,8 @@ public class Main {
             frame.setVisible(false);
         });
 
-        spiel6Btn.addActionListener(e -> {
+        itfighter.addActionListener(e -> {
+            RunIT_fighterApp.start();
             frame.setVisible(false);
         });
 
@@ -116,7 +118,7 @@ public class Main {
         panel.add(scamOrNot);
         panel.add(techmaster);
         panel.add(escape_Directory);
-        panel.add(spiel6Btn);
+        panel.add(itfighter);
     }
 
     /**
@@ -130,8 +132,9 @@ public class Main {
         JButton button = new JButton(name);
         button.setFont(MyFont.getMyFont());
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setOpaque(false); // Macht den Button-Hintergrund transparent
         button.setContentAreaFilled(false); // Entfernt das Füllen des Inhaltsbereichs
+        button.setOpaque(false); // Macht den Button-Hintergrund transparent
+        button.setBorderPainted(false); // Entfernt die Button-Grenze
         button.setForeground(Color.BLACK); // Setzt die Textfarbe
         button.setFocusable(false);
         return button;

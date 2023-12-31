@@ -9,6 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml" afterDir="false" />
@@ -33,8 +34,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tomschroeder2&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="931f02c8-38e5-4663-9144-fe7a980dfd4b" />
+        <option name="url" value="https://github.com/LeonardNid/Gruppe_08_ProgrammierProjekt.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -69,8 +99,14 @@
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Files/ITfighter_ressources" />
+      <recent name="$PROJECT_DIR$/Files/pictures" />
+      <recent name="$PROJECT_DIR$/src/ITfighter/utilities" />
+      <recent name="$PROJECT_DIR$/src/ITfighter" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\niede\Desktop\Studium\Semester_3\Gruppe_08_ProgrammierProjekt\Jars" />
     </key>
@@ -102,7 +138,91 @@
       <updated>1702388753005</updated>
       <workItem from="1702388754132" duration="6252000" />
       <workItem from="1702396011280" duration="134000" />
+      <workItem from="1702477105697" duration="61937000" />
+      <workItem from="1702898205040" duration="35875000" />
+      <workItem from="1703158995075" duration="74275000" />
     </task>
+    <task id="LOCAL-00001" summary="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
+      <option name="closed" value="true" />
+      <created>1702491686185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702491686185</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2. Optionspanel funktionalität hergestellt">
+      <option name="closed" value="true" />
+      <created>1702811418075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702811418075</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert">
+      <option name="closed" value="true" />
+      <created>1703007440061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703007440061</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten">
+      <option name="closed" value="true" />
+      <created>1703153802969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703153802969</updated>
+    </task>
+    <task id="LOCAL-00005" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437267112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437267112</updated>
+    </task>
+    <task id="LOCAL-00006" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437345618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437345618</updated>
+    </task>
+    <task id="LOCAL-00007" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437359640</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437359640</updated>
+    </task>
+    <task id="LOCAL-00008" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+      <option name="closed" value="true" />
+      <created>1703437391521</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703437391521</updated>
+    </task>
+    <task id="LOCAL-00009" summary="6. Klassen umbenannt und button bug auf linux gefixed">
+      <option name="closed" value="true" />
+      <created>1703855662495</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703855662495</updated>
+    </task>
+    <task id="LOCAL-00010" summary="7. Kommentare fetig geschrieben.">
+      <option name="closed" value="true" />
+      <created>1704019558613</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704019558613</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,5 +230,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt" />
+    <MESSAGE value="2. Optionspanel funktionalität hergestellt" />
+    <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
+    <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten" />
+    <MESSAGE value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
+    <MESSAGE value="6. Klassen umbenannt und button bug auf linux gefixed" />
+    <MESSAGE value="7. Kommentare fetig geschrieben." />
+    <option name="LAST_COMMIT_MESSAGE" value="7. Kommentare fetig geschrieben." />
   </component>
 </project>

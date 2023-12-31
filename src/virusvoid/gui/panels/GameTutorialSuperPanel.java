@@ -13,6 +13,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+
 /**
  * The base panel for the game/tutorial, providing components for spaceship, projectiles, and animations.
  */
