@@ -139,7 +139,7 @@ public class ITFighterGuiController {
      * removes all Components from the mainFrame and sets the new Panel inside the Mainframe
      * @param panel is a one Panel of the menuPanels Package or the gamePanel
      */
-    public void changePanel(JPanel panel) {
+    private void changePanel(JPanel panel) {
         mainFrame.getContentPane().removeAll();
         mainFrame.getContentPane().add(panel);
         mainFrame.pack();

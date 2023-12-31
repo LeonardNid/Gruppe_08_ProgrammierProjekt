@@ -192,6 +192,5 @@ public class ITFighterGamePanel extends JPanel {
      */
     public void removerTiktokPanel() {
         this.remove(tiktokPanel);
-        this.setLayout(new FlowLayout());
     }
 }

@@ -21,20 +21,19 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
     private Image backgroundImage;
 
     /**
-     *
+     * Konstruktor des Einstellungen-Menüs
      */
     public ITFighterOptionsPanel(){
         initOptionsPanel();
     }
 
     /**
-     *
+     * Soll den Konstruktor schlang halten.
      */
     private void initOptionsPanel() {
         setSize();
         backgroundImage = LoadAndSaveData.getImage("ITF_menu_background.jpg");
         backgroundImage = backgroundImage.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
-
         setButtons();
         setLabels();
         setLayout();
@@ -42,7 +41,7 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
     }
 
     /**
-     *
+     * erstellt die Labels des Panels
      */
     private void setLabels() {
         soundLabel = labelGenerator("Sound", new Color(63, 75, 85), getFont(70));
@@ -55,37 +54,41 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         gameSoundLabel.setVerticalAlignment(JLabel.NORTH);
     }
     /**
-     *
+     * erstellt die Buttons des Panels
      */
     private void setButtons() {
         gameMusicVolumeUpBtn = buttonGenerator("+", Color.BLACK, getFont(40));
         gameMusicVolumeUpBtn.setBackground(Color.WHITE);
         gameMusicVolumeUpBtn.setHorizontalAlignment(JButton.LEFT);
         gameMusicVolumeUpBtn.setVerticalAlignment(JButton.NORTH);
+        gameMusicVolumeUpBtn.setContentAreaFilled(true);
 
         gameMusicVolumeDownBtn = buttonGenerator("-", Color.BLACK, getFont(40));
         gameMusicVolumeDownBtn.setBackground(Color.white);
         gameMusicVolumeDownBtn.setHorizontalAlignment(JButton.LEFT);
         gameMusicVolumeDownBtn.setVerticalAlignment(JButton.NORTH);
+        gameMusicVolumeDownBtn.setContentAreaFilled(true);
 
         gameSoundVolumeUpBtn = buttonGenerator("+", Color.BLACK, getFont(40));
         gameSoundVolumeUpBtn.setBackground(Color.white);
         gameSoundVolumeUpBtn.setHorizontalAlignment(JButton.LEFT);
         gameSoundVolumeUpBtn.setVerticalAlignment(JButton.NORTH);
+        gameSoundVolumeUpBtn.setContentAreaFilled(true);
 
         gameSoundVolumeDownBtn = buttonGenerator("-", Color.BLACK, getFont(40));
         gameSoundVolumeDownBtn.setBackground(Color.white);
         gameSoundVolumeDownBtn.setHorizontalAlignment(JButton.LEFT);
         gameSoundVolumeDownBtn.setVerticalAlignment(JButton.NORTH);
+        gameSoundVolumeDownBtn.setContentAreaFilled(true);
 
-        backBtn = buttonGenerator("Back", Color.RED, getFont(60));
+        backBtn = buttonGenerator("Close", Color.RED, getFont(60));
         backBtn.setHorizontalAlignment(JButton.LEFT);
         backBtn.setVerticalAlignment(JButton.NORTH);
         backBtn.setOpaque(false);
     }
 
     /**
-     *
+     * erstellt das Layout des Panels
      */
     private void setLayout() {
         this.setLayout(new BorderLayout());
