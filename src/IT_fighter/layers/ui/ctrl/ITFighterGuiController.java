@@ -63,7 +63,7 @@ public class ITFighterGuiController {
     public void closeITFighterapplication() {
         ITFighterSoundManager.stopGameMusic();
         mainFrame.dispose();
-        Main.createMainFrame();
+        Main.setMainFrameVisible();
     }
 
     /**
