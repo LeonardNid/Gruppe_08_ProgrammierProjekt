@@ -1,12 +1,12 @@
 package IT_fighter.utilities;
 
+/**
+ * verwaltet wichtige Konstanten der Spielfigur
+ */
 public class Constants {
-    public static class Directions {
-        public static final int LEFT = 0;
-        public static final int UP = 1;
-        public static final int RIGHT = 2;
-        public static final int DOWN = 3;
-    }
+    /**
+     * verwaltet Konstanten für Aktionen der Spielfigur
+     */
     public static class PlayerConstants {
         public static final int IDLE = 0;
         public static final int IDLE_WITHOUT_EYES = 1;
@@ -19,6 +19,11 @@ public class Constants {
         public static final int HIT = 7;
         public static final int ATTACK = 8;
 
+        /**
+         * gibt zurück wie viele Bilder eine Animation besitzt
+         * @param action gibt an, um welche Animation es sich handelt.
+         * @return anzahl der Bilder, die für die Animation hinterlegt sind.
+         */
         public static int getSpritesPerLine(int action) {
             switch (action) {
                 case IDLE:

@@ -2,6 +2,9 @@ package IT_fighter.layers.app;
 
 import IT_fighter.utilities.LoadAndSaveData;
 
+/**
+ * Verwaltet konstante Werte des Spiels
+ */
 public class ITFighterGame {
     //allgemeine Daten über das Spiel
     private static final String LEVEL_ONE_DATA = "ITF_level_one_data.jpg";

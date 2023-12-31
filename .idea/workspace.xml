@@ -9,37 +9,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="6. Klassen umbenannt und button bug auf linux gefixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/EnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterEnemyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/BinaryCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterBinaryCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/RunIT_fighterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterBinaryCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterBinaryCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/Virus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterVirus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterVirus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Entity/ITFighterVirus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/IconManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterIconManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/PlayerKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterPlayerKeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/GameMusic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/ITFighterSound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/Sound/ITFighterSoundManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterCharacterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterCharacterPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/TiktokPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterTiktokPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/GamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGamePanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterEnemyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterEnemyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterGameLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterIconManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterIconManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterLevelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterPlayerKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/app/ITFighterPlayerKeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterCharacterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterCharacterGraphics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterEnemyGraphics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterGamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterMainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterTiktokPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ITFighterTiktokPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGamePanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGamePanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/ITFighterGuiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/ctrl/KeyHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/BasicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterBasicPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterBasicPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterBasicPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/LoadAndSaveData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IT_fighter/utilities/UtilMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703437391521</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6. Klassen umbenannt und button bug auf linux gefixed">
+      <option name="closed" value="true" />
+      <created>1703855662495</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703855662495</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
     <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten" />
     <MESSAGE value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
-    <option name="LAST_COMMIT_MESSAGE" value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
+    <MESSAGE value="6. Klassen umbenannt und button bug auf linux gefixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="6. Klassen umbenannt und button bug auf linux gefixed" />
   </component>
 </project>

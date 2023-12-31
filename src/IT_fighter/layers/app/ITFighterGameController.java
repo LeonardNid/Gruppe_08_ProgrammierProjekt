@@ -5,34 +5,36 @@ import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
 
 import static IT_fighter.layers.app.ITFighterGame.*;
 
+/**
+ * Der GameController verwaltet die Logik eines Levels
+ */
 public class ITFighterGameController {
 
     //##################################################################################################################
     //Attribute für GameLoop
     private ITFighterGameLoop gameThread;
-
-    //##################################################################################################################
-
     //##################################################################################################################
     //Level Daten
-    private int levelTiles_In_Width = levelOneData[0].length;
+    private final int levelTiles_In_Width = levelOneData[0].length;
     private int xLevelOffset = 0;
-    private int rightBorder = (int) (0.8 * GAME_WIDTH);
-    private int leftBorder = (int) (0.2 * GAME_WIDTH);
-    private int maxTilesOffset = levelTiles_In_Width - TILES_IN_WIDTH;
-    private int maxLevelOffsetX = maxTilesOffset * TILES_SIZE;
+    private final int rightBorder = (int) (0.8 * GAME_WIDTH);
+    private final int leftBorder = (int) (0.2 * GAME_WIDTH);
+    private final int maxTilesOffset = levelTiles_In_Width - TILES_IN_WIDTH;
+    private final int maxLevelOffsetX = maxTilesOffset * TILES_SIZE;
     //##################################################################################################################
     //Spielfigur
-    private ITFighterCharacter mCharacter;
-    private ITFighterEnemyManager mEnemyManager;
-    private ITFighterIconManager mIconManager;
+    private final ITFighterCharacter mCharacter;
+    private final ITFighterEnemyManager mEnemyManager;
+    private final ITFighterIconManager mIconManager;
     //##################################################################################################################
+
+    /**
+     * bei Instanziierung des GameControllers werden eine Spielfigur, ein EnemyManager und ein IconManager instanziiert
+     */
     public ITFighterGameController() {
-        mCharacter = new ITFighterCharacter(32, 678, (int) 16, (int) 28);
+        mCharacter = new ITFighterCharacter(32, 678, 16, 28);
         mEnemyManager = new ITFighterEnemyManager();
         mIconManager = new ITFighterIconManager();
-
-
     }
     public void startGame() {
         mEnemyManager.startSpawnThread();
@@ -42,28 +44,26 @@ public class ITFighterGameController {
         stopGameLoop();
         mEnemyManager.stopSpawnThread();
     }
-
-
-    //##########################################################################
-
-
-    //##################################################################################################################
-    //Zugriff auf Player
-    //TODO Zugriff auf Player aus AppController Regeln
-
-
     // ##########################################################################
     //GameLoop
+    /**
+     * startet einen Thread in dem die GameLoop läuft
+     */
     public void startGameLoop() {
         gameThread = new ITFighterGameLoop(this);
         gameThread.start();
     }
 
-
+    /**
+     * stoppt die GameLoop und somit das Level
+     */
     public void stopGameLoop() {
         gameThread.stopGameLoop();
     }
-    // sorgt für ein Update aller logischen Komponenten des Spiels
+
+    /**
+     * sorgt für ein Update aller logischen Komponenten des Spiels
+     */
     public void update() {
         mEnemyManager.updateEnemies();
         mCharacter.update();
@@ -72,6 +72,10 @@ public class ITFighterGameController {
 
     }
 
+    /**
+     * überprüft wie nah die Spielfigur bzw. dessen Hitbox am rechten oder linken Bildrand ist.
+     * Je nach Nähe der Spielfigur zum Bildrand verschiebt sich das LevelOffset
+     */
     private void checkCloseToBorder() {
         int playerX = (int) mCharacter.getHitbox().x;
         int difference = playerX - xLevelOffset;
@@ -88,68 +92,65 @@ public class ITFighterGameController {
         }
     }
     //##################################################################################################################
-    //sorgt für ein Update aller grafischen Komponenten des Spiels
+    /**
+     * sorgt für ein Update aller grafischen Komponenten des Spiels
+     */
     public void repaint() {
         ITFighterGuiController.getInstance().updateGraphics();
     }
+
+    /**
+     * setzt den AnimationIndex zurück
+     */
     public void setAnimationIndex() {
         ITFighterGuiController.getInstance().setAnimationIndex();
     }
     //##################################################################################################################
     //getter und setter
-
+    /**
+     * @return gibt die Logik der Spielfigur zurück
+     */
     public ITFighterCharacter getmCharacter() {
         return mCharacter;
     }
-    public void setmCharacter(ITFighterCharacter mCharacter) {
-        this.mCharacter = mCharacter;
-    }
+    /**
+     * setzt die Geschwindigkeit der Spielfigur in x-Richtung
+     * @param playerSpeed Geschwindigkeit in X-Richtung
+     */
     public void setPlayerSpeed(Float playerSpeed) {
         mCharacter.setPlayerSpeed(playerSpeed);
     }
-
+    /**
+     * @return gibt den EnemyManager eines Levels zurück
+     */
     public ITFighterEnemyManager getmEnemyManager() {
         return mEnemyManager;
     }
+    /**
+     * @param virusSpeed zeitlicher Abstand zwischen dem Erstellen von Virus Objekten
+     */
     public void setVirusSpeed(long virusSpeed) {
-        //TODO methode zum einstellen der Bewegungs geschwindigtkeit der Spielfigur
         mEnemyManager.setVirusSpawnTime(virusSpeed);
     }
+    /**
+     * @param BinaryCodeSpeed zeitlicher Abstand zwischen dem Erstellen von BinärCode Objekten
+     */
     public void setBinaryCodeSpeed(long BinaryCodeSpeed) {
         mEnemyManager.setBinaryCodeSpawnTime(BinaryCodeSpeed);
-
     }
 
-    public void setmIconManager(ITFighterIconManager mIconManager) {
-        this.mIconManager = mIconManager;
-    }
-
+    /**
+     *
+     * @return gibt den IconManger eines Levels zurück
+     */
     public ITFighterIconManager getmIconManager() {
         return mIconManager;
     }
 
-    public int getLevelTiles_In_Width() {
-        return levelTiles_In_Width;
-    }
+    /**
+     * @return gibt xLevelOffset zurück
+     */
     public int getxLevelOffset() {
         return xLevelOffset;
     }
-
-    public int getRightBorder() {
-        return rightBorder;
-    }
-
-    public int getLeftBorder() {
-        return leftBorder;
-    }
-
-    public int getMaxTilesOffset() {
-        return maxTilesOffset;
-    }
-
-    public int getMaxLevelOffsetX() {
-        return maxLevelOffsetX;
-    }
-
-
 }

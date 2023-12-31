@@ -12,10 +12,17 @@ import java.awt.image.BufferedImage;
 
 import static IT_fighter.utilities.LoadAndSaveData.getImage;
 
+/**
+ * Zeigt ein SmartPhone mit dem Layout von Tiktok.
+ * Geschlossen werden kann das Panel per Close Button, der sich im unteren Bildbereich befindet
+ */
 public class ITFighterTiktokPanel extends JPanel {
-    private BufferedImage tiktokPhone = getImage("ITF_tiktok_phone.jpg");
-    public ITFighterTiktokPanel() {
+    private final BufferedImage tiktokPhone = getImage("ITF_tiktok_phone.jpg");
 
+    /**
+     * Das Panel wird im Spiel benutzt, wenn die Spielfigur über das Tiktok Icon läuft
+     */
+    public ITFighterTiktokPanel() {
         this.setPreferredSize(new Dimension(tiktokPhone.getWidth(), tiktokPhone.getHeight()));
         this.setLayout(new BorderLayout());
         JButton close = new JButton("Close");
@@ -26,16 +33,16 @@ public class ITFighterTiktokPanel extends JPanel {
         close.setFocusPainted(false);
         close.setBorderPainted(false);
         close.setContentAreaFilled(false);
-        close.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ITFighterGuiController.getInstance().removeTiktokPanel();
-            }
-        });
+        close.addActionListener(e -> ITFighterGuiController.getInstance().removeTiktokPanel());
         this.add(close, BorderLayout.SOUTH);
         this.setOpaque(false);
 
     }
+
+    /**
+     * zeichnet das JPanel mit dem tiktokPhone-Bild als Hintergrund
+     * @param graphics the <code>Graphics</code> object to protect
+     */
     @Override
     public void paintComponent(Graphics graphics) {
         graphics.drawImage(tiktokPhone, 0, 0, tiktokPhone.getWidth(), tiktokPhone.getHeight(), null);

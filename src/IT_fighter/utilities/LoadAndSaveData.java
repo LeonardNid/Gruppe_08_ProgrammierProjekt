@@ -8,18 +8,23 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
-import java.net.URL;
 
+/**
+ * Dient zum Laden von Dateien in Java-Klassen
+ */
 public class LoadAndSaveData {
 
     //##################################################################################################################
-    //TODO hier richtige Quellen an geben
     private static final String sourceOfResources = "/ITfighter_resources/";
     public static final String LEVEL_ATLAS = "ITF_outside_sprites.jpg";
-
-
     public static final String fontName = "ITF_BACKTO1982.TTF";
     //##################################################################################################################
+
+    /**
+     * liest ein Bild ein und gibt dieses als Buffered Image zurück.
+     * @param pictureName Name des Bildes, das eingelesen werden soll.
+     * @return wird keine Datei gefunden zum Einlesen des Bilds wird null zurückgegeben.
+     */
     public static BufferedImage getImage(String pictureName) {
         BufferedImage image;
         System.out.println(sourceOfResources+pictureName);
@@ -34,6 +39,11 @@ public class LoadAndSaveData {
         }
     }
 
+    /**
+     * Liest die Standard-Schrift für die Anwendung ein.
+     * @param size Gibt die Größe an, die die Schrift haben soll.
+     * @return Gibt die Schrift in der gewünschten Größe zurück.
+     */
     public static Font getFont(int size) {
         try {
             String filepath = LoadAndSaveData.class.getResource(sourceOfResources+fontName).getPath();
@@ -45,6 +55,13 @@ public class LoadAndSaveData {
         return null;
     }
     //##################################################################################################################
+
+    /**
+     * Liest ein Bild, in dem ein Pixel für einen Block des Spiels steht ein und überträgt diese Daten in ein
+     * zweidimensionales int-Array.
+     * @param level name des Bildes, welches die Daten für das Level beinhaltet.
+     * @return gibt int-Array mit Level-Daten zurück.
+     */
     public static int[][] getLevelData(String level) {
         BufferedImage levelOneData = getImage(level);
         int[][] levelData = new int[levelOneData.getHeight()][levelOneData.getWidth()];
@@ -60,6 +77,10 @@ public class LoadAndSaveData {
         return levelData;
 
     }
+
+    /**
+     * liest ein Soundfile ein und gibt diese als Clip zurück.
+     */
     public static Clip getSoundFile(String soundFileName) {
         Clip clip;
         String errorMessage = "Fehler bei SoundFile einlesen";

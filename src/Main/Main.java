@@ -105,8 +105,8 @@ public class Main {
         JButton button = new JButton(name);
         button.setFont(MyFont.getMyFont());
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setOpaque(false); // Macht den Button-Hintergrund transparent
         button.setContentAreaFilled(false); // Entfernt das Füllen des Inhaltsbereichs
+        button.setOpaque(false); // Macht den Button-Hintergrund transparent
 //        button.setBorderPainted(false); // Entfernt die Button-Grenze
         button.setForeground(Color.BLACK); // Setzt die Textfarbe
         button.setFocusable(false);

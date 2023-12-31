@@ -1,25 +1,20 @@
 package IT_fighter.layers.ui;
-
-import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
-import Main.Main;
-
 import javax.swing.*;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowFocusListener;
 
+/**
+ * Das MainFrame ist ein JFrame in das alle anderen grafischen Komponenten (in der Regel JPanels)
+ * eingefügt und wieder gelöscht werden, je nach Gebrauch
+ */
 public class ITFighterMainFrame extends JFrame {
-
+    /**
+     * Konstruktor erstellt das MainFrame.
+     * Die Größe des MainFrames wird durch die JPanels bestimmt, die dem MainFrame hinzugefügt werden.
+     */
     public ITFighterMainFrame() {
         this.setTitle("ITFighter");
         this.setResizable(false);
-        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
-    /**
-    public static JPanel getBackroundPanel() {
-
-    }*/
 }
 

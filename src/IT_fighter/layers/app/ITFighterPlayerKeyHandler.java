@@ -5,15 +5,27 @@ import IT_fighter.layers.app.Entity.ITFighterCharacter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * Der KeyHandler manipuliert in Abhängigkeit der gedrückten Tasten die Wahrheitswerte für right, left und jump
+ * im Character
+ */
 public class ITFighterPlayerKeyHandler implements KeyListener {
     ITFighterCharacter character;
+
+    /**
+     * Konstruktor des KeyHandlers
+     */
     public ITFighterPlayerKeyHandler() {
         character = ITFighterAppController.getInstance().getActualCharacter();
     }
     @Override
     public void keyTyped(KeyEvent e) {
     }
-    //TODO hier müssen noch die richtigen Aufrufe für den AppController hinterlegt werden
+
+    /**
+     * gibt an was passiert, wenn die Tasten W, A, D und Esc gedrückt werden
+     * @param e the event to be processed
+     */
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
@@ -22,9 +34,6 @@ public class ITFighterPlayerKeyHandler implements KeyListener {
                 break;
             case KeyEvent.VK_A:
                 character.setLeft(true);
-                break;
-            case KeyEvent.VK_S:
-                character.setDown(true);
                 break;
             case KeyEvent.VK_D:
                 character.setRight(true);
@@ -36,6 +45,10 @@ public class ITFighterPlayerKeyHandler implements KeyListener {
 
     }
 
+    /**
+     * Gibt an was passiert, wenn die Tasten W, A, D und Esc losgelassen werden
+     * @param e the event to be processed
+     */
     @Override
     public void keyReleased(KeyEvent e) {
         switch (e.getKeyCode()) {
@@ -45,13 +58,9 @@ public class ITFighterPlayerKeyHandler implements KeyListener {
             case KeyEvent.VK_A:
                 character.setLeft(false);
                 break;
-            case KeyEvent.VK_S:
-                character.setDown(false);
-                break;
             case KeyEvent.VK_D:
                 character.setRight(false);
                 break;
-
         }
     }
 }

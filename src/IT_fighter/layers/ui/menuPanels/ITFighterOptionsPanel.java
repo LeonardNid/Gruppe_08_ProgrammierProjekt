@@ -2,6 +2,7 @@ package IT_fighter.layers.ui.menuPanels;
 
 import IT_fighter.layers.app.Sound.ITFighterSoundManager;
 import IT_fighter.layers.ui.ctrl.ITFighterGuiController;
+import IT_fighter.utilities.LoadAndSaveData;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,17 +11,28 @@ import java.awt.event.ActionListener;
 
 import static IT_fighter.utilities.UtilMethods.createGap;
 
-
+/**
+ * Das OptionsPanel bietet die Möglichkeit die Lautstärke der Spielmusik und der Soundeffekte zu
+ * regulieren
+ */
 public class ITFighterOptionsPanel extends ITFighterBasicPanel {
     private JLabel soundLabel, gameMusicLabel, gameSoundLabel;
     private JButton gameMusicVolumeUpBtn, gameMusicVolumeDownBtn, gameSoundVolumeUpBtn, gameSoundVolumeDownBtn, backBtn;
     private Image backgroundImage;
+
+    /**
+     *
+     */
     public ITFighterOptionsPanel(){
         initOptionsPanel();
     }
+
+    /**
+     *
+     */
     private void initOptionsPanel() {
         setSize();
-        backgroundImage = getImage("ITF_menu_background.jpg");
+        backgroundImage = LoadAndSaveData.getImage("ITF_menu_background.jpg");
         backgroundImage = backgroundImage.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
 
         setButtons();
@@ -28,6 +40,10 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         setLayout();
         setActionListeners();
     }
+
+    /**
+     *
+     */
     private void setLabels() {
         soundLabel = labelGenerator("Sound", new Color(63, 75, 85), getFont(70));
         soundLabel.setHorizontalAlignment(JLabel.LEFT);
@@ -38,7 +54,9 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         gameSoundLabel.setHorizontalAlignment(JLabel.LEFT);
         gameSoundLabel.setVerticalAlignment(JLabel.NORTH);
     }
-
+    /**
+     *
+     */
     private void setButtons() {
         gameMusicVolumeUpBtn = buttonGenerator("+", Color.BLACK, getFont(40));
         gameMusicVolumeUpBtn.setBackground(Color.WHITE);
@@ -64,33 +82,36 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         backBtn.setHorizontalAlignment(JButton.LEFT);
         backBtn.setVerticalAlignment(JButton.NORTH);
         backBtn.setOpaque(false);
-
     }
+
+    /**
+     *
+     */
     private void setLayout() {
         this.setLayout(new BorderLayout());
-        //Lücke Links
+        //Lücken erstellen
+        //Lücke links
         JPanel leftGap = new JPanel();
         leftGap.setOpaque(false);
         leftGap.setPreferredSize(new Dimension(300,100));
         this.add(leftGap,BorderLayout.WEST);
-
+        //Lücke rechts
         JPanel rightGap = new JPanel();
         rightGap.setOpaque(false);
         rightGap.setPreferredSize(new Dimension(300,100));
         this.add(rightGap, BorderLayout.EAST);
-
+        //Lücke zum oberen Bildschirmrand
         JPanel upGap = new JPanel();
         upGap.setOpaque(false);
         upGap.setPreferredSize(new Dimension(300, 100));
         this.add(upGap, BorderLayout.NORTH);
-
+        //Lücke zum unteren Bildrand
         JPanel downGap = new JPanel();
         downGap.setOpaque(false);
         downGap.setPreferredSize(new Dimension(300,100));
         this.add(downGap, BorderLayout.SOUTH);
 
-
-        //erstellen der notwendigen Panels
+        //erstellen der notwendigen Panels, um die Sounds zu steuern
         JPanel gameSoundPanel = new JPanel();
         gameSoundPanel.setOpaque(false);
         gameSoundPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 20, 20));
@@ -103,12 +124,10 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         gameMusicPanel.add(gameMusicVolumeUpBtn);
         gameMusicPanel.add(gameMusicVolumeDownBtn);
 
-
         JPanel standardGap1 = createGap(new Dimension(300,100));
         JPanel standardGap2 = createGap(new Dimension());
 
-
-
+        //beinhaltet alle Componenten
         JPanel centerPanel = new JPanel();
         centerPanel.setOpaque(false);
         centerPanel.setLayout(new GridLayout(4,2, 10, 20));
@@ -121,10 +140,11 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         centerPanel.add(backBtn);
         centerPanel.add(standardGap2);
         this.add(centerPanel, BorderLayout.CENTER);
-
-
-
     }
+
+    /**
+     * erstellt die ActionListeners für die Buttons des OptionsPanels
+     */
     private void setActionListeners() {
         backBtn.addActionListener(new ActionListener() {
             @Override
@@ -136,14 +156,12 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMEMUSIC, ITFighterSoundManager.DOWN);
-
             }
         });
         gameMusicVolumeUpBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMEMUSIC, ITFighterSoundManager.UP);
-
             }
         });
         gameSoundVolumeDownBtn.addActionListener(new ActionListener() {
@@ -158,8 +176,14 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
                 ITFighterGuiController.getInstance().setSoundVolume(ITFighterSoundManager.GAMESOUND, ITFighterSoundManager.UP);
             }
         });
-
     }
+    /**
+     * erzeugt ein JLabel im Style der Anwendung
+     * @param text ist der Inhalt des Labels
+     * @param color ist die Farbe des Labels
+     * @param font ist die Schrift des Labels
+     * @return gibt das erstellte JLabel zurück
+     */
     @Override
     public JLabel labelGenerator(String text, Color color, Font font) {
         JLabel l = new JLabel(text);
@@ -168,10 +192,10 @@ public class ITFighterOptionsPanel extends ITFighterBasicPanel {
         l.setFont(font);
         return l;
     }
-
-
-
-
+    /**
+     * zeichnet das Hintergrundbild des Optionpanels
+     * @param g the <code>Graphics</code> object to protect
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);

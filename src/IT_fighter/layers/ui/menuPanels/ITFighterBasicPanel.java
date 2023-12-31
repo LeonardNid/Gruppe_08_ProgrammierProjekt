@@ -4,33 +4,29 @@ import IT_fighter.utilities.LoadAndSaveData;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
+/**
+ * Das BasicPanel ist verwaltet Methoden, die alle Panel die ein Menü darstellen brauchen
+ */
 public abstract class ITFighterBasicPanel extends JPanel {
 
-    //Screen variables
+    //ScreenDimension bestimmt die Größe der erstellten BasicPanels
     public static final Dimension ScreenDimension = new Dimension(1920, 1056);
-
-    //##################################################################################################################
-    //Größen für das GamePanel
-    public final static int TILES_DEFAULT_SIZE = 32;
-    public final static float SCALE = 1.0f;
-    public final static int TILES_IN_WIDTH = 60;
-    public final static int TILES_IN_HEIGHT = 33;
-
-    public final static int TILE_SIZE = (int) (TILES_DEFAULT_SIZE * SCALE);
-    public final static int GAME_WIDTH = TILE_SIZE * TILES_IN_WIDTH;
-    public final static int GAME_HEIGHT = TILE_SIZE * TILES_IN_HEIGHT;
     //##################################################################################################################
     public static final int screenWidth = 1920;//tileSize * maxScreenCol; //1280 pixels -angestrebt 1280
     public static final int screenHeight = 1080;//tileSize * maxScreenRow;// 704 pixels -angestrebt 720
-    public static final int TITLE_WIDTH = 600;
     public static final int BUTTON_WIDTH = 550;
     public static final int BUTTON_HEIGHT = 100;
     public static final int BUTTON_GAP_SIZE = 80;
-    public static final int BUTTON_WIDTH_MAIN_MENU = 250;
     public static final int ButtonStandardSize = 70;
-
+    //##################################################################################################################
+    /**
+     * generiert JButton mit den gewünschten Parametern
+     * @param text Inhalt des Buttons
+     * @param color Schriftfarbe des Buttons
+     * @param font Schriftart und Schriftgröße des Buttons
+     * @return gibt den mit den gegebenen Parametern erstellten JButton zurück
+     */
     // gibt transparenten Button mit Text, Schriftfarbe und Schriftart zurück
     public JButton buttonGenerator(String text, Color color, Font font) {
         JButton b = new JButton(text);
@@ -38,15 +34,18 @@ public abstract class ITFighterBasicPanel extends JPanel {
         b.setBackground(Color.black);
         b.setOpaque(true);
         b.setBorderPainted(false);
-        b.setContentAreaFilled(true);
-
+        b.setContentAreaFilled(false);
         b.setFocusPainted(false);
         b.setFont(font);
-
         return b;
     }
-
-    // gibt transparentes Label mit Text, Schriftfarbe und Schriftart zurück
+    /**
+     * gibt transparentes Label mit Text, Schriftfarbe und Schriftart zurück
+     * @param text Inhalt des JLabel
+     * @param color Farbe des zu erzeugenden JLabels
+     * @param font Schrift des zu erzeugenden JLabels
+     * @return gibt das mit den gegebenen Parametern erstellte JLabel zurück
+     */
     public JLabel labelGenerator(String text, Color color, Font font) {
         JLabel l = new JLabel(text);
         l.setForeground(color);
@@ -55,20 +54,22 @@ public abstract class ITFighterBasicPanel extends JPanel {
         return l;
     }
 
-    // importiert aus Datei eine Schriftart und gibt diese zurück
+    /**
+     * Lädt die Standardschrift des Spiels
+     * @param size ist die Größe der Schrift
+     * @return gibt die Standardschrift des Spiels in der gewünschten Größe zurück
+     */
     public static Font getFont(int size) {
-        Font myfont = LoadAndSaveData.getFont(size);
-        return myfont;
+        return LoadAndSaveData.getFont(size);
     }
 
+    /**
+     * setzt die Größe eines Panels, welches von BasicPanel erbt
+     */
     public void setSize() {
         this.setMinimumSize(ScreenDimension);
         this.setMaximumSize(ScreenDimension);
         this.setPreferredSize(ScreenDimension);
-    }
-    public BufferedImage getImage(String source) {
-        BufferedImage image = LoadAndSaveData.getImage(source);
-        return image;
     }
 }
 

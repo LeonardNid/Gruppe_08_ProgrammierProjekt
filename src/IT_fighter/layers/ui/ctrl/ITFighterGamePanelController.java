@@ -2,8 +2,8 @@ package IT_fighter.layers.ui.ctrl;
 
 import IT_fighter.layers.app.ITFighterAppController;
 import IT_fighter.layers.ui.ITFighterGamePanel;
-import IT_fighter.layers.ui.ITFighterCharacterPanel;
-import IT_fighter.layers.ui.ITFighterEnemyPanel;
+import IT_fighter.layers.ui.ITFighterCharacterGraphics;
+import IT_fighter.layers.ui.ITFighterEnemyGraphics;
 import IT_fighter.layers.ui.ITFighterTiktokPanel;
 import IT_fighter.utilities.LoadAndSaveData;
 
@@ -12,57 +12,65 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
- * Verwaltet alle graphischen Objekte eines Levels
+ * Verwaltet alle grafischen Objekte eines Levels
  */
 public class ITFighterGamePanelController {
-    //TODO hier erweitern wenn weitere graphische Objekte zum Level hinzukommen
-    private ITFighterCharacterPanel characterPanel;
-    private ITFighterGamePanel gamePanel;
+    private final ITFighterCharacterGraphics characterPanel;
+    private final ITFighterGamePanel gamePanel;
     private boolean showingTiktokPanel = false;
-    private ITFighterEnemyPanel enemyPanel;
-    public ITFighterGamePanelController(ITFighterGamePanel gamePanel, ITFighterCharacterPanel characterPanel,
-                                        ITFighterEnemyPanel enemyPanel) {
+    private final ITFighterEnemyGraphics enemyPanel;
+    /**
+     * Konstruktor des GamePanelControllers
+     * @param gamePanel dessen Komponenten vom GamePanelController verwaltet werden
+     * @param characterPanel das dem übergebenen GamePanel übergeben wird
+     * @param enemyPanel das dem übergebenen GamePanel übergeben wird
+     */
+    public ITFighterGamePanelController(ITFighterGamePanel gamePanel, ITFighterCharacterGraphics characterPanel,
+                                        ITFighterEnemyGraphics enemyPanel) {
         this.characterPanel = characterPanel;
         this.gamePanel = gamePanel;
         this.enemyPanel = enemyPanel;
         setUpGamePanel();
     }
 
+    /**
+     * setzt in einem GamePanel das TiktokPanel, das EnemyPanel und das CharacterPanel
+     */
     private void setUpGamePanel() {
         gamePanel.setCharacterPanel(characterPanel);
-        gamePanel.setEnemyPanenl(enemyPanel);
+        gamePanel.setEnemyPanel(enemyPanel);
         gamePanel.setTiktokPanel(new ITFighterTiktokPanel());
-        //gamePanel
     }
 
+    /**
+     * setzt den AnimationIndex der Spielfigur zurück
+     * die Methode sollte aufgerufen werden, wenn sich die Animation der Spielfigur verändert
+     */
     public void setAnimationIndex() {
         characterPanel.setAnimationIndex();
     }
 
-    public ITFighterCharacterPanel getCharacterPanel() {
-        return characterPanel;
-    }
-
+    /**
+     * @return gibt das GamePanel des GamePanelControllers zurück
+     */
     public ITFighterGamePanel getGamePanel() {
         return gamePanel;
     }
 
+    /**
+     * wird 120-mal pro Sekunde aufgerufen und bewirkt, dass das GamePanel und dessen Komponenten neu gezeichnet werden
+     */
     public void renderGame() {
         gamePanel.renderPanel();
-        characterPanel.update();
+        characterPanel.updateAnimationTick();
     }
 
-    public void setCharacterPanel(ITFighterCharacterPanel characterPanel) {
-        this.characterPanel = characterPanel;
-    }
-    //TODO entfernen falls es nicht mehr implementiert wirda
-    public void setGamePanel(ITFighterGamePanel gamePanel) {
-        this.gamePanel = gamePanel;
-    }
+    /**
+     * @return gibt ein neu erzeugtes Panel zurück, welches angezeigt werden soll, wenn das Spiel durch den Tod der
+     * Spielfigur beendet wird
+     */
     public JPanel createGameOverPanel() {
         Container gameOvercontainer = new Container();
         gameOvercontainer.setPreferredSize(new Dimension(500,300));
@@ -100,12 +108,7 @@ public class ITFighterGamePanelController {
         back_button.setOpaque(false);
         back_button.setBorderPainted(false);
         back_button.setContentAreaFilled(false);
-        back_button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ITFighterAppController.getInstance().closeGame();
-            }
-        });
+        back_button.addActionListener(e -> ITFighterAppController.getInstance().closeGame());
 
         gameOvercontainer.add(gameOverLabel);
         gameOvercontainer.add(gameOverText);
@@ -115,6 +118,9 @@ public class ITFighterGamePanelController {
 
     }
 
+    /**
+     * @return gibt ein Panel zurück, welches angezeigt werden soll, wenn das Level erfolgreich beendet wurde
+     */
     public JPanel createFinishedPanel() {
         Container finishedContainer = new Container();
         finishedContainer.setPreferredSize(new Dimension(500,300));
@@ -152,13 +158,7 @@ public class ITFighterGamePanelController {
         back_button.setOpaque(false);
         back_button.setBorderPainted(false);
         back_button.setContentAreaFilled(false);
-        back_button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ITFighterAppController.getInstance().closeGame();
-            }
-        });
-
+        back_button.addActionListener(e -> ITFighterAppController.getInstance().closeGame());
         finishedContainer.add(finishedLabel);
         finishedContainer.add(finishedText);
         finishedContainer.add(back_button);
@@ -167,16 +167,26 @@ public class ITFighterGamePanelController {
 
 
     }
+    /**
+     * sorgt dafür, dass das GamePanel den GameOverScreen anzeigt
+     */
     public void setGameOverPanel() {
         if(showingTiktokPanel) {
             ITFighterGuiController.getInstance().removeTiktokPanel();
         }
         gamePanel.showScreen(createGameOverPanel());
     }
+
+    /**
+     * sorgt dafür, dass das GamePanel das Panel für ein erfolgreich beendetes Level anzeigt
+     */
     public void setGameFinishedPanel() {
         gamePanel.showScreen(createFinishedPanel());
     }
 
+    /**
+     * sorgt dafür, dass das TiktokPanel angezeigt wird
+     */
     public void setTiktokPanel() {
         if (!showingTiktokPanel) {
             gamePanel.showTiktokScreen();
@@ -184,6 +194,9 @@ public class ITFighterGamePanelController {
         }
     }
 
+    /**
+     * entfernt das TiktokPanel aus dem GamePanel
+     */
     public void removeTiktokPanel() {
         gamePanel.removerTiktokPanel();
         showingTiktokPanel = false;

@@ -11,7 +11,7 @@ public class ITFighterTutorialPanel extends ITFighterBasicPanel {
     private JButton close;
     public ITFighterTutorialPanel() {
         setSize();
-        backgroundImage = getImage("ITF_menu_background.jpg");
+        backgroundImage = LoadAndSaveData.getImage("ITF_menu_background.jpg");
         backgroundImage = backgroundImage.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
 
     }

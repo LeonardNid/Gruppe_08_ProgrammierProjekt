@@ -1,13 +1,25 @@
 package IT_fighter.layers.app;
 
+/**
+ * Die GameLoop ist ein Thread der sicherstellt, dass alle Komponenten des Spiels mit Updates versorgt werden.
+ */
 public class ITFighterGameLoop extends Thread{
     private final int FPS_SET = 120;
     private final int UPS_SET = 200;
     private boolean run = true;
     private ITFighterGameController game;
+
+    /**
+     * @param gameController ist der GameController dessen Methoden aufgerufen werden, um die Logik und die Grafik
+     *                       des Spiels mit Updates zu versorgen.
+     */
     public ITFighterGameLoop(ITFighterGameController gameController) {
         game = gameController;
     }
+
+    /**
+     * Run-Methode des Threads, indem die GameLoop als while-Schleife läuft.
+     */
     @Override
     public void run() {
         double timePerFrame = 1000000000.0 / FPS_SET;
@@ -50,6 +62,10 @@ public class ITFighterGameLoop extends Thread{
             }
         }
     }
+
+    /**
+     * Beendet den Thread der GameLoop
+     */
     public void stopGameLoop() {
         this.run = false;
         this.interrupt();

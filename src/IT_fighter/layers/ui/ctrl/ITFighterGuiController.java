@@ -197,8 +197,8 @@ public class ITFighterGuiController {
     public void createLevelGraphics() {
         currentGamePanelController = new ITFighterGamePanelController(
                 new ITFighterGamePanel(ITFighterGame.levelOneData),
-                new ITFighterCharacterPanel(ITFighterAppController.getInstance().getActualCharacter()),
-                new ITFighterEnemyPanel(getCurrentEnemyManager())
+                new ITFighterCharacterGraphics(ITFighterAppController.getInstance().getActualCharacter()),
+                new ITFighterEnemyGraphics(getCurrentEnemyManager())
         );
         changePanel(currentGamePanelController.getGamePanel());
     }
