@@ -1,5 +1,6 @@
 package de.Luca.ScamOrNot.UI;
 
+import Main.Main;
 import de.Luca.ScamOrNot.Logic.Logic;
 import de.Luca.ScamOrNot.Logic.MusicPlayer;
 import de.Luca.ScamOrNot.Logic.main;
@@ -20,7 +21,6 @@ public class MainMenueUI {
 
         JButton startGameBtn = new ImageButton("ScamOrNot/Icons/Buttons/play.png", 96, 96, "Start", 20f);
         startGameBtn.addActionListener(e -> {
-            MusicPlayer.playSound(main.click_sound);
             GameUI.init(Logic.getRandomMail());
         });
         JButton howToPlayBtn = new ImageButton("ScamOrNot/Icons/Buttons/placeholder.png", 96, 96, "How To?", 20f);
@@ -32,7 +32,11 @@ public class MainMenueUI {
             OptionsUI.init();
         });
         JButton quitBtn = new ImageButton("ScamOrNot/Icons/Buttons/quit.png", 96, 96, "Quit", 20f);
-        quitBtn.addActionListener(e -> MainFrame.GameFrame.dispose());
+        quitBtn.addActionListener(e -> {
+            MainFrame.GameFrame.dispose();
+            main.player.stop(true);
+            Main.setMainFrameVisible();
+        });
 
         JPanel oberesPanel = new JPanel();
         oberesPanel.setLayout(new BoxLayout(oberesPanel, BoxLayout.Y_AXIS));
@@ -41,7 +45,6 @@ public class MainMenueUI {
         oberesPanel.add(startGameBtn);
         oberesPanel.add(howToPlayBtn);
         oberesPanel.add(optionsBtn);
-        //oberesPanel.add(creditsBtn);
         oberesPanel.add(quitBtn);
 
         backgroundPanel.add(oberesPanel, BorderLayout.NORTH);

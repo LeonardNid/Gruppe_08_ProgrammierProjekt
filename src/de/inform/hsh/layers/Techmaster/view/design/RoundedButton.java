@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.view.design;
+package de.inform.hsh.layers.Techmaster.view.design;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;

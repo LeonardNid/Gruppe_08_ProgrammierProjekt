@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.view;
+package de.inform.hsh.layers.Techmaster.view;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -21,15 +21,15 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import de.inform.hsh.layers.controller.GUIController;
-import de.inform.hsh.layers.model.Antwort;
-import de.inform.hsh.layers.model.Frage;
-import de.inform.hsh.layers.model.Spieler;
-import de.inform.hsh.layers.utils.ChooseAntwortActionListener;
-import de.inform.hsh.layers.utils.ExitActionListener;
-import de.inform.hsh.layers.utils.HelpActionListener;
-import de.inform.hsh.layers.utils.JokerActionListener;
-import de.inform.hsh.layers.view.design.RoundedButton;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
+import de.inform.hsh.layers.Techmaster.model.Antwort;
+import de.inform.hsh.layers.Techmaster.model.Frage;
+import de.inform.hsh.layers.Techmaster.model.Spieler;
+import de.inform.hsh.layers.Techmaster.utils.ChooseAntwortActionListener;
+import de.inform.hsh.layers.Techmaster.utils.ExitActionListener;
+import de.inform.hsh.layers.Techmaster.utils.HelpActionListener;
+import de.inform.hsh.layers.Techmaster.utils.JokerActionListener;
+import de.inform.hsh.layers.Techmaster.view.design.RoundedButton;
 /**
  * Stellt das SpielPanel da
  * @author thorb

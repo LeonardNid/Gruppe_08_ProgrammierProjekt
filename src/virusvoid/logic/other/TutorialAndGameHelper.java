@@ -30,7 +30,6 @@ public class TutorialAndGameHelper {
      */
     public static void startManagers() {
         SpaceshipManager.startSpaceshipManager();
-        MoveSpaceship.startMoveSpaceship();
 
         PlanetManager.startPlanetManager();
         LogicController.updatePlanetHp();

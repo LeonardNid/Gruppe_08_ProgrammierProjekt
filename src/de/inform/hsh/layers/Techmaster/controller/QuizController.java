@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.controller;
+package de.inform.hsh.layers.Techmaster.controller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,10 +9,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import de.inform.hsh.layers.model.Antwort;
-import de.inform.hsh.layers.model.Frage;
-import de.inform.hsh.layers.model.Spieler;
-import de.inform.hsh.layers.utils.QuizFacade;
+import de.inform.hsh.layers.Techmaster.model.Antwort;
+import de.inform.hsh.layers.Techmaster.model.Frage;
+import de.inform.hsh.layers.Techmaster.model.Spieler;
+import de.inform.hsh.layers.Techmaster.utils.QuizFacade;
 
 /**
  * Diese Klasse implementiert die Logik des Spiels.

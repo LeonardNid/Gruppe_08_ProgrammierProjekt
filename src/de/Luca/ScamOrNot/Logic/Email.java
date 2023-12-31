@@ -74,6 +74,8 @@ public class Email {
     public static void init() {
         ObjectMapper objectMapper = new ObjectMapper();
 
+        loaded_mails.clear();
+
         try {
             ClassLoader classLoader = main.class.getClassLoader();
             InputStream inputStream = classLoader.getResourceAsStream("ScamOrNot/maildata.json");

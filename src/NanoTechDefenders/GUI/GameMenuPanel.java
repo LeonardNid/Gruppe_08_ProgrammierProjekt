@@ -5,7 +5,6 @@ import NanoTechDefenders.GUI.Controlling.GUIController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.WindowEvent;
 
 /**
  * Das GameMenuPanel ist ein spezielles Menüpanel für das Pause-Menü während des Spiels.
@@ -48,7 +47,7 @@ public class GameMenuPanel extends MenuPanel {
             System.out.println("Back gedrückt");
 //            frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING)); // schließt die Anwendung wie wenn man auf X klickt
             frame.dispose();
-            Main.createMainFrame();
+            Main.setMainFrameVisible();
         }
     }
 }

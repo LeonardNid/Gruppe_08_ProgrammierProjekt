@@ -1,4 +1,4 @@
-package de.inform.hsh.layers.controller;
+package de.inform.hsh.layers.Techmaster.controller;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -23,17 +23,18 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
-import de.inform.hsh.layers.model.Frage;
-import de.inform.hsh.layers.model.Spieler;
-import de.inform.hsh.layers.utils.ChooseLevelActionListener;
-import de.inform.hsh.layers.utils.ExitActionListener;
-import de.inform.hsh.layers.utils.HelpActionListener;
-import de.inform.hsh.layers.utils.QuizFacade;
-import de.inform.hsh.layers.utils.StartActionListener;
-import de.inform.hsh.layers.view.GameMainFrame;
-import de.inform.hsh.layers.view.GameMainPanel;
-import de.inform.hsh.layers.view.GameStartPanel;
-import de.inform.hsh.layers.view.design.RoundedButton;
+import Main.Main;
+import de.inform.hsh.layers.Techmaster.model.Frage;
+import de.inform.hsh.layers.Techmaster.model.Spieler;
+import de.inform.hsh.layers.Techmaster.utils.ChooseLevelActionListener;
+import de.inform.hsh.layers.Techmaster.utils.ExitActionListener;
+import de.inform.hsh.layers.Techmaster.utils.HelpActionListener;
+import de.inform.hsh.layers.Techmaster.utils.QuizFacade;
+import de.inform.hsh.layers.Techmaster.utils.StartActionListener;
+import de.inform.hsh.layers.Techmaster.view.GameMainFrame;
+import de.inform.hsh.layers.Techmaster.view.GameMainPanel;
+import de.inform.hsh.layers.Techmaster.view.GameStartPanel;
+import de.inform.hsh.layers.Techmaster.view.design.RoundedButton;
 
 /**
  * Diese Klasse bildet den GUIController ab und übernimmt jegliche Kommunikation
@@ -253,7 +254,9 @@ public class GUIController {
 		int option = JOptionPane.showConfirmDialog(null, "Möchten Sie die Anwendung wirklich beenden?", "Bestätigen",
 				JOptionPane.YES_NO_OPTION);
 		if (option == JOptionPane.YES_OPTION) {
-			System.exit(0);
+//			System.exit(0);
+			frame.dispose();
+			Main.setMainFrameVisible();
 		} else {
 			if (message != null && title != null && options != null) {
 				showJOptionPane(message, title, options);

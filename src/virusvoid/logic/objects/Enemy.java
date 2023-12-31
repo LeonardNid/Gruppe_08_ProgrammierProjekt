@@ -8,6 +8,8 @@ import virusvoid.logic.controller.LogicController;
 public class Enemy extends GameObject {
 
     private boolean playerCollision;
+    private final int height;
+    private final int width;
     private final int type;
     private final int id;
 
@@ -20,7 +22,9 @@ public class Enemy extends GameObject {
      * @param type The type of the enemy.
      */
     public Enemy(int x, int y, int id, int type) {
-        super(x, y, LogicController.scaleX(25), LogicController.scaleX(25));
+        super(x, y);
+        this.height = LogicController.scaleX(25);
+        this.width = LogicController.scaleX(25);
         this.playerCollision = false;
         this.type = type;
         this.id = id;
@@ -60,5 +64,25 @@ public class Enemy extends GameObject {
      */
     public void setPlayerCollision(boolean playerCollision) {
         this.playerCollision = playerCollision;
+    }
+
+    /**
+     * Gets the height of the enemy.
+     *
+     * @return The height of the enemy.
+     */
+    @Override
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Gets the width of the enemy.
+     *
+     * @return The width of the enemy.
+     */
+    @Override
+    public int getWidth() {
+        return width;
     }
 }

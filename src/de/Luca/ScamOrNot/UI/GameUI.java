@@ -14,10 +14,11 @@ import static de.Luca.ScamOrNot.Logic.Logic.rightChoice;
 public class GameUI {
     //TODO: Explanation
     //TODO: before go, open popup with explanation etc.
-    //TODO: timer for difficulty
     public static void init(Email mail) {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+
+        Logic.startTimer();
 
         JPanel topPanel = createTopPanel(mail);
         JPanel emailPanel = createEmailPanel(mail);
@@ -101,7 +102,7 @@ public class GameUI {
                 String html = editorPane.getText();
                 int linkIndex = html.indexOf(href);
                 if(Logic.isBadEmail(html, linkIndex)) {
-                    EndScreenUI.init(4);
+                    EndScreenUI.init(4, mail.getExplanation());
                 }
                 else {
                     //TODO: ist ein guter link
@@ -147,20 +148,21 @@ public class GameUI {
 
         JButton normalBtn = new JButton("Claim as Valid"); //code = 0
         normalBtn.addActionListener(e -> {
+            Logic.stopTimer();
             boolean right = rightChoice(0, mail);
             if(right) {
                 if(!Logic.newMailAvailabe()) {
                     GameUI.init(Logic.getRandomMail());
                 }
                 else {
-                    EndScreenUI.init(0);
+                    EndScreenUI.init(0, "");
                 }
             }
             else if(mail.getTyp() == 1){
-                EndScreenUI.init(2);
+                EndScreenUI.init(2, mail.getExplanation());
             }
             else {
-                EndScreenUI.init(3);
+                EndScreenUI.init(3, mail.getExplanation());
             }
         });
 
@@ -172,14 +174,24 @@ public class GameUI {
                     GameUI.init(Logic.getRandomMail());
                 }
                 else {
-                    EndScreenUI.init(0);
+                    EndScreenUI.init(0, "");
                 }
             }
             else if(mail.getTyp() == 0) {
-                EndScreenUI.init(2);
+                EndScreenUI.init(2, mail.getExplanation());
             }
             else {
-                //TODO: Popup das es der falsche typ war, aber immerhin als gefährlich erkannt und dann weiter
+                int result = JOptionPane.showConfirmDialog(null, "Du hast diese Email als gefährlich erkannt, das ist gut! Jedoch hast du den falschen Typen ausgewählt!","Warning", JOptionPane.DEFAULT_OPTION,
+                        JOptionPane.PLAIN_MESSAGE);
+
+                if(result == JOptionPane.OK_OPTION) {
+                    if(!Logic.newMailAvailabe()) {
+                        GameUI.init(Logic.getRandomMail());
+                    }
+                    else {
+                        EndScreenUI.init(0, "");
+                    }
+                }
             }
         });
 
@@ -191,14 +203,24 @@ public class GameUI {
                     GameUI.init(Logic.getRandomMail());
                 }
                 else {
-                    EndScreenUI.init(0);
+                    EndScreenUI.init(0, "");
                 }
             }
             else if(mail.getTyp() == 0) {
-                EndScreenUI.init(3);
+                EndScreenUI.init(3, mail.getExplanation());
             }
             else {
-                //TODO: Popup das es der falsche typ war, aber immerhin als gefährlich erkannt und dann weiter
+                int result = JOptionPane.showConfirmDialog(null, "Du hast diese Email als gefährlich erkannt, das ist gut! Jedoch hast du den falschen Typen ausgewählt!","Warning", JOptionPane.DEFAULT_OPTION,
+                        JOptionPane.PLAIN_MESSAGE);
+
+                if(result == JOptionPane.OK_OPTION) {
+                    if(!Logic.newMailAvailabe()) {
+                        GameUI.init(Logic.getRandomMail());
+                    }
+                    else {
+                        EndScreenUI.init(0, "");
+                    }
+                }
             }
         });
 

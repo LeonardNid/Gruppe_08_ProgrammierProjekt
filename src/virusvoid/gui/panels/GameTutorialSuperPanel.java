@@ -38,7 +38,8 @@ public class GameTutorialSuperPanel extends GuiBasic {
         int size = GuiController.scaleY(50);
 
         spaceshipLabel = new SpaceshipLabel(PictureManager.getSpaceshipImageIcon(), new Point(GuiController.scaleX(460), GuiController.scaleY(420)), 0) {
-            @Override protected void paintComponent(Graphics g) {
+            @Override
+            protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 int xBuffer = GuiController.scaleX(5);
                 int yBuffer = GuiController.scaleY(8);
@@ -134,7 +135,6 @@ public class GameTutorialSuperPanel extends GuiBasic {
             if (!explosionAnimationLabels.isEmpty()) {
                 this.remove(explosionAnimationLabels.get(0));
                 explosionAnimationLabels.remove(explosionAnimationLabels.get(0));
-                //TODO ausgeklammert
             }
         });
     }

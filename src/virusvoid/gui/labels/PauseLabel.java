@@ -9,7 +9,7 @@ import java.awt.*;
  * The {@code PauseLabel} class extends JLabel and represents a label used to display a "Paused" message in the GUI.
  * It provides a method to create a new JLabel with the specified properties for a pause panel.
  */
-public class PauseLabel extends JLabel {
+public class PauseLabel {
 
     /**
      * Creates and returns a JLabel with specific properties for displaying a "Paused" message.

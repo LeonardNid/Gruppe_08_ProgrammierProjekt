@@ -1,11 +1,10 @@
-package de.inform.hsh.layers.view;
+package de.inform.hsh.layers.Techmaster.view;
 
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
-import de.inform.hsh.layers.controller.GUIController;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
 
 /**
  * Hauptfenster der Anwendung

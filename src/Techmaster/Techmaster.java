@@ -1,8 +1,8 @@
 package Techmaster;
 
-import de.inform.hsh.layers.controller.GUIController;
-import de.inform.hsh.layers.controller.QuizController;
-import de.inform.hsh.layers.utils.QuizFacade;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
+import de.inform.hsh.layers.Techmaster.controller.QuizController;
+import de.inform.hsh.layers.Techmaster.utils.QuizFacade;
 
 /**
  * HauptKlasse zum Starten der Anwendung. Enthält die main-Methode.

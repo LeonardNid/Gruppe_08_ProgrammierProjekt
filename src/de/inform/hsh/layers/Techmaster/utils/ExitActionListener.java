@@ -1,11 +1,9 @@
-package de.inform.hsh.layers.utils;
+package de.inform.hsh.layers.Techmaster.utils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JOptionPane;
-
-import de.inform.hsh.layers.controller.GUIController;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
 /**
  * Actionlistener um das Spiel zu beenden
  * 

@@ -1,13 +1,9 @@
-package de.inform.hsh.layers.utils;
+package de.inform.hsh.layers.Techmaster.utils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JOptionPane;
-import javax.swing.Timer;
-
-import de.inform.hsh.layers.controller.GUIController;
-import de.inform.hsh.layers.view.GameMainPanel;
+import de.inform.hsh.layers.Techmaster.controller.GUIController;
 
 /**
  * ActionListener welcher sich um die verarbeitung von Joker anfragen kümmert

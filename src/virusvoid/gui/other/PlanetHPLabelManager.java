@@ -23,7 +23,16 @@ public class PlanetHPLabelManager {
      *
      * @return The PlanetHPLabel instance.
      */
-    public static PlanetHPLabel getPlanetHPLabel () {
+    public static PlanetHPLabel getPlanetHPLabel() {
         return planetHPLabel;
+    }
+
+    /**
+     * Sets the health points (HP) value for the planet and updates the label text accordingly.
+     *
+     * @param hp The new health points value for the planet.
+     */
+    public static void setPlanetHP(int hp) {
+        planetHPLabel.setText("Planet HP: " + hp);
     }
 }

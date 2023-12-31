@@ -1,8 +1,8 @@
-package de.inform.hsh.layers.model;
+package de.inform.hsh.layers.Techmaster.model;
 
 import java.util.ArrayList;
 
-import de.inform.hsh.layers.view.GameMainPanel;
+import de.inform.hsh.layers.Techmaster.view.GameMainPanel;
 
 /**
  * Model-Klasse für den Spieler

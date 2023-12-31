@@ -3,7 +3,6 @@ package de.Luca.ScamOrNot.Logic;
 import de.Luca.ScamOrNot.UI.MainFrame;
 import de.Luca.ScamOrNot.UI.MainMenueUI;
 
-import javax.sound.sampled.Clip;
 import java.awt.*;
 import java.io.File;
 import java.io.InputStream;
@@ -21,19 +20,13 @@ public class main {
         - 2 -> Scam
      */
 
-    //TODO: Options menu in schön (maybe einfach genau so wie how to play?
     //TODO: anzeigen der erklärung nach email wahl
-    //TODO: email frame bisschen schöner stylen
-    //TODO: Musik loop
-    //TODO: alter mausklick sound entfernen
-    //TODO: End screen ui schön
-    //TODO: options zum funktionieren bringen
+    //TODO?: email frame bisschen schöner stylen
+    //TODO?: End screen ui schön
 
     public static List<File> loaded_tracks = new ArrayList<>();
 
     public static MusicPlayer player;
-
-    public static Clip click_sound = MusicPlayer.loadClip("Sounds/Effects/mouse_click.wav");
 
     public static Font pixelFont;
 
