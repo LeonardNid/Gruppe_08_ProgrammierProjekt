@@ -1,6 +1,6 @@
 package Escape_Directory;
 
-/** Updated die Tiles & ihre Interaktionen zwischeneinander */
+/** Updated die Tiles und ihre Interaktionen zwischeneinander */
 public class Logic {
 	private Player player;
 	private Level level;
@@ -37,7 +37,7 @@ public class Logic {
 		enemy = e;
 	}
 
-	/** Updated Spieler & Gegner */
+	/** Updated Spieler und Gegner */
 	public void update(String input, double deltaTime, blockStates[][] world, Camera c, boolean keyE) {
 		updatePlayer(input, deltaTime, world, keyE);
 		updateEnemy(deltaTime);

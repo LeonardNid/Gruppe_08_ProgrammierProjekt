@@ -16,7 +16,7 @@ public interface QuizFacade {
 	 * dementsprechend
 	 * 
 	 * @return boolean
-	 * @param String antwort
+	 * @param a
 	 */
 	boolean proofAntwort(String a);
 
@@ -25,7 +25,7 @@ public interface QuizFacade {
 	 * die Spieler Informationen.
 	 * 
 	 * @return boolean
-	 * @param Frage frage
+	 * @param frage
 	 */
 	boolean useJoker(Frage frage);
 
@@ -41,8 +41,7 @@ public interface QuizFacade {
 
 	/**
 	 * Methode zum setzen des Dateipfads
-	 * 
-	 * @param String level
-	 */
+	 *
+     */
 	void chooseFragenKatalog(String level);
 }

@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
- * Die GUI & das Herz von dem Spiel. Hier wird auch jeder Frame neu gezeichnet.
+ * Die GUI und das Herz von dem Spiel. Hier wird auch jeder Frame neu gezeichnet.
  */
 @SuppressWarnings("serial")
 public class frame extends JFrame implements KeyListener {

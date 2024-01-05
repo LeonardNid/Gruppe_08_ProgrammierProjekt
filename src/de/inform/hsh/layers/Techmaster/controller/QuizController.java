@@ -36,7 +36,7 @@ public class QuizController implements QuizFacade {
 	/**
 	 * Konstruktor zum erstellen des QuizControllers
 	 * 
-	 * @param Spieler spieler2
+	 * @param spieler2
 	 */
 	private QuizController(Spieler spieler2) {
 		this.spieler = spieler2;
@@ -56,7 +56,7 @@ public class QuizController implements QuizFacade {
 	/**
 	 * Methode zum setzen des Dateipfads
 	 * 
-	 * @param String level
+	 * @param level
 	 */
 	public void chooseFragenKatalog(String level) {
 		if (level.equals("Leicht")) {
@@ -131,7 +131,7 @@ public class QuizController implements QuizFacade {
 	 * dementsprechend
 	 * 
 	 * @return boolean
-	 * @param String antwort
+	 * @param a
 	 */
 	public boolean proofAntwort(String a) {
 		for (Antwort antwort : frage.getA()) {
@@ -154,9 +154,8 @@ public class QuizController implements QuizFacade {
 	/**
 	 * Überprüft ob bereits ein Joker genutzt wurde oder nutzt den Joker und ändert
 	 * die Spieler Informationen.
-	 * 
+	 * @param frage
 	 * @return boolean
-	 * @param Frage frage
 	 */
 	public boolean useJoker(Frage frage) {
 		if (!frage.getJokerUsed() && spieler.getJoker() > 0) {

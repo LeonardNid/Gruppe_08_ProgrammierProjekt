@@ -202,8 +202,8 @@ public class GUIController {
 
 	/**
 	 * Erstellt ein JOptionPane
-	 * 
-	 * @param String message, String title, Object[] options, JPanel panel
+	 *
+	 * @param message, String title, Object[] options, JPanel panel
 	 */
 	public void showJOptionPane(String message, String title, Object[] options) {
 		// Hier muss eine abfrage stattfinden ob das MainPanel bereits genutzt wird
@@ -284,7 +284,7 @@ public class GUIController {
 	/**
 	 * erstellt den Font für die gegebenene Komponente
 	 * 
-	 * @param Component c, float size
+	 * @param title, float size
 	 */
 	public void createFont(Component title, float size) {
 	    try {
@@ -323,7 +323,7 @@ public class GUIController {
 	/**
 	 * wechselt die Panels in dem Frame
 	 * 
-	 * @param JPanel old, JPanel new
+	 * @param old, JPanel new
 	 */
 	public void setNewView(JPanel old, JPanel newOne) {
 		frame.getContentPane().add(newOne, BorderLayout.CENTER);

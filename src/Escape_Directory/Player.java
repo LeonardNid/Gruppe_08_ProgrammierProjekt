@@ -1,7 +1,7 @@
 package Escape_Directory;
 
 /**
- * Speichert die Informationen welche wichtig für Spieler & Spielerbewegungen
+ * Speichert die Informationen welche wichtig für Spieler und Spielerbewegungen
  * sind. Außerdem wurden Methoden implementiert, welche die Verarbeitung
  * vereinfacht.
  */
@@ -27,7 +27,7 @@ public class Player {
 
 	/**
 	 * Berechnet die neue Geschwindigkeit welche abhängig von der bis zum letzten
-	 * Frame vergangenen Zeit & der sich bewegenden Richtung des Spielers ist. Die
+	 * Frame vergangenen Zeit und der sich bewegenden Richtung des Spielers ist. Die
 	 * Geschwindigkeit muss im Interval [-maxvel;maxvel] sein
 	 */
 	

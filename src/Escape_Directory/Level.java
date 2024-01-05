@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import javax.imageio.ImageIO;
 
 /**
- * Eine Klasse, welche alle Informationen des Levels aufrufen & weitergeben soll
+ * Eine Klasse, welche alle Informationen des Levels aufrufen und weitergeben soll
  */
 public class Level {
 	private Position playerStartPos;
