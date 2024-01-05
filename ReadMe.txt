@@ -1,0 +1,1 @@
+Executable Jar befindet sich in: .\out\artifacts\Gruppe_08_ProgrammierProjekt_jar
