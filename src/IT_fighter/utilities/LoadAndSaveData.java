@@ -1,5 +1,7 @@
 package IT_fighter.utilities;
 
+import virusvoid.logic.sound.SoundManager;
+
 import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import java.awt.*;
@@ -8,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Dient zum Laden von Dateien in Java-Klassen
@@ -15,7 +18,7 @@ import java.net.MalformedURLException;
 public class LoadAndSaveData {
 
     //##################################################################################################################
-    private static final String sourceOfResources = "/ITfighter_resources/";
+    private static final String sourceOfResources = "ITfighter_resources/";
     public static final String LEVEL_ATLAS = "ITF_outside_sprites.jpg";
     public static final String fontName = "ITF_BACKTO1982.TTF";
     //##################################################################################################################
@@ -27,8 +30,7 @@ public class LoadAndSaveData {
      */
     public static BufferedImage getImage(String pictureName) {
         BufferedImage image;
-        System.out.println(sourceOfResources+pictureName);
-        InputStream inputStream = LoadAndSaveData.class.getResourceAsStream(sourceOfResources + pictureName);
+        InputStream inputStream = LoadAndSaveData.class.getClassLoader().getResourceAsStream(sourceOfResources + pictureName);
         try {
             image = ImageIO.read(inputStream);
             inputStream.close();
@@ -45,10 +47,13 @@ public class LoadAndSaveData {
      * @return Gibt die Schrift in der gewünschten Größe zurück.
      */
     public static Font getFont(int size) {
-        try {
-            String filepath = LoadAndSaveData.class.getResource(sourceOfResources+fontName).getPath();
-            File fontfile = new File(filepath);
-            return Font.createFont(Font.TRUETYPE_FONT, fontfile).deriveFont(Font.BOLD, size);
+        try (InputStream inputStream = LoadAndSaveData.class.getClassLoader().
+                getResourceAsStream(sourceOfResources+fontName)){
+            if (inputStream != null) {
+                return Font.createFont(Font.TRUETYPE_FONT, inputStream).deriveFont(Font.BOLD, size);
+            } else {
+                System.out.println("Schriftart-Datei nicht gefunden: "+ sourceOfResources+fontName);
+            }
         } catch (IOException | FontFormatException e) {
             e.printStackTrace();
         }
@@ -83,28 +88,21 @@ public class LoadAndSaveData {
      */
     public static Clip getSoundFile(String soundFileName) {
         Clip clip;
-        String errorMessage = "Fehler bei SoundFile einlesen";
         try {
-            String path = "ITfighter_resources/"+soundFileName;
-            System.out.println(path);
-            InputStream musicStream = LoadAndSaveData.class.getClassLoader().getResourceAsStream(path);
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(musicStream);
-            clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-        } catch (UnsupportedAudioFileException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-        } catch (MalformedURLException e) {
-            System.out.println(errorMessage+ "falsche Url");
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-        } catch (LineUnavailableException e) {
-            System.out.println(errorMessage);
-            throw new RuntimeException(e);
-
+            String path = sourceOfResources+soundFileName;
+            URL url = LoadAndSaveData.class.getClassLoader().getResource(path);
+            if(url != null) {
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(url);
+                clip = AudioSystem.getClip();
+                clip.open(audioInputStream);
+                return clip;
+            } else {
+                System.out.println("Fehler bei SoundFile einlesen"+path);
+                return null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
-        return clip;
     }
 }

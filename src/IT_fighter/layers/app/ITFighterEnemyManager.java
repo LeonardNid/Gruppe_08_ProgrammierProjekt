@@ -32,14 +32,18 @@ public class ITFighterEnemyManager {
                 try {
                     Thread.sleep((random.nextLong(sleepTime)+50)/2);
                 } catch (InterruptedException e) {
-                    System.out.println("Interrupted Exception gefangen");
+                    //hier muss nicht gefangen werden, da nach dem stoppt der GameController
+                    // eh nicht mehr verwendet wird
+                    //System.out.println("Interrupted Exception gefangen");
                 }
                 virusList.add(new ITFighterVirus(2594, 132, 32,32));
                 virusList.add(new ITFighterVirus(1094, 172, 32, 32));
                 try {
                     Thread.sleep((random.nextLong(sleepTime)+50)/2);
                 } catch (InterruptedException e) {
-                    System.out.println("Interrupted Exception gefangen");
+                    //hier muss nicht gefangen werden, da nach dem stoppt der GameController
+                    // eh nicht mehr verwendet wird
+                    //System.out.println("Interrupted Exception gefangen");
                 }
             }
         });
@@ -58,7 +62,9 @@ public class ITFighterEnemyManager {
                 try {
                     Thread.sleep(random.nextLong(sleepTime));
                 } catch (InterruptedException e) {
-                    System.out.println("Interrupted Exception gefangen");
+                    //hier muss nicht gefangen werden, da nach dem stoppt der GameController
+                    // eh nicht mehr verwendet wird
+                    //System.out.println("Interrupted Exception gefangen");
                 }
             }
         });
