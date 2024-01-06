@@ -51,10 +51,10 @@ public class GUI implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == b1) {
 			meinFrame.dispose();
-			meinFrame = new frame();
+			meinFrame = new frame("tutorial");
 		} else if (e.getSource() == b2) {
 			meinFrame.dispose();
-			meinFrame = new frame();
+			meinFrame = new frame("play");
 		} else if (e.getSource() == b3) {
 			meinFrame.dispose();
 		}

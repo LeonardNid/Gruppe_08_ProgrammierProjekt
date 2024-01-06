@@ -2,17 +2,22 @@ package Escape_Directory;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 /**
- * Die GUI und das Herz von dem Spiel. Hier wird auch jeder Frame neu gezeichnet.
+ * Die GUI uuuuuuuuuuuuuuuuund das Herz von dem Spiel. Hier wird auch jeder Frame neu gezeichnet.
  */
 @SuppressWarnings("serial")
 public class frame extends JFrame implements KeyListener {
@@ -32,16 +37,21 @@ public class frame extends JFrame implements KeyListener {
 
 	Player p = new Player(lev.getPlayerStartPos(), Position.ZERO(), 400, new Position(800, 400),
 			System.currentTimeMillis());
-	Camera c = new Camera(0.005,500, new Position(p.getPos().getX() - (0.4 * FilePaths.windowSize.getX()), p.getPos().getY()));
+	Camera c = new Camera(0.005, 500,
+			new Position(p.getPos().getX() - (0.4 * FilePaths.windowSize.getX()), p.getPos().getY()));
 	Enemy e = new Enemy(Position.ZERO(), Position.ZERO(), FilePaths.enemyVel);
 	ArrayList<Enemy> es = new ArrayList<Enemy>();
 	ArrayList<JLabel> eslabel = new ArrayList<JLabel>();
 
-	Logic l = new Logic(p, null, e);
+	Logic l = new Logic(p, lev, e);
 
 	long lastCycle;
 
-	public frame() {
+	public frame(String activationTyp) {
+		if (activationTyp.equals("play")) {
+			lev.setLev(1);
+			lev.drawWorld();
+		}
 		frame = new JFrame("test");
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		try {
@@ -67,7 +77,6 @@ public class frame extends JFrame implements KeyListener {
 					}
 					double deltaTime = (double) (System.currentTimeMillis() - lastCycle) / 1000;
 					l.update("", deltaTime, lev.getWorld(), c, keyE);
-					draw();
 					lastCycle = System.currentTimeMillis();
 					if (keyDown) {
 						l.updatePlayerVelocity("DOWN", deltaTime);
@@ -109,7 +118,9 @@ public class frame extends JFrame implements KeyListener {
 			}
 		}, 0, 16);
 	}
-
+ /* 
+  * restarted die map & die positions der entities
+  * */
 	private void restart() {
 		lev.drawWorld();
 		backgroundImage = new ImageIcon(lev.getBackgroundPath());
@@ -122,6 +133,9 @@ public class frame extends JFrame implements KeyListener {
 		c.restart();
 	}
 
+	/*
+	 * * Updated alle Positions abhängig von der Kameraposition
+	 *  */
 	private void updatePositions() {
 		for (int i = 0; i < world.length; i++) {
 			for (int j = 0; j < world[i].length; j++) {
@@ -162,7 +176,7 @@ public class frame extends JFrame implements KeyListener {
 				}
 			}
 		}
-		
+
 		backgroundImage = new ImageIcon(getClass().getResource(lev.getBackgroundPath()));
 		background = new JLabel(backgroundImage);
 		background.setBounds(0, -300, backgroundImage.getIconWidth(), backgroundImage.getIconHeight());
@@ -182,15 +196,6 @@ public class frame extends JFrame implements KeyListener {
 				}
 			}
 		}
-	}
-
-	/** Malt den Spieler. Wird nach der Update-Methode in Logik aufgerufen. */
-	private void draw() {
-		playerLabel.setBounds((int) (p.getPos().getX()), (int) (p.getPos().getY()), FilePaths.pixelSize,
-				FilePaths.pixelSize);
-		enemyLabel.setBounds((int) (e.getPos().getX()), (int) (e.getPos().getY()), FilePaths.pixelSize,
-				FilePaths.pixelSize);
-
 	}
 
 	boolean keyUp, keyDown, keyLeft, keyRight, keyEscape, keyE;
@@ -218,6 +223,9 @@ public class frame extends JFrame implements KeyListener {
 		}
 		if (e.getKeyCode() == KeyEvent.VK_E) {
 			keyE = true;
+		}
+		if (e.getKeyCode() == KeyEvent.VK_Q) {
+			l.playSound(FilePaths.quack);
 		}
 	}
 

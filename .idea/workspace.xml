@@ -12,6 +12,12 @@
     <list default="true" id="c1519221-66c6-4b94-82b1-40fd889098d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/resources/ED_level2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Files/resources/ED_level2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/FilePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/frame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +32,7 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2aXYoo7beSVAtmoUu3qYo1X9WR9" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -40,6 +46,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
@@ -51,7 +60,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
       </set>
     </attachedChunks>
   </component>
@@ -69,5 +79,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

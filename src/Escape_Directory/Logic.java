@@ -1,5 +1,18 @@
 package Escape_Directory;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
 /** Updated die Tiles und ihre Interaktionen zwischeneinander */
 public class Logic {
 	private Player player;
@@ -56,6 +69,9 @@ public class Logic {
 		enemy.calcNewPosition(deltaTime);
 		if (enemiesCollideWithPlayer()) {
 			win = gameStates.LOSE;
+		}
+		if (level.getLev() == 6) {
+			enemy.setPos(new Position(-1000,-1000));
 		}
 	}
 
@@ -253,6 +269,35 @@ public class Logic {
 		if (player.getPos().getY() + playerSize > windowSize.getY() - 7) { // 7 ist die Größe des Fensters außerhalb des
 																			// // // Spiels
 			win = gameStates.LOSE;
+		}
+	}
+	public void playSound(String resourcePath) {
+	    try {
+	    	URL url = getClass().getClassLoader().getResource(resourcePath);
+	        if (url != null) {
+	            AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);
+	            Clip clip = AudioSystem.getClip();
+	            clip.open(audioIn);
+	            clip.start();
+	        } else {
+	            System.err.println("Die Ressource '" + resourcePath + "' wurde nicht gefunden.");
+	        }
+	    } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	public void playQuack() {
+		try {
+			File musicPath = new File(FilePaths.quack);
+			if (musicPath.exists()) {
+				AudioInputStream audioInput = AudioSystem.getAudioInputStream(musicPath);
+				Clip clip = AudioSystem.getClip();
+				clip.open(audioInput);
+				clip.start();
+			}
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }
