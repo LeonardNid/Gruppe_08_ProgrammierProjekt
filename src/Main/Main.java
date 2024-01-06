@@ -115,10 +115,10 @@ public class Main {
 
         panel.add(nanoTechDefendersBtn);
         panel.add(virusVoidBtn);
+        panel.add(itfighter);
         panel.add(scamOrNot);
         panel.add(techmaster);
         panel.add(escape_Directory);
-        panel.add(itfighter);
     }
 
     /**
