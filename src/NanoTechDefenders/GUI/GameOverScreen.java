@@ -69,7 +69,7 @@ public class GameOverScreen extends JPanel {
         Font myFont = MyFont.getMyFont();
 
         JButton button = new JButton();
-        button.setText("Main.Main Menu");
+        button.setText("Main Menu");
         button.setFont(myFont);
         button.setBorder(BorderFactory.createLineBorder(Color.RED, 2));
         button.setBackground(Color.BLACK);

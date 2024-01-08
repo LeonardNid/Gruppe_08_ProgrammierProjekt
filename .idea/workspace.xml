@@ -10,9 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1519221-66c6-4b94-82b1-40fd889098d3" name="Changes" comment="Escape-Directory-Einbindung">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameOverScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameOverScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,9 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704466568239</updated>
       <workItem from="1704466570094" duration="174000" />
+      <workItem from="1704708603597" duration="732000" />
     </task>
     <task id="LOCAL-00001" summary="Escape-Directory-Einbindung">
       <option name="closed" value="true" />
