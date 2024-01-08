@@ -1,0 +1,304 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_19\" default=\"true\" project-jdk-name=\"19\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 56cdc74a8eefe29c3c8b82b873a0cf44088e85a1)
++++ b/.idea/misc.xml	(date 1704705996907)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ArtifactsWorkspaceSettings\">\n    <artifacts-to-build>\n      <artifact name=\"Gruppe_08_ProgrammierProjekt:jar\" />\n    </artifacts-to-build>\n  </component>\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n\n    <list default=\"true\" id=\"a012f2c4-53b6-4eb8-a3c5-09b0a19269f4\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/gui/labels/PauseLabel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/gui/labels/PauseLabel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/gui/labels/PlanetHPLabel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/gui/labels/PlanetHPLabel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/gui/other/PlanetHPLabelManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/gui/other/PlanetHPLabelManager.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/controller/LogicController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/controller/LogicController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Boss.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Boss.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Enemy.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Enemy.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/GameObject.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/GameObject.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Projectile.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Projectile.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Spaceship.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/objects/Spaceship.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/other/MoveSpaceship.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/other/TutorialAndGameHelper.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/other/TutorialAndGameHelper.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/PlayerProjectileManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/PlayerProjectileManager.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;tomschroeder2&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"931f02c8-38e5-4663-9144-fe7a980dfd4b\" />\n        <option name=\"url\" value=\"https://github.com/LeonardNid/Gruppe_08_ProgrammierProjekt.git\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 8\n}</component>\n  <component name=\"ProjectId\" id=\"2ZRdJCB5JKBy8rLTeCp5aeNU5hj\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"Application.Main.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"master\",\n    \"jdk.selected.JAVA_MODULE\": \"21\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"C:/Users/niede/Desktop/Studium/Semester_3/Gruppe_08_ProgrammierProjekt/Jars/jackson-core-2.16.0.jar\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Libraries\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/Files/ITfighter_ressources\" />\n      <recent name=\"$PROJECT_DIR$/Files/pictures\" />\n      <recent name=\"$PROJECT_DIR$/src/ITfighter/utilities\" />\n      <recent name=\"$PROJECT_DIR$/src/ITfighter\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\niede\\Desktop\\Studium\\Semester_3\\Gruppe_08_ProgrammierProjekt\\Jars\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main.Main\" />\n      <module name=\"Gruppe_08_ProgrammierProjekt\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0\" />\n        <option value=\"jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a012f2c4-53b6-4eb8-a3c5-09b0a19269f4\" name=\"Changes\" comment=\"\" />\n      <created>1702388753005</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702388753005</updated>\n      <workItem from=\"1702388754132\" duration=\"6252000\" />\n      <workItem from=\"1702396011280\" duration=\"134000\" />\n      <workItem from=\"1702477105697\" duration=\"61937000\" />\n      <workItem from=\"1702898205040\" duration=\"35875000\" />\n      <workItem from=\"1703158995075\" duration=\"74275000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702491686185</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702491686185</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"2. Optionspanel funktionalität hergestellt\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702811418075</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702811418075</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703007440061</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703007440061</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703153802969</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703153802969</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703437267112</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703437267112</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703437345618</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703437345618</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703437359640</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703437359640</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703437391521</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703437391521</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"6. Klassen umbenannt und button bug auf linux gefixed\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703855662495</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703855662495</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"7. Kommentare fetig geschrieben.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1704019558613</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1704019558613</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"11\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt\" />\n    <MESSAGE value=\"2. Optionspanel funktionalität hergestellt\" />\n    <MESSAGE value=\"2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert\" />\n    <MESSAGE value=\"2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten\" />\n    <MESSAGE value=\"4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final\" />\n    <MESSAGE value=\"6. Klassen umbenannt und button bug auf linux gefixed\" />\n    <MESSAGE value=\"7. Kommentare fetig geschrieben.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"7. Kommentare fetig geschrieben.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 56cdc74a8eefe29c3c8b82b873a0cf44088e85a1)
++++ b/.idea/workspace.xml	(date 1704273568139)
+@@ -9,62 +9,54 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-
+     <list default="true" id="a012f2c4-53b6-4eb8-a3c5-09b0a19269f4" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_12_2023_16_54__Changes_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/controller/GUIController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/controller/QuizController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Antwort.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Frage.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/model/Spieler.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ChooseAntwortActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ChooseLevelActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/ExitActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/HelpActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/JokerActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/QuizFacade.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/utils/StartActionListener.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameMainFrame.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameMainPanel.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/GameStartPanel.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/de/inform/hsh/layers/Techmaster/view/design/RoundedButton.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/labels/PauseLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/PauseLabel.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/labels/PlanetHPLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/labels/PlanetHPLabel.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/GameMenuPanel.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NanoTechDefenders/GUI/MenuPanel.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/Techmaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Techmaster/Techmaster.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/GUIController.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/controller/QuizController.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Antwort.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Frage.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/model/Spieler.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseAntwortActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ChooseLevelActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/ExitActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/HelpActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/JokerActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/QuizFacade.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/utils/StartActionListener.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainFrame.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameMainPanel.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/GameStartPanel.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Techmaster/de/inform/hsh/layers/view/design/RoundedButton.java" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/GuiController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/other/PlanetHPLabelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/other/PlanetHPLabelManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/gui/panels/GameTutorialSuperPanel.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/controller/LogicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/controller/LogicController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/objects/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Boss.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/objects/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Enemy.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/objects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/GameObject.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/objects/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Projectile.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/objects/Spaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/objects/Spaceship.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/other/MoveSpaceship.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/other/TutorialAndGameHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/other/TutorialAndGameHelper.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/PlayerProjectileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/virusvoid/logic/projectilemanager/PlayerProjectileManager.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
+-      </map>
+-    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;tomschroeder2&quot;
+-  }
+-}</component>
+-  <component name="GithubPullRequestsUISettings">
+-    <option name="selectedUrlAndAccountId">
+-      <UrlAndAccount>
+-        <option name="accountId" value="931f02c8-38e5-4663-9144-fe7a980dfd4b" />
+-        <option name="url" value="https://github.com/LeonardNid/Gruppe_08_ProgrammierProjekt.git" />
+-      </UrlAndAccount>
+-    </option>
+-  </component>
+-  <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 8
+@@ -77,36 +69,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "Application.Main.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master",
+-    "jdk.selected.JAVA_MODULE": "21",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/niede/Desktop/Studium/Semester_3/Gruppe_08_ProgrammierProjekt/Jars/jackson-core-2.16.0.jar",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Libraries",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/leonard/Studium/Semester_3/DBS2/Bonusaufgabe2&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/Files/ITfighter_ressources" />
+-      <recent name="$PROJECT_DIR$/Files/pictures" />
+-      <recent name="$PROJECT_DIR$/src/ITfighter/utilities" />
+-      <recent name="$PROJECT_DIR$/src/ITfighter" />
+-    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\niede\Desktop\Studium\Semester_3\Gruppe_08_ProgrammierProjekt\Jars" />
+     </key>
+@@ -123,7 +108,6 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
+         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+       </set>
+     </attachedChunks>
+@@ -138,91 +122,10 @@
+       <updated>1702388753005</updated>
+       <workItem from="1702388754132" duration="6252000" />
+       <workItem from="1702396011280" duration="134000" />
+-      <workItem from="1702477105697" duration="61937000" />
+-      <workItem from="1702898205040" duration="35875000" />
+-      <workItem from="1703158995075" duration="74275000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt">
+-      <option name="closed" value="true" />
+-      <created>1702491686185</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1702491686185</updated>
+-    </task>
+-    <task id="LOCAL-00002" summary="2. Optionspanel funktionalität hergestellt">
+-      <option name="closed" value="true" />
+-      <created>1702811418075</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1702811418075</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert">
+-      <option name="closed" value="true" />
+-      <created>1703007440061</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703007440061</updated>
+-    </task>
+-    <task id="LOCAL-00004" summary="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten">
+-      <option name="closed" value="true" />
+-      <created>1703153802969</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703153802969</updated>
+-    </task>
+-    <task id="LOCAL-00005" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+-      <option name="closed" value="true" />
+-      <created>1703437267112</created>
+-      <option name="number" value="00005" />
+-      <option name="presentableId" value="LOCAL-00005" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703437267112</updated>
+-    </task>
+-    <task id="LOCAL-00006" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+-      <option name="closed" value="true" />
+-      <created>1703437345618</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703437345618</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+-      <option name="closed" value="true" />
+-      <created>1703437359640</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703437359640</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final">
+-      <option name="closed" value="true" />
+-      <created>1703437391521</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703437391521</updated>
+-    </task>
+-    <task id="LOCAL-00009" summary="6. Klassen umbenannt und button bug auf linux gefixed">
+-      <option name="closed" value="true" />
+-      <created>1703855662495</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1703855662495</updated>
++      <workItem from="1702465548306" duration="1012000" />
++      <workItem from="1702553336458" duration="42000" />
++      <workItem from="1702896569097" duration="107000" />
+     </task>
+-    <task id="LOCAL-00010" summary="7. Kommentare fetig geschrieben.">
+-      <option name="closed" value="true" />
+-      <created>1704019558613</created>
+-      <option name="number" value="00010" />
+-      <option name="presentableId" value="LOCAL-00010" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1704019558613</updated>
+-    </task>
+-    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -230,13 +133,5 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+-    <MESSAGE value="1.Integration in Spielesammlung ITFighter noch nicht weiter entwickelt" />
+-    <MESSAGE value="2. Optionspanel funktionalität hergestellt" />
+-    <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert" />
+-    <MESSAGE value="2. Optionpanel mit Buttons für Sound funktionsfähig. Gamemusic funktioniert.&#10;Commit um auf Linux weiter zu arbeiten" />
+-    <MESSAGE value="4. Virus und BinärCode als Enemies funktionsfähig und Game-Over-Screen final" />
+-    <MESSAGE value="6. Klassen umbenannt und button bug auf linux gefixed" />
+-    <MESSAGE value="7. Kommentare fetig geschrieben." />
+-    <option name="LAST_COMMIT_MESSAGE" value="7. Kommentare fetig geschrieben." />
+   </component>
+ </project>
+\ No newline at end of file

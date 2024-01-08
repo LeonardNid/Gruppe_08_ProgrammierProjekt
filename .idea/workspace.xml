@@ -9,299 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1519221-66c6-4b94-82b1-40fd889098d3" name="Changes" comment="Updates">
+    <list default="true" id="c1519221-66c6-4b94-82b1-40fd889098d3" name="Changes" comment="Escape-Directory-Einbindung">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Block.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Camera.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Camera.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Enemy.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Enemy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/FilePaths.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/FilePaths.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/GUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Level.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Level.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Logic.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Logic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Player.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Position.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/Position.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/SoundPlayerUsingClip.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/SoundPlayerUsingClip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/blockStates.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/blockStates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/gameStates.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/gameStates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Escape_Directory/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Escape_Directory/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/RunIT_fighterApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/RunIT_fighterApp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterBinaryCode.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterBinaryCode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterCharacter.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterCharacter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterEnemy.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterEnemy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterEntity.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterEntity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterVirus.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/ITFighterVirus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Entity/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterAppController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterAppController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterEnemyManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterEnemyManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGameController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGameController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGameLoop.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterGameLoop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterIconManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterIconManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterPlayerKeyHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/ITFighterPlayerKeyHandler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/ITFighterSound.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/ITFighterSound.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/ITFighterSoundManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/ITFighterSoundManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/Sound/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/app/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterCharacterGraphics.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterCharacterGraphics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterEnemyGraphics.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterEnemyGraphics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterGamePanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterGamePanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterMainFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterMainFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterTiktokPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ITFighterTiktokPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/ITFighterGamePanelController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/ITFighterGamePanelController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/ITFighterGuiController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/ITFighterGuiController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/ctrl/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterBasicPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterBasicPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterLevelPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterMenuPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterOptionsPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/ITFighterTutorialPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/menuPanels/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/layers/ui/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/Constants.PlayerConstants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/Constants.PlayerConstants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/Constants.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/Constants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/LoadAndSaveData.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/LoadAndSaveData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/UtilMethods.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/UtilMethods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/IT_fighter/utilities/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Main/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Main/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Main/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Main/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Main/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Main/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/GUIController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/GUIController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/UIManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/UIManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Controlling/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/EnemyContainPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/EnemyContainPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/EnemyLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/EnemyLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Enemy/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/GameMenuPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/GameMenuPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/GameOverScreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/GameOverScreen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/HauptFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/HauptFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/LevelPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/LevelPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/MenuPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/MenuPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/ProjectileContainPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/ProjectileContainPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/ProjectileLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/ProjectileLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Projectile/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierContainPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierContainPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierPlacePanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/SoldierPlacePanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Soldier/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/UIPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/UIPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/InfoWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/InfoWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/InfoWindowSoldiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/InfoWindowSoldiers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/Window/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/GUI/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/Direction.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/Direction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/MyFont.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/MyFont.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/MyImage.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/MyImage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/Soldiers.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/Soldiers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Help/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/GameManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/GameManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/LevelManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/LevelManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/LogicController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/LogicController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/SoldierManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/SoldierManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Controlling/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Enemy.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Enemy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Path.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Path.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/Projectile.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/Projectile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileBeam.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileBeam.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileFireBall.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileFireBall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectilePierce.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectilePierce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileRocket.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileRocket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileTracker.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/ProjectileTracker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Projectiles/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Soldier.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/Soldier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Logic/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/Audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/Audio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/SoundController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/SoundController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/NanoTechDefenders/Sound/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Techmaster/Techmaster.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Techmaster/Techmaster.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Techmaster/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Techmaster/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/Techmaster/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/Techmaster/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Email.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Logic.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Logic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/MusicPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/MusicPlayer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Options.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/Options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/Logic/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/AttachmentButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/AttachmentButton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/BackgroundPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/BackgroundPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/CustomSlider.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/CustomSlider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/ImageButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/ImageButton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/CustomElements/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/EndScreenUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/EndScreenUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/GameUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/GameUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/HowToPlayUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/HowToPlayUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/MainFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/MainFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/MainMenueUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/MainMenueUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/OptionsUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/OptionsUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/Luca/ScamOrNot/UI/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/GUIController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/GUIController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/QuizController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/QuizController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/controller/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Antwort.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Antwort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Frage.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Frage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Spieler.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/Spieler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/model/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ChooseAntwortActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ChooseAntwortActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ChooseLevelActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ChooseLevelActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ExitActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/ExitActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/HelpActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/HelpActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/JokerActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/JokerActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/QuizFacade.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/QuizFacade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/StartActionListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/StartActionListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/utils/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameMainFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameMainFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameMainPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameMainPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameStartPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/GameStartPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/RoundedButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/RoundedButton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/design/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/de/inform/hsh/layers/Techmaster/view/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-21.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-22.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-22.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-23.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-24.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-24.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/legal/jqueryUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/legal/jqueryUI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/serialized-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/serialized-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/PictureManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/PictureManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/ScaledImage.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/ScaledImage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/imagecontrol/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/PauseLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/PauseLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/PlanetHPLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/PlanetHPLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/ScaledLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/ScaledLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/SpaceshipLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/SpaceshipLabel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/labels/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/GuiBasic.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/GuiBasic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/GuiController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/GuiController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/PlanetHPLabelManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/PlanetHPLabelManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/SpaceshipKeyListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/SpaceshipKeyListener.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/VolumeRegulatorBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/VolumeRegulatorBar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/other/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GamePanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GamePanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialEndPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialEndPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialSuperPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/GameTutorialSuperPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/MainFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/MainFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/MainMenuPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/MainMenuPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/OptionsPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/OptionsPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/OrangePanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/OrangePanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/TutorialPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/TutorialPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/gui/panels/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/help/WaitHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/help/WaitHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/help/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/help/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/help/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/help/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/GameController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/GameController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/InfiniteGameController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/InfiniteGameController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/LogicController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/LogicController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/TutorialController.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/TutorialController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/controller/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/BossManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/BossManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/DefaultEnemyManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/DefaultEnemyManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/EnemyManagerHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/EnemyManagerHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/ShootingEnemyManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/ShootingEnemyManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/enemymanager/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Boss.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Boss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Enemy.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Enemy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/GameObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/GameObject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Planet.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Planet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Projectile.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Projectile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Spaceship.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/Spaceship.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/objects/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/GameTutorialEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/GameTutorialEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/SpaceshipCollisionDetection.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/SpaceshipCollisionDetection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/TutorialAndGameHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/TutorialAndGameHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/GameTimeManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/GameTimeManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/GameTutorialEventManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/GameTutorialEventManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/InfiniteGameTimeManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/InfiniteGameTimeManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/PlanetManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/PlanetManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/SpaceshipManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/SpaceshipManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/TimeManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/TimeManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/TutorialTimeManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/TutorialTimeManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/manager/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/other/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/BossProjectileManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/BossProjectileManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/EnemyProjectileManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/EnemyProjectileManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/PlayerProjectileManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/PlayerProjectileManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/ProjectileManagerHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/ProjectileManagerHelper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/projectilemanager/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/MusicManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/MusicManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/SoundEffectManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/SoundEffectManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/SoundManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/SoundManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDoc/virusvoid/logic/sound/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Gruppe_08_ProgrammierProjekt_jar/Gruppe_08_ProgrammierProjekt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/FilePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Escape_Directory/frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escape_Directory/frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +41,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/reina/OneDrive/Studium/Semester_3/Gruppe_08_ProgrammierProjekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -359,8 +69,6 @@
       <option name="presentableId" value="Default" />
       <updated>1704466568239</updated>
       <workItem from="1704466570094" duration="174000" />
-      <workItem from="1704702276755" duration="594000" />
-      <workItem from="1704704494443" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Escape-Directory-Einbindung">
       <option name="closed" value="true" />
@@ -370,15 +78,7 @@
       <option name="project" value="LOCAL" />
       <updated>1704532624724</updated>
     </task>
-    <task id="LOCAL-00002" summary="Updates">
-      <option name="closed" value="true" />
-      <created>1704533095638</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1704533095638</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +97,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Escape-Directory-Einbindung" />
-    <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Escape-Directory-Einbindung" />
   </component>
 </project>
