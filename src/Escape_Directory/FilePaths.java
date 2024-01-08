@@ -14,10 +14,13 @@ public class FilePaths {
 	public static final String mainScreen = "/resources/ED_main screen.png";
 	public static final String quack = "resources/ED_quack.wav";
 	public static int pixelSize = 32;
-	public static double gravity = 500;
+	public static double gravity = 500; 
 	public static Position windowSize = new Position(2016, 551);
-	public static String tutorialButton = "/resources/ED_tutorialbutton.png";
-	public static String playButton = "/resources/ED_playbutton.png";
-	public static String exitButton = "/resources/ED_exitbutton.png";
+	public static final String tutorialButton = "/resources/ED_tutorialbutton.png";
+	public static final String playButton = "/resources/ED_playbutton.png";
+	public static final String exitButton = "/resources/ED_exitbutton.png";
+	public static final String resumeButton = "/resources/ED_resumebutton.png";
+	public static final String MainMenuButton= "/resources/ED_mainmenubutton.png";
+
 	public static double enemyVel = 50;
 }

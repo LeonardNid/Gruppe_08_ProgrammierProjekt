@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
-
+import Main.Main;
 public class GUI implements ActionListener {
 	JButton b1;
 	JButton b2;
@@ -57,6 +57,8 @@ public class GUI implements ActionListener {
 			meinFrame = new frame("play");
 		} else if (e.getSource() == b3) {
 			meinFrame.dispose();
+			Main.setMainFrameVisible();
+
 		}
 	}
 
